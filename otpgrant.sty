@@ -1,0 +1,38 @@
+%% otpgrant.sty -- shared preamble for FY2026 OTP (84.116T) application documents
+%% Implements ED discretionary grant formatting standards (2025 Common Instructions):
+%%   * 8.5" x 11" letter paper, 1" margins on all sides
+%%   * 12pt Times (or Times-like) font
+%%   * page numbers
+%%   * double spacing for the project narrative (toggle per document)
+%% Compile with pdflatex to produce a flattened, non-fillable PDF as ED recommends.
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{otpgrant}[2026/06/12 OTP grant formatting]
+
+\RequirePackage[letterpaper,margin=1in]{geometry}
+
+% Times text + math. Prefer newtx (modern); fall back to mathptmx on minimal installs.
+\IfFileExists{newtxtext.sty}{%
+  \RequirePackage{newtxtext,newtxmath}%
+}{%
+  \RequirePackage{mathptmx}%
+}
+
+\RequirePackage{setspace}      % \doublespacing / \singlespacing per document
+\RequirePackage[hidelinks]{hyperref} % internal links, no colored boxes in print
+
+% Page numbers, bottom center (LaTeX "plain" default) -- nothing else needed.
+\pagestyle{plain}
+
+% Keep the TOC to depth 1 so it fits the one-double-spaced-page limit.
+\setcounter{tocdepth}{1}
+
+% Headers stay readable and modest; no color, no decoration.
+\RequirePackage{titlesec}
+\titleformat{\section}{\normalfont\large\bfseries}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\normalfont\normalsize\bfseries}{\thesubsection}{0.5em}{}
+
+% Convenience: a labeled criterion header showing reviewer point values,
+% e.g. \criterion{Need for the Project}{12}
+\newcommand{\criterion}[2]{\section{#1 (up to #2 points)}}
+
+\endinput

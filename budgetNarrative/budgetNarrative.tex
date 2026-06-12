@@ -1,0 +1,59 @@
+%% OTP_Budget_Narrative.tex
+%% Budget Narrative -- not counted toward the narrative page limit.
+%% Must itemize every project year; per-year totals must match
+%% SF-424A Section E, and the four-year total must match Section A line 5(e).
+\documentclass[12pt,letterpaper]{article}
+\usepackage{../otpgrant}
+
+\title{\bfseries Budget Narrative\\[0.5ex]
+  \large Open Textbook Pilot Program (84.116T), FY 2026}
+\author{The Ohio State University}
+\date{}
+
+% One environment per project year; categories mirror the SF-424A
+% object class categories and the notice's required breakdown.
+\newcommand{\budgetyear}[1]{\section{Project Year #1}}
+\newcommand{\budgetcat}[1]{\subsection*{#1}}
+
+\begin{document}
+\singlespacing % the double-spacing standard applies to the narrative;
+               % budget narratives are conventionally single-spaced.
+
+\maketitle
+\thispagestyle{empty}
+\clearpage
+
+\budgetyear{1}
+\budgetcat{Personnel}
+% List each position by title; role, annual salary, % effort, amount charged.
+\budgetcat{Fringe Benefits}
+% Use the institution's negotiated fringe rates; omit if in indirects.
+\budgetcat{Travel}
+% Grantee staff only: purpose, # travelers, trips, per diem, mileage.
+\budgetcat{Equipment}
+% Only items >= $10,000/unit (or your capitalization level) with life > 1 yr.
+\budgetcat{Supplies}
+% Tangible property under $10,000/unit; list item, quantity, unit cost.
+\budgetcat{Contractual}
+% Procurement-system contracts; consultant fees/expenses/travel under contract.
+\budgetcat{Other}
+% Space rental, fees, honoraria, training, printing, stipends (exclude
+% stipends from the indirect cost base if included here).
+\budgetcat{Indirect Costs}
+% State the approved negotiated rate (type, base, amount) or 15% de minimis.
+\budgetcat{Total -- Year 1}
+% Total direct + indirect. Must match SF-424A.
+
+\budgetyear{2}
+% Repeat categories.
+
+\budgetyear{3}
+% Repeat categories.
+
+\budgetyear{4}
+% Repeat categories.
+
+\section{Four-Year Total}
+% Must equal SF-424A Section A line 5(e).
+
+\end{document}
