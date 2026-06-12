@@ -38,7 +38,76 @@
 
 \subsection{Current state of the project}
 
+Ximera, pronounced ``chimera,'' (\textbf{X}imera:
+\textbf{I}nteractive, \textbf{M}athematics, \textbf{E}ducation,
+\textbf{R}esources, for \textbf{A}ll) is an open-source platform that
+provides tools for authoring and publishing (PDF and Online),
+open-source, interactive educational content, such as
+textbooks, assessments, and online courses.  
+\textbf{The ultimate goal of this project is to promote sustained student success and savings.}
 
+
+Students interact with the free \textit{content} produced within
+Ximera, hence their experience is highly dependent on the \textit{quality} of this
+    content. Research \ref{F21} shows that \textbf{students find Ximera materials to be more readable
+    than traditional course materials and perform equivalently to those using
+    proprietary textbooks and online homework systems}. While students typically
+    encounter Ximera through their courses, many discover it via web-search and
+    use the platform as independent learners. In 2025, Ximera servers had over one million
+    unique visitors. Since Ximera materials are free, they are accessible to
+    anyone, regardless of enrollment in official courses.
+
+Instructors (who are not authors) can freely use
+    any Ximera materials,
+    \textbf{without permission}, by simply sharing the URLs of activities
+    with their students. Many first time Ximera instructors start  by
+    using online Ximera content as
+    ungraded assignments. Visit our website for an incomplete list of
+    Ximera courses that have been deployed online.
+
+    
+
+
+Authors write and store their content on their own
+    machines and GitHub repositories.
+    \textbf{Authors own their content and decide how to license their content}. From a
+    single source written in \LaTeX, Ximera generates various output: PDF
+    worksheets,
+    PDF textbooks, and	PDF solution manuals, and so on. Of most interest,
+    Ximera can
+    also create online interactive activities:
+    \begin{center}
+        \begin{tikzpicture}
+            \node at (-1.8,.2)
+            {\resizebox{.65cm}{!}{\input{document.tex}}};
+            \node at (-1.8,.2) {\small PDF};
+            \node at (-2,0) {\resizebox{.65cm}{!}{\input{document.tex}}};
+            \node at (-2,0) {\small PDF};
+            \node at (-2.2,-.2)
+            {\resizebox{.65cm}{!}{\input{document.tex}}};
+            \node at (-2.2,-.2) {\small PDF};
+            \draw[->] (-.6,0) -- (-1.4,0);
+            \draw[->] (-.6,.2) -- (-1.4,.2);
+            \draw[->] (-.6,-.2) -- (-1.4,-.2);
+            \node at (0,0) {\resizebox{1cm}{!}{\input{document.tex}}};
+            \node at (0,0) {\LaTeX};
+            \draw[->] (.6,0) -- (1.4,0);
+
+            \node at (2,0) {\resizebox{1cm}{!}{\input{server.tex}}};
+            \draw[->] (2.6,0) -- (3.4,0);
+            \node at (4,0) {\resizebox{1cm}{!}{\input{computer.tex}}};
+            \node at (-2,-1) {Various};
+            \node at (-2,-1.4) {PDFs};
+            \node at (0,-1) {Single};
+            \node at (0,-1.4) {Source};
+            \node at (2,-1) {Deploy};
+            \node at (2,-1.4) {Server};
+            \node at (4,-1) {Students};
+            \node at (4,-1.4) {Engage};
+
+        \end{tikzpicture}
+    \end{center}
+    The source code used to produce PDFs can also create interactive online activities when deployed to a Ximera server. Students access this content via a URL or an assignment in their LMS.
 
 
 \section{Absolute Priority 1: Improving Collaboration and Dissemination}

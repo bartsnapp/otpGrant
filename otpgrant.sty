@@ -20,6 +20,10 @@
 \RequirePackage{setspace}      % \doublespacing / \singlespacing per document
 \RequirePackage[hidelinks]{hyperref} % internal links, no colored boxes in print
 
+\RequirePackage{standalone}     % for documents that can be compiled on their own (abstract, budget narrative)
+\RequirePackage{tikz}           % for drawing diagrams; load before titlesec to avoid conflicts
+
+
 % Page numbers, bottom center (LaTeX "plain" default) -- nothing else needed.
 \pagestyle{plain}
 
