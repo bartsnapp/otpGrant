@@ -22,7 +22,18 @@
 
 \RequirePackage{standalone}     % for documents that can be compiled on their own (abstract, budget narrative)
 \RequirePackage{tikz}           % for drawing diagrams; load before titlesec to avoid conflicts
+\usetikzlibrary{backgrounds,fit,matrix}
+\usetikzlibrary{shapes, arrows}
+\tikzstyle{terminator} = [outer sep=2pt,thick,rectangle, draw, text centered, rounded corners, minimum height=2em]
 
+
+\tikzstyle{objective} = [outer sep=2pt,thick,rectangle, draw, text centered, minimum height=2em]
+
+\tikzstyle{output}=[outer sep=2pt,thick,trapezium, draw, text centered, trapezium left angle=60, trapezium right angle=120, minimum height=2em]
+\tikzstyle{connector} = [draw, black!50!white,ultra thick, -stealth]
+\RequirePackage{booktabs}
+\RequirePackage{array}
+\RequirePackage{longtable}       % for better tables; load after geometry to avoid conflicts
 
 % Page numbers, bottom center (LaTeX "plain" default) -- nothing else needed.
 \pagestyle{plain}
@@ -34,7 +45,8 @@
 \RequirePackage{titlesec}
 \titleformat{\section}{\normalfont\large\bfseries}{\thesection.}{0.5em}{}
 \titleformat{\subsection}{\normalfont\normalsize\bfseries}{\thesubsection}{0.5em}{}
-
+\titleformat{\paragraph}[runin]{\normalfont\normalsize\bfseries}{}{}{}
+\titlespacing*{\paragraph}{0pt}{*4}{1em}
 % Convenience: a labeled criterion header showing reviewer point values,
 % e.g. \criterion{Need for the Project}{12}
 \newcommand{\criterion}[2]{\section{#1 (up to #2 points)}}
