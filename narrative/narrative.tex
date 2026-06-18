@@ -53,9 +53,12 @@ Students interact with the \textit{content} produced within
     proprietary textbooks and online homework systems}.
     
 
+\paragraph{Past Awards and Current Funding} 
+
+The Ximera Project is funded 2024-2026 (with no other external funding) by a \$2,125,000 Open Textbooks Pilot Program grant. In the past, the Ximera Project has also received support from NSF Grant DUE-1245433 (\$180,000), the Shuttleworth Foundation (\$5,000), the Affordable Learning Exchange at OSU (\$16,000), and the Ohio State University Department of Mathematics.
 
 
-\paragraph{Ximera Content is Open} Ximera content is free and available to anyone in the world.  Students
+\paragraph{Ximera Content is Open and Free} Ximera content is free and available to anyone in the world.  Students
 can access Ximera materials via a \textit{Google Search} without
 signing-up or logging-in. As an example, anyone can see the content
 hosted at
@@ -370,9 +373,6 @@ their mistakes as they go.
 
 
 
-\paragraph{Current Awards and Funding} 
-
-The Ximera Project is funded 2024-2026 (with no other external funding) by a \$2,125,000 Open Textbooks Pilot Program grant. In the past, the Ximera Project has also received support from NSF Grant DUE-1245433 (\$180,000), the Shuttleworth Foundation (\$5,000), the Affordable Learning Exchange at OSU (\$16,000), and the Ohio State University Department of Mathematics.
 
 
 
@@ -431,7 +431,7 @@ The Ximera Project is funded 2024-2026 (with no other external funding) by a \$2
 \subsection{Technical Details}
 \label{ss:LaTeX}
 
-\LaTeX\ is a markup language created in the 1980s. It provides a
+Ximera uses \LaTeX\ as its authoring language. \LaTeX\ is a markup language created in the 1980s. It provides a
 simplified way to produce documents by separating the content and
 structure from the formatting. \LaTeX\ is particularly useful for
 producing complex documents, such as books, reports, and academic
@@ -993,7 +993,7 @@ while contributing anonymized usage data back to the
 project. Modulus transforms a collection of independent deployments
 into an observable, coordinated network.
 
-\paragraph{Modulus Atlas.}\label{par:modulus-atlas} Discovery is the central bottleneck for any
+\paragraph{Modulus Atlas}\label{par:modulus-atlas} Discovery is the central bottleneck for any
 open educational ecosystem: valuable materials remain invisible to the
 people who would most benefit from them, and adoption depends on
 personal networks. To solve this, Infonomic will build \emph{Modulus
@@ -1013,7 +1013,7 @@ that proven model to the Ximera ecosystem, turning dissemination from
 a periodic, manual effort into an ongoing, largely automatic function
 of the platform.
 
-\paragraph{Interoperability with the broader OER ecosystem.} Once
+\paragraph{Interoperability with the broader OER ecosystem} Once
 Ximera activities are fully instrumented in Modulus, we will extend
 discovery and grade-passback interoperability outward to the wider
 open educational resources community, reaching out to PreTeXt
@@ -1025,7 +1025,7 @@ the reach of consortium materials well beyond our own institutions and
 positions Ximera as a connective layer within the national OER
 landscape rather than an isolated silo.
 
-Together, these mechanisms, a formalized multi-institution consortium,
+Together, these mechanisms,
 engagement with disciplinary and workforce-facing associations, a
 shared grade-integration layer, an automated discovery platform, and
 deliberate interoperability with peer OER projects, allow the
@@ -1045,7 +1045,7 @@ content is delivered and how interactivity scales) and the validation
 level (how student responses are checked, relative to industry-leading
 commercial platforms).
 
-\paragraph{Architectural gaps.} At the architectural level, the
+\paragraph{Architectural gaps} At the architectural level, the
 current open textbook marketplace shows five recurring gaps: limited
 interactive or dynamic content, with many free and open textbooks
 restricted to static PDFs or web pages; a lack of integrated online
@@ -1097,13 +1097,11 @@ Table~\ref{tab:calc-comparison}; the task this project addresses is
 bringing that same standard to every Ximera course, at every
 consortium institution.
 
-\paragraph{Validation-level gaps.} Beyond architecture, we conducted a
+\paragraph{Validation-level gaps} Beyond architecture, we conducted a
 systematic comparison of Ximera's answer-validation and authoring
 capabilities against the leading commercial mathematics homework
-platforms: Pearson MyLab Math, McGraw Hill ALEKS, Cengage WebAssign,
-Hawkes Learning, and MyOpenMath/IMathAS. This assessment, conducted by
-Jason Nowell (University of Florida), evaluated each platform along
-seven dimensions: standard response validation, algebraic and
+platforms. Here by `validator' we mean a given online homework system's ability to detect a correct answer from an incorrect answer and vice versa. we evaluated each platform: Pearson MyLab Math, McGraw Hill ALEKS, Cengage WebAssign,
+Hawkes Learning, and MyOpenMath/IMathAS. Seven dimensions were analyzed: standard response validation, algebraic and
 functional submissions, graphing, randomization, factored-form
 validation, targeted feedback, and custom-validation authoring.
 
@@ -1114,67 +1112,25 @@ consequential differences emerge in mathematically richer territory.
 Ximera's default algebraic validator is unusually robust because its
 equivalence check samples many complex-plane points, motivated by the
 identity theorem, rather than relying only on a small fixed set of
-real-number substitutions. Ximera also exposes a direct,
-author-written JavaScript validation pathway and can use Sage to
-construct randomized mathematical objects that remain connected to the
-displayed problem, the answer key, and the validator throughout
-authoring. In factored-form validation specifically, Ximera's
-\texttt{factorCheck} workflow lets an instructor's answer define the
-intended factorization structure while tolerating mathematically
-harmless variations, such as reordered factors, repeated-factor
-notation, and scalar redistribution. None of the five primary
-comparison platforms offers public documentation of an equivalently
-transparent, author-accessible validator for arbitrary polynomial
-factorization; the typical alternatives are publisher-authored problem
-banks, generic algebraic equivalence (which cannot distinguish a
-factored answer from its expanded equivalent), or advanced
-CAS-scripting routes that shift authoring burden onto the instructor.
-Ximera's targeted-feedback architecture extends this advantage: when
-combined with Sage randomization, authors can generate both the
-correct answer and the likely incorrect answers for a given randomized
-instance, and attach feedback to the specific error rather than a
-generic ``incorrect.''
+real-number substitutions.
 
-The same assessment identified clear gaps. Ximera does not currently
-provide native student-generated graph submission and graph-state
-validation comparable to WebAssign or MyOpenMath, both of which
-publicly document author-visible graph-validation structures. Nor does
-Ximera offer the packaged AI tutoring or adaptive learning-path engine
-that platforms such as ALEKS, Hawkes, and Pearson now advertise; the
-assessment notes that AI is currently a disadvantage for Ximera when
-compared against packaged, student-facing commercial tutoring. Ximera
-is also more technical to author in than GUI-first commercial systems,
-particularly when using Sage randomization or custom JavaScript
-validators. The assessment's overall conclusion, however, is that
-Ximera should not be benchmarked as a polished turnkey homework
-system; its comparative strength is transparent, author-controlled
-mathematical content, LaTeX-first source authoring connected to
-Sage-based randomization and JavaScript-based validation, openly
-licensed and owned by the instructor rather than the publisher.
-WebAssign and MyOpenMath are identified as Ximera's closest technical
-peers for programmable mathematical homework, while Pearson, ALEKS,
-and Hawkes compete primarily as packaged instructional ecosystems
-rather than as author-extensible platforms.
 
-Together, these two assessments identify the gaps this project
-proposes to close: native graph-submission validation, and AI-assisted
-authoring and feedback that preserve, rather than abandon, the
-client-side, author-controlled architecture that already distinguishes
-Ximera from every comparison platform reviewed. Both are addressed
-below.
+Ximera also offers additional flexibility by exposing an optional
+author-written JavaScript validation pathway as well as one using the open-source computer algebra system SAGE.
+These powerful tools allow Ximera to validate novel mathematical forms that simply would not be possible with other systems.
+
 
 \subsection{Creation and Expansion of Scalable Materials}        % (b)
 
 
-\paragraph{Stitz-Zeager Precalculus conversion.} Building on existing
-work converting the widely used, free Stitz-Zeager Precalculus text
+\paragraph{Stitz-Zeager Precalculus conversion} We are currently converting the widely used, free Stitz-Zeager Precalculus text
 into the Ximera document class, this project will complete and
 disseminate a fully interactive version of one of the most widely
 adopted free precalculus textbooks in the country, immediately
 extending Ximera's reach to every institution already using the
 Stitz-Zeager print or PDF edition.
 
-\paragraph{Course-sequence completion.} Beyond these targeted gaps, we
+\paragraph{Course-sequence completion} Beyond these targeted gaps, we
 will continue expanding interactive coverage of the high-enrollment
 gateway sequence: college algebra, precalculus, the calculus sequence,
 linear algebra, differential equations, and introductory statistics,
@@ -1183,11 +1139,9 @@ barriers to adoption.
 
 \subsection{Review Protocols: Accuracy, Rigor, and Accessibility} % (c)
 
-All Ximera content passes through a multi-layered review process.
-Mathematical accuracy and rigor are maintained through the open
-\LaTeX\ source model itself: because content is hosted on GitHub
-(Section~\ref{ss:gh}), errors are tracked as issues, reviewed through
-pull requests, and corrected transparently, with a visible history of
+Authors make errors. However, 
+Because content is hosted on GitHub
+(Section~\ref{ss:gh}), errors are tracked as issues, and can be corrected transparently, with a visible history of
 revision. Flash Grants frequently fund targeted review work, for
 example, reviewing or editing one-third of an existing online course,
 and completed Flash Grant deliverables are checked against their
@@ -1286,11 +1240,19 @@ improved outcomes.
 
 \section{Statement of Need}
 
-While open educational resources have demonstrated their potential to reduce costs and improve access, significant barriers remain between the existence of OER and their successful adoption at scale. Many high-quality resources remain difficult to discover, fragmented across repositories, or insufficiently supported for local implementation. At the same time, faculty often lack the time, technical support, and incentives necessary to identify, adapt, and deploy OER effectively.
+While open educational resources have demonstrated their potential to reduce costs and improve access, significant barriers remain between the existence of OER and their successful adoption at scale. Many high-quality resources remain difficult to discover, are insufficiently open,  or insufficiently supported for LMS intgeration. At the same time, faculty often lack the time, technical support, and incentives necessary to identify, adapt, and deploy OER effectively.
 
-The challenge is not simply the creation of additional content. It is ensuring that existing and newly developed resources are discoverable, maintainable, reliable, and capable of supporting student success over time. As the Modulus ecosystem expands, a robust infrastructure is needed to help faculty find relevant materials, adapt them to local contexts, monitor their impact, and sustain their use beyond the grant period.
+
+Ximera does a good job of solving the problem above. It uses a language (\LaTeX) that faculty are familier with. Modulus will ensure LMS integration. However, the real issue is that Ximera is truly free and open, we have no way of knowing who uses Ximera unless they directly contact us. Moreover, others have no way of finding our work, unless we publish direct links to it in.
+\textbf{Hence, the challenge is not simply the creation of additional content. It is ensuring that existing and newly developed resources are discoverable, maintainable, reliable, and capable of supporting student success over time. }
+
+
 
 This need is particularly acute in high-enrollment courses, where even modest barriers to adoption can affect thousands of students. To maximize student savings and educational impact, the consortium must provide both high-quality open resources and the infrastructure necessary for their successful dissemination, implementation, and continuous improvement.
+
+
+
+
 
 \section{Project Design}
 
@@ -1326,18 +1288,110 @@ Sustainability is built directly into the project design. Modulus Atlas provides
 
 Through these integrated activities, the project will achieve substantial student cost savings, increase adoption of open educational resources in high-enrollment courses, improve educational outcomes, and create a sustainable framework for continued growth and innovation.
 
+section{Management Plan}
 
-\section{Management Plan}
+Responsibility for each activity area below rests with a named lead,
+backed by a specific contract or personnel line in the budget. Snapp,
+as Project Director, holds quarterly check-ins with each lead; these
+feed directly into the annual APR cycle and give the project an early
+warning mechanism for schedule slippage, the lesson learned from the
+six-month delay in contracting Infonomic under the current award.
 
 \subsection{Dissemination}
 
+Dissemination is led jointly by Snapp and Paul Zachlin (Lakeland
+Community College), who continues as Dissemination Specialist under a
+\$5,000/year contract (\$20,000 over four years), supported by a
+\$46,000/year domestic travel budget (\$184,000 total) covering
+exhibitor booths and presentations at the Joint Mathematics Meetings,
+MAA MathFest, AMATYC, and similar venues. Zachlin is responsible for
+identifying new conference and institutional outreach opportunities
+throughout the year and reports quarterly to Snapp on contacts made,
+presentations delivered, and leads converted to adoption. Beyond
+direct outreach, \emph{Modulus Atlas} (Section~\ref{ss:modulus-atlas})
+functions as a standing, automated dissemination channel once
+deployed, surfacing new Ximera activities publicly without requiring
+staff time per institution. Progress is measured annually using the
+same metrics established under the current award: institutions and
+individuals contacted, presentations given, and rate of adoption,
+reported in the APR alongside Net Promoter Score data.
+
 \subsection{Professional Development}
+
+The annual Ximera Workshop remains the primary professional
+development vehicle, organized by Snapp and Fowler with Wim Obbels
+(DevOps, \$12,000/year contract) and Jeff Kuan (accessibility,
+Section~\ref{ss:accessibility}) leading hands-on sessions on server
+infrastructure, validators, and accessible authoring. Workshop and
+ongoing-support costs are drawn from the Materials and Supplies line
+(\$6,000 in Year 1, \$2,000 in Years 2--4) and the general travel
+budget. Between workshops, professional development continues through
+monthly Ximera Office Hours and a Virtual Support Desk, both staffed
+by existing personnel at no additional cost. Milestone: at least one
+multi-day workshop held each year, with attendance and post-workshop
+authoring activity tracked as a professional-development performance
+measure in the APR.
 
 \subsection{Flash Grants}
 
+Flash Grants are administered by Snapp and Fowler, who review proposed
+scopes of work and approve stipends ranging from \$400 to \$4,000,
+budgeted at \$54,000/year (\$216,000 total), supporting approximately
+32 awards annually. Awards are paid only upon verified completion of
+the agreed scope, a mechanism that has already proven effective:
+under the current FIPSE award, approximately 80 Flash Grants were
+awarded at this rate, contributing directly to growth from 10 to 15
+adopting institutions. Under this grant, the same review-and-pay-on-
+completion structure continues, with Snapp confirming deliverables
+against the original scope before any stipend is released. This
+mechanism also functions as distributed professional development,
+since recipients acquire skills, such as authoring validators or
+converting legacy content, by completing a funded project rather than
+attending separate training.
+
 \subsection{Accessibility}
+\label{ss:accessibility}
+
+Accessibility work is led by Jeff Kuan of BAWL (Botting Accessibility
+with \LaTeX, \url{https://www.bawl-stem.com}), under a \$50,000/year
+contract (\$200,000 total), who audits new and existing Ximera content
+for WCAG~2.1 Level~AA compliance and maintains the accessibility
+sections of the Ximera User Manual. Kuan consults regularly with
+Advisory Board member Neil Soiffer of MathCAT (one of three Advisory
+Board members receiving a \$1,000/year stipend from the \$3,000/year
+Advisory Board line) on mathematical screen-reader compatibility,
+including alt text and authoring metadata. Building on the Best
+Practices Guide finalized under the current award, the explicit
+management goal for this grant is to shift accessibility review from a
+single specialist to a distributed practice: consortium authors will
+be trained directly in accessible authoring conventions at the annual
+Workshop, with Kuan auditing a declining share of total content each
+year as that capacity grows. Progress is tracked via audit coverage
+and the number of consortium authors completing accessibility
+training, reported annually.
 
 \subsection{Modulus Atlas Development}
+\label{ss:modulus-atlas}
+
+Modulus Atlas is built by Infonomic under a contract budgeted at
+\$100,000 in Year 1, declining to \$70,000, \$70,000, and \$60,000 in
+Years 2--4 (\$300,000 total), under the technical direction of Fowler
+and the overall direction of Snapp as Project Director. Development
+proceeds in four phases tied to the contract's annual milestones:
+Year~1, designing the discovery schema and extending Modulus's
+existing installation registry to auto-surface newly registered
+activities; Year~2, piloting the platform with Uitwiskeling
+(\url{https://www.uitwiskeling.be}), the existing Flash-Grant partner
+in Belgium; Year~3, public launch alongside initial interoperability
+work with PreTeXt, STACK, and WeBWorK; and Year~4, full production
+deployment with default, author-overridable discussion threads
+attached to every registered activity. Having learned from the
+six-month HR delay in initially contracting Infonomic under the
+current award, this contract specifies quarterly deliverables rather
+than annual ones, giving Snapp and Fowler an earlier signal if
+re-scoping or a no-cost extension becomes necessary.
+
+
 
 
 
