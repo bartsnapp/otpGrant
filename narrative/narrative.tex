@@ -478,14 +478,6 @@ students. (See Figure \ref{F:server})
 \end{figure}
 
 
-
-
-
-
-
-
-
-
 \paragraph{Answer Verification and Computer Algebra System}
 
 \textit{Math-expressions} is a JavaScript library that can be used both
@@ -516,8 +508,6 @@ answers as correct, and incorrect answers as incorrect.  Hence
 Math-expressions uses a few different heuristics for answer
 validation.
 
-
-
 %% The most important relies on complex numbers:
 %% math-expressions uses complex numbers in answer validation by
 %% generating random complex number bindings for variables, evaluating
@@ -532,13 +522,19 @@ technique being to check for equality at random \textit{real} points
 
 
 On the other hand, math-expressions uses complex numbers to validate
-answers. This seems to work quite well.  One metric is the STACK
+answers (see Figure \ref{F:validator}). This seems to work quite well.  One metric is the STACK
 project \cite{stack}, which has produced a wide variety of pairs of
 expressions which should be adjudicated as equal, and pairs which
 should be adjudicated as different.  These form the basis for unit
 tests of math-expressions.  Out of more than five thousand test cases,
 math-expressions fails on just a handful.
 
+\begin{figure}
+  \centering
+  \includegraphics[width=.8\textwidth]{narrative/answerValidator.png}
+  \caption{Different versions of the correct answer are accepted as correct.}
+  \label{F:validator}
+\end{figure}
 
 %% There are also user interface innovations in Ximera.  At the time of
 %% initial development, Ximera's answer validation was unique in the
