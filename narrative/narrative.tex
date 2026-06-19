@@ -174,9 +174,9 @@ Together, these findings suggest that Ximera advances both components of the pro
 
 Instructors (who are not authors) can freely use any Ximera materials simply by accessing the materials' URL. Moreover, if an instructor encounters issues with the content or platform performance, there are straightforward ways to report them. Since Ximera is built using GitHub (see Section~\ref{ss:gh}), we use GitHub's issue-tracking system to collect and manage feedback.
 
-Because the content is open and written in \LaTeX\ (see Section~\ref{ss:LaTeX}), a language familiar to most mathematics instructors, users can also submit corrections and improvements directly through GitHub. As one example, instructors using Ohio State's calculus sequence have identified and helped resolve 419 issues in the course materials.
+Because the content is open and written in \LaTeX\ (see Section~\ref{ss:LaTeX}), a language familiar to most mathematics instructors, users can also submit corrections and improvements directly through GitHub. As one example, instructors using The Ohio State University's calculus sequence have identified and helped resolve 419 issues in the course materials.
 
-As Ximera authors create materials with interactive features in mind, instructors increasingly have options to incorporate discussions, group work, labs, and other forms of interactive learning into their classrooms. For example, Differential Equations utilizes spreadsheet labs that include embedded videos and links to sample spreadsheets; Linear Algebra includes many geometric explorations and links to coding exercises, while Precalculus by Stiz and Zeager, currently being converted to Ximera, boasts connections between the concrete and the abstract that can be used for classroom discussion or to encourage independent study.  (See Figure \ref{F:llama})
+As Ximera authors create more materials with interactive features in mind, instructors increasingly have options to incorporate discussions, group work, labs, and other forms of interactive learning into their classrooms. For example, Differential Equations utilizes spreadsheet labs that include embedded videos and links to sample spreadsheets; Linear Algebra includes many geometric explorations and links to coding exercises, while Precalculus by Stiz and Zeager, currently being converted to Ximera, boasts connections between the concrete and the abstract that can be used for classroom discussion or to encourage independent study.  (See Figure \ref{F:llama})
 
 \begin{figure}
   \centering
@@ -185,15 +185,12 @@ As Ximera authors create materials with interactive features in mind, instructor
   \label{F:llama}
 \end{figure}
 
-
-The instructor experience falls into three basic categories:
-
+From a technical perspective, instructor use of Ximera falls into three categories:
 
 \paragraph{Online Materials with LMS Integration} At 
 OSU and UF, instructors of large classes and a few others have Ximera
 assignments directly integrated into the Learning Management System
 (LMS). For these instructors, Ximera works seamlessly and invisibly.
-
 
 \paragraph{Online Materials without LMS Integration}
 At other institutions using Ximera, instructors can use Ximera
@@ -201,27 +198,12 @@ materials, and have their students complete various Ximera
 assignments. However, data access is prohibitively difficult for most
 instructors in this category.
 
-
-
 \paragraph{PDF Materials}
 There are a number of Ximera courses that are not yet deployed
 online. Their materials are currently only in PDF form. Instructors in
 this category are usually in a development phase of their Ximera
 course. The PDFs produced allow incremental development of the
 materials while still being used and tested in the classroom.
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 \subsection{Author Experience}
@@ -237,6 +219,7 @@ authored in \LaTeX. As a result, many potential authors already have
 course materials written in \LaTeX, making it a natural authoring
 environment for STEM content.
 
+\paragraph{Simultaneous Output}
 Ximera allows authors to use a single \LaTeX\ source file to
 simultaneously produce PDFs and online interactive content (see
 Figure~\ref{F:sout}).
@@ -290,7 +273,7 @@ The Ximera Project is funded from 2024--2026 by a \$2,125,000 Open Textbooks Pil
 
 \paragraph{Students}
 
-The most significant benefit for students has been the expansion and enhancement of Ximera materials. Since the beginning of the grant period, we have supported the development and improvement of additional textbooks, including Linear Algebra and Differential Equations. Our most recent undertaking is the conversion of the popular OER Precalculus textbook by Stitz and Zeager to the Ximera platform, with completion anticipated by autumn 2026.
+The most significant benefit for students has been the expansion and enhancement of Ximera materials. Since the beginning of the grant period, we have supported the development and improvement of additional textbooks, including Linear Algebra, and Differential Equations. Our most recent undertaking is the conversion of the popular OER Precalculus textbook by Stitz and Zeager to the Ximera platform, with completion anticipated by autumn 2026.
 
 Converting existing OER materials to Ximera allows us to incorporate auto-graded exercises, embedded interactives, and other Ximera features, enhancing these resources for today's students. Continued funding will allow us to build on this progress by expanding the library of Ximera materials, updating existing content, and bringing additional open educational resources to the platform.
 
@@ -300,7 +283,7 @@ Current funding has allowed us to make significant strides in improving the inst
 
 As testing at additional institutions and on other learning management systems (e.g., Blackboard and Brightspace) is completed, instructors will be able to integrate Ximera assignments into their existing LMS workflows and record student progress automatically.
 
-Future funding will allow us to expand the role of Modulus in supporting instructors. One proposed enhancement, Modulus Atlas, would not only allow instructors to assign and link Ximera materials of their choice through the LMS, but also provide tools for discovering and locating other relevant Ximera content to incorporate into their courses.
+Future funding will allow us to expand the role of Modulus in supporting instructors. One proposed enhancement, Modulus Atlas, would not only allow instructors to assign and link Ximera materials of their choice through the LMS, but also provide tools for discovering other relevant Ximera content to incorporate into their courses.
 
 \paragraph{Authors}
 
@@ -406,7 +389,7 @@ following features:
   allows for the embedding of YouTube videos, Desmos graphs, and
   GeoGebra interactives. 
 \item[All content displayed] By default, the Ximera document class
-  displays all content to the author. This means the author see what
+  displays all content to the author. This means the author sees what
   the students see, along with answers and solutions, and links (that
   can be checked) to various interactive elements (when deployed, the
   interactive elements are truly embedded). This can be especially
@@ -480,7 +463,14 @@ than our competitors that have server side interaction. We demonstrate
 our ability to handle large volumes of students with our experience
 with MOOCs and OSU's large calculus classes. Server side solutions
 cannot provide the same experience when there are tens-of-thousands of
-students.
+students. (See Figure \ref{F:server})
+
+ \begin{figure}
+  \centering
+  \includegraphics[width=.8\textwidth]{server.png}
+  \caption{Client side interactivity allows Ximera to serve a large number of students.}
+  \label{F:server}
+\end{figure}
 
 
 
