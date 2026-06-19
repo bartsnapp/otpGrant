@@ -304,7 +304,12 @@ While authoring Ximera documents in \LaTeX\ has always been straightforward, the
 
 \begin{itemize}
 \item A comprehensive user manual was developed in 2025.
-\item GitHub repositories containing deployment starter kits have been created.
+\item GitHub repositories containing templates for authors. These templates include the necessary structure and files to get started with creating and automatically deploying Ximera content. 
+The repository located at
+\begin{center}
+\url{https://github.com/ximeraProject/ximeraFirstSteps}
+\end{center}
+is an example of such a template repository, which provides a starting point for authors to create their own Ximera content.
 \item Deployment workflows using GitHub Codespaces and Overleaf have been developed.
 \end{itemize}
 
@@ -336,14 +341,14 @@ Collectively, Ximera now serves tens of thousands of students annually, has gene
 \label{ss:LaTeX}
 The technical infrastructure described below currently supports tens of thousands of enrolled students annually and millions of public visits to Ximera-hosted content.
 
-Ximera uses \LaTeX\ as its authoring language. \LaTeX\ is a markup language created in the 1980s. It provides a
+\paragraph{\LaTeX\ and the Ximera Document Class}
+Ximera uses \LaTeX\ as its authoring language. \LaTeX\ is a markup language created in the 1980s. It remains the preferred language for STEM authors because it provides a
 simplified way to produce documents by separating the content and
-structure from the formatting. \LaTeX\ is particularly useful for
-producing complex documents, such as books, reports, and academic
-papers. It also has a large number of packages and extensions that can
-be used to customize the output and automate many tasks.
-
-
+structure from the formatting. 
+\LaTeX\ is particularly useful for
+producing complex documents, such as books, reports, and academic papers. 
+% It also has a large number of packages and extensions that can
+% be used to customize the output and automate many tasks.
 
 Authors write their content in \LaTeX\ using the Ximera document
 class, which includes formatting for both PDF and online formats.
@@ -363,12 +368,10 @@ PDF and online versions of their content (see Figure~\ref{F:XG}).
 Once the content is complete and compiled to HTML and JavaScript,
 authors push their work to a Ximera server. Students can then access
 the online content and interact with the various interactive elements
-as designed by the author. All interaction is happening on the
-student's own computer.  
+as designed by the author. 
+% All interaction is happening on the
+% student's own computer.  
 
-
-
-\paragraph{\LaTeX\ Documentclass}
 In \LaTeX, a \emph{document class} is a file that specifies the overall
 layout and formatting of a document. It defines the structure of the
 document, including elements such as the title page, headers, footers,
@@ -447,16 +450,7 @@ come with certain challenges; however, nearly all of these challenges have been 
 \paragraph{GitHub for Collaboration}\label{ss:gh}
 
 The developers of Ximera use GitHub as a file storage,  version
-control for Ximera development, version control for content development, issue tracking, and deployment via GitHub ``Actions.''  GitHub is a web-based platform that provides version control and collaborative software development tools. It allows developers to host and review code, manage projects, and collaborate with others. By using GitHub, the Ximera project can efficiently manage its codebase, track changes, and facilitate collaboration among developers and content creators. We have set-up template repositories for authors to use for their content development. These templates include the necessary structure and files to get started with creating and automatically deploying Ximera content. 
-The repository located at
-\begin{center}
-  \url{https://github.com/ximeraProject/ximeraFirstSteps}
-\end{center}
-is an example of such a template repository, which provides a starting point for authors to create their own Ximera content.
-
-
-
-
+control for Ximera development, version control for content development, issue tracking, and deployment via GitHub ``Actions.''  GitHub is a web-based platform that provides version control and collaborative software development tools. It allows developers to host and review code, manage projects, and collaborate with others. By using GitHub, the Ximera project can efficiently manage its codebase, track changes, and facilitate collaboration among developers and content creators. 
 
 
 \paragraph{Ximera is Client Side}
@@ -480,48 +474,37 @@ students. (See Figure \ref{F:server})
 
 \paragraph{Answer Verification and Computer Algebra System}
 
-\textit{Math-expressions} is a JavaScript library that can be used both
-client-side and server-side for parsing and working with mathematical
-expressions.
+\textit{Math-expressions} is a JavaScript library that can be used for parsing and working with mathematical expressions.
 %%  It provides functionality for basic computer algebra,
 %% such as symbolic differentiation and numerically identifying
 %% equivalent expressions. The library allows users to create,
 %% manipulate, and compare mathematical expressions in text and \LaTeX\
 %% formats.
 %%
- Ximera uses the math-expressions library for answer validation. In the
-context of Ximera, the library helps parse and evaluate student input,
-making it possible to check if their answers are correct or equivalent
-to the expected solutions.
+ Ximera uses the math-expressions library for answer validation. 
+%  In the
+% context of Ximera, the library helps parse and evaluate student input,
+% making it possible to check if their answers are correct or equivalent
+% to the expected solutions.
 %% The math-expressions library enables Ximera
 %% to handle a wide range of mathematical expressions, including those
 %% involving functions, variables, and complex operations. 
-
-
-To validate that an answer is correct, some sort of heuristic is
-required. This is due to Richardson's theorem. This theorem says that
-equality is undecidable between functions defined by expressions
-involving exponential and trigonometric functions and standard
-constants \cite{richardson}. This means that in theory (and in
+%To validate that an answer is correct, some sort of heuristic is required. 
+In theory (and in
 practice), a computer algebra system cannot always validate correct
-answers as correct, and incorrect answers as incorrect.  Hence
-Math-expressions uses a few different heuristics for answer
-validation.
-
-%% The most important relies on complex numbers:
+answers as correct, and incorrect answers as incorrect.  This is due to Richardson's theorem which states that 
+equality is undecidable between certain types of functions. \cite{richardson}. 
+%Math-expressions uses a few different heuristics for answer validation. 
+ %% The most important relies on complex numbers:
 %% math-expressions uses complex numbers in answer validation by
 %% generating random complex number bindings for variables, evaluating
 %% expressions with these bindings, and comparing their numerical
 %% equivalence within specified tolerances.  This results in a quite
 %% robust system for answer validation.
+A popular validation technique is to check for equality at random \textit{real} points
+\cite{fisher}. This and some additional techniques are summarized by Chris Sangwin \cite{sangwin}.
 
-There are precedents to this system.  Some of the techniques are
-summarized by Chris Sangwin \cite{sangwin}, with a popular standard
-technique being to check for equality at random \textit{real} points
-\cite{fisher}.
-
-
-On the other hand, math-expressions uses complex numbers to validate
+In contrast, math-expressions uses complex numbers to validate
 answers (see Figure \ref{F:validator}). This seems to work quite well.  One metric is the STACK
 project \cite{stack}, which has produced a wide variety of pairs of
 expressions which should be adjudicated as equal, and pairs which
@@ -624,51 +607,61 @@ latest advancements, it is imperative that Modulus be completed and fully integr
 
 
 
+% \paragraph{Open Licensing}
+% For Open Educational Resources (OER) to achieve their full potential,
+% it is key that not only the content be openly licensed, but also that
+% the platforms and underlying technologies that support this content be
+% similarly licensed.%%  This is fundamental to ensure that OER is not only
+% %% freely accessible but also freely adaptable and reusable, ultimately
+% %% upholding the spirit of openness in education.
+
+% Ximera is committed to open licensing. The content on Ximera is
+% generally licensed under Creative Commons Attribution-ShareAlike (CC
+% BY-SA). This license allows others to remix, tweak, and build upon our
+% work even for commercial purposes, as long as they credit us and
+% license their new creations under the identical terms. This promotes
+% the creation of a rich, diverse, and dynamic pool of educational
+% resources that supports and enhances learning experiences.  However,
+% it's noteworthy that some content within our platform is licensed
+% under Creative Commons Attribution-NonCommercial-ShareAlike (CC
+% BY-NC-SA). This essentially allows for adaptation and building upon
+% the work non-commercially, with new works licensed under the same
+% terms. When we adopt such content, we must maintain the NC
+% license. This choice, while limiting commercial uses, ensures the
+% content remains free for educational and other non-profit purposes.
+
+% Again, not just the content but also the technology that powers Ximera
+% subscribes to the ethos of openness. The \LaTeX\ code powering Ximera,
+% like the ``documentclass'' are licensed under the \LaTeX\ Project
+% Public License (LPPL). This license, which governs most of \LaTeX\
+% itself, ensures that the components of the system remain freely
+% available, modifiable, and distributable. It supports the continuous
+% improvement and adaptation of the system, contributing to the quality
+% and flexibility of the resources we can offer.
+
+% The code that powers the Ximera server is currently licensed under the
+% General Public License (GPL). This not only allows users to run the
+% program for any purpose but also provides the freedom to study how the
+% program works, and change it to make it do what they wish. Modulus is licensed under the
+% Affero General Public License (AGPL). The AGPL is better suited for
+% networked services like Modulus as it ensures that even if the software
+% is running on a server, users have access to its source code. This
+% enhances transparency and promotes collaborative improvements. By
+% adopting the AGPL, we will ensure that, in the future, Ximera and Modulus remain
+% a truly open platform, dedicated to facilitating access to
+% high-quality educational resources for all.
+
 \paragraph{Open Licensing}
-For Open Educational Resources (OER) to achieve their full potential,
-it is key that not only the content be openly licensed, but also that
-the platforms and underlying technologies that support this content be
-similarly licensed.%%  This is fundamental to ensure that OER is not only
-%% freely accessible but also freely adaptable and reusable, ultimately
-%% upholding the spirit of openness in education.
+Ximera is fully committed to open-source principles; both the educational content and the underlying platform technologies are entirely openly licensed.
 
-Ximera is committed to open licensing. The content on Ximera is
-generally licensed under Creative Commons Attribution-ShareAlike (CC
-BY-SA). This license allows others to remix, tweak, and build upon our
-work even for commercial purposes, as long as they credit us and
-license their new creations under the identical terms. This promotes
-the creation of a rich, diverse, and dynamic pool of educational
-resources that supports and enhances learning experiences.  However,
-it's noteworthy that some content within our platform is licensed
-under Creative Commons Attribution-NonCommercial-ShareAlike (CC
-BY-NC-SA). This essentially allows for adaptation and building upon
-the work non-commercially, with new works licensed under the same
-terms. When we adopt such content, we must maintain the NC
-license. This choice, while limiting commercial uses, ensures the
-content remains free for educational and other non-profit purposes.
+Our content is primarily released under a Creative Commons Attribution-ShareAlike (\mbox{CC BY-SA}) license, which allows for universal adaptation and remixing. To integrate existing open educational resources (OER), select materials maintain a Creative Commons Attribution-NonCommercial-ShareAlike (\mbox{CC BY-NC-SA}) license.
 
-Again, not just the content but also the technology that powers Ximera
-subscribes to the ethos of openness. The \LaTeX\ code powering Ximera,
-like the ``documentclass'' are licensed under the \LaTeX\ Project
-Public License (LPPL). This license, which governs most of \LaTeX\
-itself, ensures that the components of the system remain freely
-available, modifiable, and distributable. It supports the continuous
-improvement and adaptation of the system, contributing to the quality
-and flexibility of the resources we can offer.
-
-The code that powers the Ximera server is currently licensed under the
-General Public License (GPL). This not only allows users to run the
-program for any purpose but also provides the freedom to study how the
-program works, and change it to make it do what they wish. Modulus is licensed under the
-Affero General Public License (AGPL). The AGPL is better suited for
-networked services like Modulus as it ensures that even if the software
-is running on a server, users have access to its source code. This
-enhances transparency and promotes collaborative improvements. By
-adopting the AGPL, we will ensure that, in the future, Ximera and Modulus remain
-a truly open platform, dedicated to facilitating access to
-high-quality educational resources for all.
-
-
+The platform's technical infrastructure is similarly open, using targeted licensing to ensure long-term accessibility and transparency:
+\begin{itemize}
+    \item \textbf{\LaTeX\ Document Class:} Licensed under the \LaTeX\ Project Public License (LPPL) to ensure the authoring environment remains freely modifiable and distributable.
+    \item \textbf{Ximera Server:} Powered by code licensed under the GNU General Public License (GPL) to protect user freedom and collaborative development.
+    \item \textbf{Modulus Assignment Database:} Licensed under the GNU Affero General Public License (AGPL). This network-specific license guarantees that the source code remains accessible and transparent even when run strictly as a cloud-hosted service.
+\end{itemize}
 
 \subsection{Industry Partners}
 
