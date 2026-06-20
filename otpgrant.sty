@@ -9,13 +9,11 @@
 \ProvidesPackage{otpgrant}[2026/06/12 OTP grant formatting]
 
 \RequirePackage[letterpaper,margin=1in]{geometry}
-
+\RequirePackage{microtype}
 % Times text + math. Prefer newtx (modern); fall back to mathptmx on minimal installs.
-\IfFileExists{newtxtext.sty}{%
-  \RequirePackage{newtxtext,newtxmath}%
-}{%
-  \RequirePackage{mathptmx}%
-}
+\RequirePackage{stix2}
+
+\RequirePackage[scale=.85]{FiraMono}
 
 \usepackage[backend=biber, style=numeric]{biblatex}
 \addbibresource{references.bib}
@@ -34,7 +32,7 @@
 
 \tikzstyle{output}=[outer sep=2pt,thick,trapezium, draw, text centered, trapezium left angle=60, trapezium right angle=120, minimum height=2em]
 \tikzstyle{connector} = [draw, black!50!white,ultra thick, -stealth]
-% \RequirePackage{booktabs}
+\RequirePackage{booktabs}
 \RequirePackage{array}
 \RequirePackage{longtable}       % for better tables; load after geometry to avoid conflicts
 
@@ -42,14 +40,19 @@
 \pagestyle{plain}
 
 % Keep the TOC to depth 1 so it fits the one-double-spaced-page limit.
-\setcounter{tocdepth}{1}
+\setcounter{tocdepth}{2}
 
 % Headers stay readable and modest; no color, no decoration.
 \RequirePackage{titlesec}
-\titleformat{\section}{\normalfont\large\bfseries}{\thesection.}{0.5em}{}
-\titleformat{\subsection}{\normalfont\normalsize\bfseries}{\thesubsection}{0.5em}{}
+\titleformat{\section}{\normalfont\bfseries}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\normalfont\bfseries}{\thesubsection}{0.5em}{}
 \titleformat{\paragraph}[runin]{\normalfont\normalsize\bfseries}{}{}{}
 \titlespacing*{\paragraph}{0pt}{*4}{1em}
+
+
+
+\titleformat{\subsubsection}[runin]{\normalfont\normalsize\bfseries}{\thesubsubsection.}{0.5em}{}
+\titlespacing*{\subsubsection}{0pt}{*4}{1em}
 % Convenience: a labeled criterion header showing reviewer point values,
 % e.g. \criterion{Need for the Project}{12}
 \newcommand{\criterion}[2]{\section{#1 (up to #2 points)}}

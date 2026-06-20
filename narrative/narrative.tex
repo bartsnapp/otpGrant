@@ -37,26 +37,33 @@ Ximera, pronounced ``chimera,'' (\textbf{X}imera:
 \textbf{R}esources, for \textbf{A}ll) is an open-source platform that
 provides tools for authoring and publishing (PDF and Online),
 open-source, interactive educational content, such as
-textbooks, assessments, and online courses.  The Ximera Project supports the development of the Ximera platform, creation of educational materials, and instructor tools. Through this proposal, we seek support to continue and expand our work in all three areas. \textbf{The ultimate goal of this project is to promote sustained student success and savings.} With our previous funding, we have solved critical technical problems. Hence \textbf{our ultimate objective of this grant is content discoverability.} 
+textbooks, assessments, and online courses. Ximera serves tens of thousands of students annually, has generated annual savings of more than \$5 million, supports a growing community of authors and instructors, and Ximera servers attract  millions of visitors worldwide.   \textbf{The ultimate goal of this project is to promote sustained student success and savings.} The Ximera project depends on four essential parts:
+\begin{itemize}
+  \item Authoring: Needs to be easy and promote collaboration/remixing.
+  \item Content Deployment: Needs to be robust and invisible to the author.
+  \item Grade data from: Required to be used in a graded course.
+  \item Discoverability and Dissemination: Instructors need to be able to find the content.
+\end{itemize}
+With our previous funding, we have solved (or are about to solve) the first three points above. Hence, \textbf{the primary objective of this grant is content discoverability and dissemination.} 
 
-\paragraph{Annual Impact} Ximera serves tens of thousands of students annually, has generated annual savings of more than \$5 million, supports a growing community of authors and instructors, and attracts millions of visitors worldwide.
 
-\paragraph{Past Awards and Current Funding} 
+
+\subsection*{Past Awards and Current Funding} 
 The Ximera Project is funded 2024--2026 (with no other external funding) by a \$2,125,000 Open Textbooks Pilot Program grant. We will refer to this as OTP Phase I funding. In the past, the Ximera Project has also received support from NSF Grant DUE-1245433 (\$180,000), the Shuttleworth Foundation (\$5,000), the Affordable Learning Exchange at The Ohio State University (OSU) (\$16,000), and the OSU Department of Mathematics.
 
-\paragraph{}
-The Ximera platform has three basic types of users: students, instructors, and authors. We will discuss each in turn below.
+% \subsubsection{}
+% The Ximera platform has three basic types of users: students, instructors, and authors. We will discuss each in turn below.
 
 
 
-\subsection{The Student Experience}
+\subsection{Students}
 % Students interact with the \textit{content} produced within
 %     Ximera, hence their experience is highly dependent on the \textit{quality} of this
 %     content. With that said, research \ref{F21} shows that \textbf{students find Ximera materials to be more readable
 %     than traditional course materials and perform equivalently to those using
 %     proprietary textbooks and online homework systems}.
     
-\paragraph{Ximera Content is Open and Free} Ximera materials require no purchase, sign-up, or subscription and are available to anyone in the world.  Complete textbooks are currently available for Precalculus, Calculus I, II and III, Linear Algebra, and Differential Equations. In addition, activities and supplementary materials exist for Introductory Statistics, College Algebra and other courses.
+\subsubsection{Ximera Content is Open and Free} Ximera materials require no purchase, sign-up, or subscription and are available to anyone in the world.  Complete textbooks are currently available for Precalculus, Calculus I, II and III, Linear Algebra, and Differential Equations. In addition, activities and supplementary materials exist for Introductory Statistics, College Algebra and other courses.
 Students can access Ximera materials without
 signing up or logging in. As an example, anyone can see and use the content
 hosted at
@@ -67,24 +74,13 @@ This means that students who seek information, even if they are not
 enrolled in a Ximera course, can find Ximera materials via a search engine and access content immediately. \textbf{In 2025, Ximera servers had recorded millions of
     unique visitors.} 
     
-\paragraph{Ximera is Interactive} Ximera's auto-graded prompts give students
-instant feedback on the correctness of their answers, allowing them to
-correct mistakes and solidify their understanding.
-
-
-\begin{figure}
-  \centering
-  \includegraphics[width=.8\textwidth]{ScreenshotDesmos.jpg}
-  \caption{Answer boxes provide immediate feedback while embedded 
-  interactives offer an engaging experience.}\label{F:Xdesmos}
-\end{figure}
-
-
-Higher levels of student engagement lead to better learning
+\subsubsection{Ximera is Interactive} Higher levels of student engagement lead to better learning
 outcomes. An analysis of student interactions with a mathematics
 digital textbook, while learning a new topic, by Reinhold et
 al.~\cite{reinhold2020} revealed a significant difference in achievement, ``with
-higher engaged clusters reaching higher outcomes.''
+higher engaged clusters reaching higher outcomes.'' Ximera's auto-graded prompts give students
+instant feedback on the correctness of their answers, allowing them to
+correct mistakes and solidify their understanding.
 
 
 Moreover, Ximera allows authors to embed popular interactive graphing tools
@@ -95,6 +91,14 @@ videos, allow Ximera courses to make mathematical concepts more
 approachable and understandable for students, see
 Figures~\ref{F:Xdesmos} and \ref{F:Xgeogebra}.
 
+\begin{figure}
+  \centering
+  \includegraphics[width=.8\textwidth]{ScreenshotDesmos.jpg}
+  \caption{Answer boxes provide immediate feedback while embedded 
+  interactives offer an engaging experience.}\label{F:Xdesmos}
+\end{figure}
+
+
 
 \begin{figure}
   \centering
@@ -104,9 +108,9 @@ Figures~\ref{F:Xdesmos} and \ref{F:Xgeogebra}.
 \end{figure}
 
 
-\paragraph{Ximera Saves Students Money}
+\subsubsection{Ximera Saves Students Money}
 
-Each year, tens of thousands of students save money using Ximera materials. In 2025, around 45,000 students used Ximera materials in their courses. Estimating \$120 per textbook gives a total savings of \$5,400,000 in textbook costs, see Table~\ref{tab:enrollment2025}.  This is a conservative estimate based on known Ximera enrollments in the most recent academic year. Moreover, this estimate is likely to grow as more institutions adopt Ximera materials and as existing institutions expand their use of Ximera in additional courses.
+In 2025, around 45,000 students used Ximera materials in their courses. Estimating \$120 per textbook gives a total savings of \$5,400,000, see Table~\ref{tab:enrollment2025}.  However, this does not include all Ximera enrollments, only those where the instructor has independently informed the developers of its use. Hence, this is a conservative estimate based on \textit{known Ximera enrollments}. This estimate will grow as more institutions adopt Ximera materials and as existing institutions expand their use of Ximera in additional courses.
 
 
 
@@ -140,7 +144,7 @@ Ohio Dominican University & 6 & \$720 \\
 \end{table}
 
 
-\paragraph{Students Find Success Through Ximera}
+\subsubsection{Students Find Success Through Ximera}
 
 While affordability is an important benefit, student success remains the primary goal of the project.
 Authors and instructors use Ximera because of its flexibility \cite{active-learning-osu}. Ximera 
@@ -153,9 +157,8 @@ PDFs of the online course materials ensures continuity of learning
 even in the face of technical difficulties or internet disruptions
 \cite{active-learning-osu}.  
 
-Quantitative work performed by Ohio State researchers also supports the
-effectiveness of Ximera for student success.  Specifically,
-researchers analyzed the correlation between the total number of
+Research also supports the effectiveness of Ximera for student success.  Specifically,
+researchers at OSU analyzed the correlation between the total number of
 learning events for a student and their exam scores
 \cite{ximera-calculus}. The study found a significant relationship
 between increased learning events and improved exam performance. More
@@ -169,13 +172,111 @@ in mathematics courses.
 Together, these findings suggest that Ximera advances both components of the project's mission: reducing educational costs while supporting student success.
 
 
-\subsection{Instructor Experience}
 
-Instructors (who are not authors) can freely use any Ximera materials simply by accessing the materials' URL. Moreover, if an instructor encounters issues with the content or platform performance, there are straightforward ways to report them. Since Ximera is built using GitHub (see Section~\ref{ss:gh}), we use GitHub's issue-tracking system to collect and manage feedback.
 
-Because the content is open and written in \LaTeX\ (see Section~\ref{ss:LaTeX}), a language familiar to most mathematics instructors, users can also submit corrections and improvements directly through GitHub. As one example, instructors using The Ohio State University's calculus sequence have identified and helped resolve 419 issues in the course materials.
+\subsection{Institutions}
 
-As Ximera authors create more materials with interactive features in mind, instructors increasingly have options to incorporate discussions, group work, labs, and other forms of interactive learning into their classrooms. For example, the Differential Equations text utilizes spreadsheet labs that include embedded videos and links to sample spreadsheets; Linear Algebra includes many geometric explorations and links to online coding exercises, while Precalculus by Stitz and Zeager, currently being converted to Ximera, boasts connections between the concrete and the abstract that can be used for classroom discussion or to encourage independent reading.  (See Figure \ref{F:llama})
+
+\subsubsection{Modulus: Grade Data}
+
+Large educational institutions use Learning Management Systems (LMS) to manage their grades. Canvas and Blackboard are examples of LMSs. To transfer grades, one needs a Learning Tools Interoperability (LTI) link. LTI is a standard protocol that allows different learning applications to communicate and work together. One of the outcomes of our current work is the development of a new LTI~1.3 connection via Modulus, a novel assignment-grade database. This new connection provides a seamless and efficient experience for both instructors and students.
+
+Modulus is being developed by Infonomic under the direction of Snapp and Fowler. At the time of this writing, it is being tested in one of OSU's Canvas installation. Modulus will allow instructors to easily create and manage Ximera assignments within their LMS, while also providing a centralized database for tracking student progress and performance. This integration will enable instructors to access detailed analytics and insights about student engagement and learning outcomes, ultimately supporting the goal of promoting sustained student success (See Figure \ref{F:modulus}). Modulus will also provide alternatives for
+    self-learners
+    and situations where LTI 1.3 support is not available.
+    
+\begin{figure}    
+\begin{center}
+        \begin{tikzpicture}
+            \node at (-3,1) [cloud, draw,cloud puffs=10,cloud puff arc=120,
+                aspect=2, inner ysep=1em,scale=.8] {};
+            \node at (-3,1) {LMS};
+            \node at (-3,-1) {\resizebox{1cm}{!}{\input{computer.tex}}};
+            \node at (-3,-2) {Students with LTI};
+            \draw[->] (-3.1,-.4) -- (-3.1,.4);
+            \draw[<-] (-2.9,-.4) -- (-2.9,.4);
+            \node at (0,0) {\resizebox{1cm}{!}{\input{modulus.tex}}};
+            \node at (0,-1) {Modulus};
+            \node at (0,-1.4) {Server};
+            \draw[->] (-2,.8) -- (-.6,.2);
+            \draw[<-] (-2.1,.6) -- (-.7,0);
+            \node at (3,-1) {\resizebox{1cm}{!}{\input{server.tex}}};
+            \node at (3,-2) {Ximera};
+            \node at (3,-2.4) {Server};
+            \node at (3,1) {\resizebox{1cm}{!}{\input{computer.tex}}};
+            \node at (3,2) {Self-learner};
+            \draw[->] (3.1,-.4) -- (3.1,.4);
+            \draw[<-] (2.9,-.4) -- (2.9,.4);
+            \draw[->] (2,.8) -- (.6,.2);
+            \draw[<-] (2.1,.6) -- (.7,0);
+            \draw[->] (2.3,-1) -- (.6,-.4);
+            \draw[<-] (2.4,-.8) -- (.7,-.2);
+        \end{tikzpicture}
+         \end{center}
+        \caption{Modulus assignment database integrated into the Ximera ecosphere.}
+  \label{F:modulus}
+\end{figure}
+   
+   
+
+
+
+
+%% LTI~1.3 introduced enhanced security measures through the
+%% incorporation of OpenID Connect and the OAuth~2.0 security
+%% framework. It also improved adherence to privacy regulations such as
+%% GDPR.  Ximera is therefore missing out on key LTI features like:
+%% \begin{description}
+%% \item[Assignment and Grade Services] Facilitating the sharing of
+%%   grades back to the LMS and providing a standardized approach to
+%%   managing line items in the gradebook.
+%% \item[Names and Role Provisioning Services] Allowing tools to access
+%%   the list of users in a course, along with their roles.  This is
+%%   critical for understanding the user's context within a course.
+%% \item[Deep Linking] Enabling tools to offer a user interface to select
+%%   content items to be added to a course, thereby simplifying course
+%%   content creation.
+%% \end{description}
+By completing Modulus, Ximera will be able to offer a more seamless and efficient experience for both instructors and students, ultimately supporting the goal of promoting sustained student success.
+
+
+\subsubsection{WCAG 2.1 AA Compliance}
+
+All products of this grant and our previous grant must be WCAG 2.1 AA Compliant. As a remedy, we have Jeff Kuan, a math-accessibility specialist as a developer; and Neil Soiffer, the developer of MathCAT, screen reader software for mathematics, on our Advisory Board. 
+
+
+
+
+
+\subsection{Instructors}
+
+Instructors (who are not authors) can freely use any Ximera materials simply by sharing the materials' URL.
+Since Ximera courses are built in a modular fashion, these URLs might be from various sources. Modulus will all these instructors to get consolidated grade data even when they choose content from various Ximera sources. 
+Instructor use of Ximera falls into three categories:
+
+\subsubsection{PDF Materials}
+There are a number of Ximera courses that are not yet deployed
+online. Their materials are currently only in PDF form. Instructors in
+this category are usually in a development phase of their Ximera
+course. The PDFs produced allow incremental development of the
+materials while still being used and tested in the classroom. 
+
+\subsubsection{Online Materials without LMS Integration}
+At other institutions using Ximera, instructors can use Ximera
+materials, and have their students complete various Ximera
+assignments. However, data access is prohibitively difficult for most
+instructors in this category; Modulus solves this issue.
+
+
+\subsubsection{Online Materials with LMS Integration} At 
+OSU and UF, instructors of large classes and a few others have Ximera
+assignments directly integrated into the Learning Management System
+(LMS). For these instructors, Ximera works seamlessly and invisibly.
+
+
+
+
+As Ximera authors create more materials with interactive features in mind, instructors increasingly have options to incorporate discussions, group work, labs, and other forms of interactive learning into their classrooms. For example, the Differential Equations text utilizes spreadsheet labs that include embedded videos and links to sample spreadsheets; Linear Algebra includes many geometric explorations and links to online coding exercises, while Precalculus by Stitz and Zeager, currently being converted to Ximera, boasts connections between the concrete and the abstract that can be used for classroom discussion or to encourage independent reading  (See Figure \ref{F:llama}).
 
 \begin{figure}
   \centering
@@ -184,48 +285,30 @@ As Ximera authors create more materials with interactive features in mind, instr
   \label{F:llama}
 \end{figure}
 
-From a technical perspective, instructor use of Ximera falls into three categories:
-
-\paragraph{Online Materials with LMS Integration} At 
-OSU and UF, instructors of large classes and a few others have Ximera
-assignments directly integrated into the Learning Management System
-(LMS). For these instructors, Ximera works seamlessly and invisibly.
-
-\paragraph{Online Materials without LMS Integration}
-At other institutions using Ximera, instructors can use Ximera
-materials, and have their students complete various Ximera
-assignments. However, data access is prohibitively difficult for most
-instructors in this category.
-
-\paragraph{PDF Materials}
-There are a number of Ximera courses that are not yet deployed
-online. Their materials are currently only in PDF form. Instructors in
-this category are usually in a development phase of their Ximera
-course. The PDFs produced allow incremental development of the
-materials while still being used and tested in the classroom.
 
 
-\subsection{Author Experience}
-
-\paragraph{Familiar Writing Tools}
-
+\subsection{Authors}
+\subsubsection{Familiar Writing Tools}
 With Ximera, authors use the document preparation system
-\LaTeX\ to create content (see Section~\ref{ss:LaTeX}). While this
+\LaTeX\ to create content.  \LaTeX\ is a markup language created in the 1980s. It provides a
+simplified way to produce documents by separating the content and
+structure from the visual formatting. 
+ While this
 system may seem obscure to the layperson, it is enormously popular in
 mathematics and other STEM fields. For example, the preprint server
 arXiv hosts more than 2 million papers, nearly all of which were
-authored in \LaTeX. As a result, many potential authors already have
+authored in \LaTeX. This narrative was authored in \LaTeX. As a result, many potential authors already have
 course materials written in \LaTeX, making it a natural authoring
-environment for STEM content.
+environment for STEM content. In May 2024, the platform achieved a critical scaling milestone by publishing the \texttt{ximera} document class to the Comprehensive \TeX{} Archive Network (CTAN). Now natively bundled within standard global distributions like \TeX{} Live and MiK\TeX{}, any educator worldwide can instantly begin authoring interactive STEM materials via \texttt{\textbackslash documentclass\{ximera\}} with zero local configuration. This integration shifts Ximera from an isolated campus utility to a permanent, globally available piece of open educational infrastructure.
 
-\paragraph{Simultaneous Output}
+\subsubsection{Simultaneous Output}
 Ximera allows authors to use a single \LaTeX\ source file to
 simultaneously produce PDFs and online interactive content (see
 Figure~\ref{F:sout}).
 
 
 
-% \paragraph{\LaTeX\ is preferred}
+% \subsubsection{\LaTeX\ is preferred}
 % In mathematics, the preferred method of producing a book is with a
 % document preparation system called \LaTeX.  We utilize the PDFs
 % naturally produced by \LaTeX\ to produce materials that are useful to
@@ -246,112 +329,25 @@ Figure~\ref{F:sout}).
 \end{figure}
 
 
-\paragraph{GitHub Aids in Building Community}
+\subsubsection{GitHub: Building Community and Deploying Content}
 
-All files used to create Ximera materials are openly licensed (see Section \ref{ss:LaTeX}). These files are hosted on
-GitHub, a web-based platform for version control and collaborative
-software development. As a result, authors can easily collaborate,
-share materials, and contribute improvements.
-
-For example, the GitHub repository for The Ohio State University's calculus sequence
-has 41 contributors and has been forked 460 times. Each fork
-represents a copy of the course materials that can be adapted and
-extended by another instructor or author.
-
-% \paragraph{Online Deployment is Limited}
-% Currently, Ximera relies on a few servers that convert \LaTeX\ content
-% and deploy it to the web. For Ximera to be sustainable in the long
-% term, it is absolutely critical that authors and instructors have the ability to
-% modify existing work on their own, without intervention from Ximera
-% developers.
-
-\subsection{Exceptional Design Elements in Ximera}
-
-Ximera is built by educators, for educators. Three design elements distinguish the platform and contribute to its effectiveness for students, instructors, and authors.
-
-\paragraph{Simultaneous Output}
-Ximera allows authors to maintain a single source file that generates both PDF and interactive online content. This approach supports flexible pedagogy, accommodates different learning preferences, and provides a reliable backup format when internet or technical issues arise.
-
-\paragraph{Open Community}
-Ximera content is openly licensed and developed through public GitHub repositories. This model promotes transparency, collaboration, and continuous improvement while allowing institutions and instructors to adapt materials to their local needs. In addition, all published content is freely accessible without login requirements, supporting the project's commitment to open education.
-
-\paragraph{Immediate Feedback}
-Ximera's interactive exercises provide students with immediate feedback as they work. By allowing students to identify and correct mistakes in real time, these tools promote engagement, persistence, and deeper learning.
-
-\subsection{Impact of Current Funding on User Experience}
-
-OTP Phase I funding has enabled significant improvements in the user experience for all three groups of users.
-
-\paragraph{Students}
-
-The most significant benefit for students has been the expansion and enhancement of Ximera materials. Since the beginning of the grant period, we have supported the development and improvement of additional textbooks, including Linear Algebra, and Differential Equations. Our most recent undertaking is the conversion of the popular OER Precalculus textbook by Stitz and Zeager to the Ximera platform, with completion anticipated by autumn 2026.
-
-Converting existing OER materials to Ximera allows us to incorporate auto-graded exercises, embedded interactives, and other Ximera features, enhancing these resources for today's students. Continued funding will allow us to build on this progress by expanding the library of Ximera materials, updating existing content, and bringing additional open educational resources to the platform.
-
-\paragraph{Instructors}
-
-Current funding has allowed us to make significant strides in improving the instructor experience. The most notable advancement has been the development of the Modulus tool, which enables Ximera assignments to pass student grades directly to a learning management system (LMS) (see Section~???). Modulus is being developed by Infonomic under the direction of Snapp and Fowler. In its current implementation, Modulus successfully passes grades to Canvas at The Ohio State University.
-
-As testing at additional institutions and on other learning management systems (e.g., Blackboard and Brightspace) is completed, instructors will be able to integrate Ximera assignments into their existing LMS workflows and record student progress automatically.
-
-Future funding will allow us to expand the role of Modulus in supporting instructors. One proposed enhancement, Modulus Atlas, would not only allow instructors to assign and link Ximera materials of their choice through the LMS, but also provide tools for discovering other relevant Ximera content to incorporate into their courses.
-
-\paragraph{Authors}
-
-While authoring Ximera documents in \LaTeX\ has always been straightforward, the deployment process prior to 2024 required significant technical expertise. Current funding has allowed us to substantially improve the author experience. The following tools and resources have simplified the process of deploying Ximera content:
-
+Our content is primarily released under a Creative Commons Attribution-ShareAlike (\mbox{CC BY-SA}) license, which allows for universal adaptation and remixing. To integrate existing open educational resources (OER), select materials maintain a Creative Commons Attribution-NonCommercial-ShareAlike (\mbox{CC BY-NC-SA}) license.
+The platform's technical infrastructure is similarly open, using targeted licensing to ensure long-term accessibility and transparency:\label{ss:open-license}
 \begin{itemize}
-\item A comprehensive user manual for authors was developed in 2025.
-\item GitHub repositories containing templates for authors were created. These templates include the necessary structure and files to get started with creating and automatically deploying Ximera content. 
-The repository located at
-\begin{center}
-\url{https://github.com/ximeraProject/ximeraFirstSteps}
-\end{center}
-provides a starting point for authors to create their own Ximera content.
-\item Deployment workflows using GitHub Codespaces and Overleaf have been developed.
+    \item \textbf{\LaTeX\ Document Class:} Licensed under the \LaTeX\ Project Public License (LPPL) to ensure the authoring environment remains freely modifiable and distributable.
+    \item \textbf{Ximera Server:} Powered by code licensed under the GNU General Public License (GPL) to protect user freedom and collaborative development.
+    \item \textbf{Modulus Assignment Database:} Licensed under the GNU Affero General Public License (AGPL). This network-specific license guarantees that the source code remains accessible and transparent even when run strictly as a cloud-hosted service.
 \end{itemize}
 
-The last item, in particular, automates much of the deployment process. After the initial setup is complete, deployment occurs automatically behind the scenes, allowing authors to focus on content creation rather than technical implementation.
 
-Future funding will allow us to further streamline and automate deployment workflows, reducing technical barriers for new authors and making Ximera content creation accessible to a broader community of educators.
 
-\paragraph{Impact Summary} Table \ref{tab:phaseIphaseII} summarizes milestones achieved during OTP Phase I and proposed advances for Phase II.
-
-\begin{table}[htbp]
-\centering
-\caption{Summary of Phase I accomplishments, and proposed Phase II developments.}
-\label{tab:phaseIphaseII}
-\begin{tabular}{lll}
-\hline
-Users & \textbf{Progress Under Phase I} & \textbf{Proposed for Phase II} \\
-\hline
-\textbf{Students} & \$5,000,000 in annual savings. & Additional textbooks \\ & Additional interactive textbooks & and other interactive content \\
-\textbf{Instructors} & More interactive content & Modulus Atlas \\ & to support class discussions & \\ &  Modulus is in Canvas testing phase& \\
-\textbf{Authors} & User manual created & Additional automation \\ & Automated deployment through & of deployment\\ & Codespaces and Overleaf & \\ & Starter kits made available on GitHub & \\
-\hline
-\end{tabular}
-\end{table}
-
-\subsection{Technical Details}
-\label{ss:LaTeX}
-The technical infrastructure described below currently supports tens of thousands of enrolled students annually and millions of public visits to Ximera-hosted content.
-
-\paragraph{\LaTeX\ and the Ximera Document Class}
-Ximera uses \LaTeX\ as its authoring language. \LaTeX\ is a markup language created in the 1980s. It remains the preferred language for STEM authors because it provides a
-simplified way to produce documents by separating the content and
-structure from the formatting. 
-\LaTeX\ is particularly useful for
-producing complex documents, such as books, reports, and academic papers. 
-% It also has a large number of packages and extensions that can
-% be used to customize the output and automate many tasks.
-
-Authors write their content in \LaTeX\ using the Ximera document
-class, which includes formatting for both PDF and online formats.
-Within the \LaTeX\ document, authors can use various Ximera macros to
-add interactive content such as answer boxes and embedded videos or
-graphs.  Authors then (invisibly) compile their document and generate the necessary files for both
-PDF and online versions of their content (see Figure~\ref{F:XG}).
-
+All of these files are hosted on GitHub, a web-based platform for version control and collaborative
+software development. As a result, authors can easily collaborate,
+share materials, and contribute improvements. If a user (student, instructor, or author) encounters issues with the content or platform performance, GitHub provides straightforward ways to report them.
+For example, the GitHub repository for The Ohio State University's calculus sequence
+has 41 contributors, authors have resolved 419 issues in the course materials, and the content been `forked' 460 times (each fork
+represents a copy of the course materials that can be adapted and
+extended by another instructor or author).
 \begin{figure}
   \centering
   \includegraphics[width=.8\textwidth]{XimeraGraphic.png}
@@ -359,244 +355,29 @@ PDF and online versions of their content (see Figure~\ref{F:XG}).
     and online interactive content.}
   \label{F:XG}
 \end{figure}
+% \subsubsection{Online Deployment is Limited}
+% Currently, Ximera relies on a few servers that convert \LaTeX\ content
+% and deploy it to the web. For Ximera to be sustainable in the long
+% term, it is absolutely critical that authors and instructors have the ability to
+% modify existing work on their own, without intervention from Ximera
+% developers.
 
-Once the content is complete and compiled to HTML and JavaScript,
-authors push their work to a Ximera server. Students can then access
-the online content and interact with the various interactive elements
-as designed by the author. 
-% All interaction is happening on the
-% student's own computer.  
+% \subsection{Exceptional Design Elements in Ximera}
 
-In \LaTeX, a \emph{document class} is a file that specifies the overall
-layout and formatting of a document. It defines the structure of the
-document, including elements such as the title page, headers, footers,
-and the document body. The Ximera document class provides the
-following features:
+% Ximera is built by educators, for educators. Three design elements distinguish the platform and contribute to its effectiveness for students, instructors, and authors.
 
-\begin{description}
-\item[Formatting for different domains] The Ximera document class
-  provides built-in support for formatting documents in both PDF and
-  online formats, which can be a big time-saver for
-  authors. Additionally, it allows for the simultaneous creation of
-  solution manuals and teaching editions, which can be especially
-  useful for educators.
-\item[Compiling individually or as a whole] With the Ximera document
-  class, authors can easily compile individual documents or an entire
-  collection of documents. This flexibility can be helpful when making
-  changes to specific documents without having to re-compile the
-  entire collection. Moreover, this allows an author to share large
-  portions of a text with another, with minimal changes.
-\item[Interactive content] The Ximera document class allows for the
-  inclusion of interactive content, such as answer boxes that are
-  validated by a client-side computer algebra system. Additionally, it
-  allows for the embedding of YouTube videos, Desmos graphs, and
-  GeoGebra interactives. 
-\item[All content displayed] By default, the Ximera document class
-  displays all content to the author. This means the author sees what
-  the students see, along with answers and solutions, and links (that
-  can be checked) to various interactive elements (when deployed, the
-  interactive elements are truly embedded). This can be especially
-  helpful for catching errors or inconsistencies in the content.
-\end{description}
+% \subsubsection{Simultaneous Output}
+% Ximera allows authors to maintain a single source file that generates both PDF and interactive online content. This approach supports flexible pedagogy, accommodates different learning preferences, and provides a reliable backup format when internet or technical issues arise.
 
-In May 2024, the platform achieved a critical scaling milestone by publishing the \texttt{ximera} document class to the Comprehensive \TeX{} Archive Network (CTAN). Now natively bundled within standard global distributions like \TeX{} Live and MiK\TeX{}, any educator worldwide can instantly begin authoring interactive STEM materials via \texttt{\textbackslash documentclass{ximera}} with zero local configuration. This integration shifts Ximera from an isolated campus utility to a permanent, globally available piece of open educational infrastructure.
+% \subsubsection{Open Community}
+% Ximera content is openly licensed and developed through public GitHub repositories. This model promotes transparency, collaboration, and continuous improvement while allowing institutions and instructors to adapt materials to their local needs. In addition, all published content is freely accessible without login requirements, supporting the project's commitment to open education.
 
-\paragraph{Xake: Deploying Ximera Content Online}\label{xake}
+% \subsubsection{Immediate Feedback}
+% Ximera's interactive exercises provide students with immediate feedback as they work. By allowing students to identify and correct mistakes in real time, these tools promote engagement, persistence, and deeper learning.
 
-Xake (a play on words with \emph{make}) is the compiler currently used by Ximera
-to compile \LaTeX\ source files into web-friendly formats such as
-HTML, CSS, and JavaScript.  One of the primary goals of Xake is to provide a simple and reliable
-way for authors to deploy their content to the web. 
+\subsection{Impact of Current Funding on User Experience}
 
-% To accomplish
-% this, Xake provides a series of pre-defined build targets that
-% automate the process of compiling and deploying Ximera content. These
-% targets can be easily customized to suit the needs of individual
-% projects via the \LaTeX\ source documents.
-
-% Xake uses \textit{htlatex} as part of it's compilation process. The
-% utility \textit{htlatex} forms part of the larger \TeX 4ht system,
-% which converts \LaTeX\ documents into HTML and other formats.  \TeX
-% 4ht was created by Eitan Gurari, a computer science professor at Ohio
-% State in the early 1990s. The primary motivation for developing \TeX
-% 4ht was to provide a solution for converting \LaTeX\ documents into
-% HTML, thereby making them accessible on the Web. 
-% This was especially
-% important during the early years of the Web when the need for sharing
-% scientific documents online was rapidly growing.  Over the years, \TeX
-% 4ht evolved to support various output formats, including XHTML, XML,
-% and MathML, while also offering compatibility with other \LaTeX\
-% packages.  Xake uses \textit{htlatex} to perform part of its
-% conversation from \LaTeX\ to HTML, but includes additional
-% post-processing.  After all, the goal of Ximera is not merely to
-% convert \LaTeX\ to HTML, but to convert \LaTeX\ to
-% \textit{interactive} webpages.
-
-Although the Xake tool streamlines the deployment process, it does
-come with certain challenges; however, nearly all of these challenges have been resolved by work funded by the current OTP grant.
-
-[[ BE MORE DESCRIPTIVE]]
-
-
-
- %particularly when a TikZ
-% image is incorporated in a \LaTeX\ document. In such cases, Xake depends
-% on MuPDF to generate SVG files, but installing MuPDF can be a
-% challenging task for some authors.
-
-\paragraph{GitHub for Collaboration}\label{ss:gh}
-
-The developers of Ximera use GitHub as a file storage,  version
-control for Ximera development, version control for content development, issue tracking, and deployment via GitHub ``Actions.''  GitHub is a web-based platform that provides version control and collaborative software development tools. It allows developers to host and review code, manage projects, and collaborate with others. By using GitHub, the Ximera project can efficiently manage its codebase, track changes, and facilitate collaboration among developers and content creators. 
-
-
-\paragraph{Ximera is Client Side}
-
-All of the
-interactivity provided by Ximera happens on the student's
-computer. This means we can serve a much higher volume of students
-than our competitors that have server side interaction. We demonstrate
-our ability to handle large volumes of students with our experience
-with MOOCs and OSU's large calculus classes. Server side solutions
-cannot provide the same experience when there are tens-of-thousands of
-students. (See Figure \ref{F:server})
-
- \begin{figure}
-  \centering
-  \includegraphics[width=.8\textwidth]{server.png}
-  \caption{Client side interactivity allows Ximera to serve a large number of students.}
-  \label{F:server}
-\end{figure}
-
-
-\paragraph{Answer Verification and Computer Algebra System}
-
-\textit{Math-expressions} is a JavaScript library that can be used for parsing and working with mathematical expressions.
-%%  It provides functionality for basic computer algebra,
-%% such as symbolic differentiation and numerically identifying
-%% equivalent expressions. The library allows users to create,
-%% manipulate, and compare mathematical expressions in text and \LaTeX\
-%% formats.
-%%
- Ximera uses the math-expressions library for answer validation. 
-%  In the
-% context of Ximera, the library helps parse and evaluate student input,
-% making it possible to check if their answers are correct or equivalent
-% to the expected solutions.
-%% The math-expressions library enables Ximera
-%% to handle a wide range of mathematical expressions, including those
-%% involving functions, variables, and complex operations. 
-%To validate that an answer is correct, some sort of heuristic is required. 
-In theory (and in
-practice), a computer algebra system cannot always validate correct
-answers as correct, and incorrect answers as incorrect.  This is due to Richardson's theorem which states that 
-equality is undecidable between certain types of functions. \cite{richardson}. 
-%Math-expressions uses a few different heuristics for answer validation. 
- %% The most important relies on complex numbers:
-%% math-expressions uses complex numbers in answer validation by
-%% generating random complex number bindings for variables, evaluating
-%% expressions with these bindings, and comparing their numerical
-%% equivalence within specified tolerances.  This results in a quite
-%% robust system for answer validation.
-A popular validation technique is to check for equality at random \textit{real} points
-\cite{fisher}. This and some additional techniques are summarized by Chris Sangwin \cite{sangwin}.
-
-In contrast, math-expressions uses complex numbers to validate
-answers (see Figure \ref{F:validator}). This seems to work quite well.  One metric is the STACK
-project \cite{stack}, which has produced a wide variety of pairs of
-expressions which should be adjudicated as equal, and pairs which
-should be adjudicated as different.  These form the basis for unit
-tests of math-expressions.  Out of more than five thousand test cases,
-math-expressions fails on just a handful.
-
-\begin{figure}
-  \centering
-  \includegraphics[width=.8\textwidth]{answerValidator.png}
-  \caption{Different versions of the correct answer are accepted as correct.}
-  \label{F:validator}
-\end{figure}
-
-%% There are also user interface innovations in Ximera.  At the time of
-%% initial development, Ximera's answer validation was unique in the
-%% sense that as students type their answer, Ximera displays the
-%% expression back to the student, as the validator interprets it. This
-%% can help students format math, as they get real-time feedback on the
-%% meaning of their input.  This significantly reduces complaints from
-%% students.
-
-
-
-
-\paragraph{Modulus: LMS Integration}
-
-%% Ximera integrates with Learning Management Systems (LMSs) using the
-%% Learning Tools Interoperability (LTI) protocol. Developed by the IMS
-%% Global Learning Consortium, LTI enables various learning applications
-%% to interconnect, thereby significantly broadening the ecosystem that
-%% LMSs can access. This interoperability allows LMSs to seamlessly
-%% assimilate a diverse range of learning tools and platforms, leading to
-%% a tailored and rich learning environment.
-
-Setting up a Ximera activity within a Learning Management System (LMS) like Canvas or Blackboard currently means using a Learning Tools Interoperability (LTI) link. LTI is a standard protocol that allows different learning applications to communicate and work together. One of the outcomes of our current work is the development of a new LTI~1.3 connection via ``Modulus,'' a novel assignment-grade database. This new connection provides a seamless and efficient experience for both instructors and students.
-
-Modulus is being developed by Infonomic under the direction of Snapp and Fowler. At the time of this writing, it is being tested in test-instances of OSU's Canvas installation. Modulus will allow instructors to easily create and manage Ximera assignments within their LMS, while also providing a centralized database for tracking student progress and performance. This integration will enable instructors to access detailed analytics and insights about student engagement and learning outcomes, ultimately supporting the goal of promoting sustained student success. (See Figure \ref{F:modulus})
-    
-\begin{figure}    
-\begin{center}
-        \begin{tikzpicture}
-            \node at (-3,1) [cloud, draw,cloud puffs=10,cloud puff arc=120,
-                aspect=2, inner ysep=1em,scale=.8] {};
-            \node at (-3,1) {LMS};
-            \node at (-3,-1) {\resizebox{1cm}{!}{\input{computer.tex}}};
-            \node at (-3,-2) {Students with LTI};
-            \draw[->] (-3.1,-.4) -- (-3.1,.4);
-            \draw[<-] (-2.9,-.4) -- (-2.9,.4);
-            \node at (0,0) {\resizebox{1cm}{!}{\input{modulus.tex}}};
-            \node at (0,-1) {Assignment};
-            \node at (0,-1.4) {Database};
-            \draw[->] (-2,.8) -- (-.6,.2);
-            \draw[<-] (-2.1,.6) -- (-.7,0);
-            \node at (3,-1) {\resizebox{1cm}{!}{\input{server.tex}}};
-            \node at (3,-2) {Deploy};
-            \node at (3,-2.4) {Server};
-            \node at (3,1) {\resizebox{1cm}{!}{\input{computer.tex}}};
-            \node at (3,2) {Self-learner};
-            \draw[->] (3.1,-.4) -- (3.1,.4);
-            \draw[<-] (2.9,-.4) -- (2.9,.4);
-            \draw[->] (2,.8) -- (.6,.2);
-            \draw[<-] (2.1,.6) -- (.7,0);
-            \draw[->] (2.3,-1) -- (.6,-.4);
-            \draw[<-] (2.4,-.8) -- (.7,-.2);
-        \end{tikzpicture}
-         \end{center}
-        \caption{Modulus assignment database integrated into the Ximera ecosphere.}
-  \label{F:modulus}
-\end{figure}
-   
-   Modulus will also provide alternatives for
-    self-learners
-    and situations where LTI 1.3 support is not available.
-
-
-
-
-%% LTI~1.3 introduced enhanced security measures through the
-%% incorporation of OpenID Connect and the OAuth~2.0 security
-%% framework. It also improved adherence to privacy regulations such as
-%% GDPR.  Ximera is therefore missing out on key LTI features like:
-%% \begin{description}
-%% \item[Assignment and Grade Services] Facilitating the sharing of
-%%   grades back to the LMS and providing a standardized approach to
-%%   managing line items in the gradebook.
-%% \item[Names and Role Provisioning Services] Allowing tools to access
-%%   the list of users in a course, along with their roles.  This is
-%%   critical for understanding the user's context within a course.
-%% \item[Deep Linking] Enabling tools to offer a user interface to select
-%%   content items to be added to a course, thereby simplifying course
-%%   content creation.
-%% \end{description}
-In order for Ximera to attain wider adoption and stay abreast with the
-latest advancements, it is imperative that Modulus be completed and fully integrated. Many institutions of higher education require LMS intgration for the adoption of new educational technologies, and without it, Ximera may face barriers to widespread adoption. By completing Modulus, Ximera will be able to offer a more seamless and efficient experience for both instructors and students, ultimately supporting the goal of promoting sustained student success.
+OTP Phase I funding has enabled significant improvements for all realms of Ximera.
 
 
 
@@ -604,7 +385,8 @@ latest advancements, it is imperative that Modulus be completed and fully integr
 
 
 
-% \paragraph{Open Licensing}
+
+% \subsubsection{Open Licensing}
 % For Open Educational Resources (OER) to achieve their full potential,
 % it is key that not only the content be openly licensed, but also that
 % the platforms and underlying technologies that support this content be
@@ -648,534 +430,326 @@ latest advancements, it is imperative that Modulus be completed and fully integr
 % a truly open platform, dedicated to facilitating access to
 % high-quality educational resources for all.
 
-\paragraph{Open Licensing}
-Ximera is fully committed to open-source principles; both the educational content and the underlying platform technologies are entirely openly licensed.
 
-Our content is primarily released under a Creative Commons Attribution-ShareAlike (\mbox{CC BY-SA}) license, which allows for universal adaptation and remixing. To integrate existing open educational resources (OER), select materials maintain a Creative Commons Attribution-NonCommercial-ShareAlike (\mbox{CC BY-NC-SA}) license.
 
-The platform's technical infrastructure is similarly open, using targeted licensing to ensure long-term accessibility and transparency:
+
+
+
+\subsubsection{Students}
+
+The most significant benefit for students has been the expansion and enhancement of Ximera materials. Since the beginning of the grant period, we have supported the development and improvement of additional textbooks, including Linear Algebra, and Differential Equations. Our most recent undertaking is the conversion of the popular OER Precalculus textbook by Stitz and Zeager to the Ximera platform, with completion anticipated by autumn 2026.
+
+Converting existing OER materials to Ximera allows us to incorporate auto-graded exercises, embedded interactives, and other Ximera features, enhancing these resources for today's students. Continued funding will allow us to build on this progress by expanding the library of Ximera materials, updating existing content, and bringing additional open educational resources to the platform.
+
+\subsubsection{Instructors}
+
+Current funding has allowed us to make significant strides in improving the instructor experience. The most notable advancement has been the development of the Modulus tool, which enables Ximera assignments to pass student grades directly to a learning management system (LMS) (see Section~???). Modulus is being developed by Infonomic under the direction of Snapp and Fowler. In its current implementation, Modulus successfully passes grades to Canvas at The Ohio State University.
+
+As testing at additional institutions and on other learning management systems (e.g., Blackboard and Brightspace) is completed, instructors will be able to integrate Ximera assignments into their existing LMS workflows and record student progress automatically.
+
+Future funding will allow us to expand the role of Modulus in supporting instructors. One proposed enhancement, Modulus Atlas, would not only allow instructors to assign and link Ximera materials of their choice through the LMS, but also provide tools for discovering other relevant Ximera content to incorporate into their courses.
+
+\subsubsection{Authors}
+
+While authoring Ximera documents in \LaTeX\ has always been straightforward, the deployment process prior to 2024 required significant technical expertise. Current funding has allowed us to substantially improve the author experience. The following tools and resources have simplified the process of deploying Ximera content:
+
 \begin{itemize}
-    \item \textbf{\LaTeX\ Document Class:} Licensed under the \LaTeX\ Project Public License (LPPL) to ensure the authoring environment remains freely modifiable and distributable.
-    \item \textbf{Ximera Server:} Powered by code licensed under the GNU General Public License (GPL) to protect user freedom and collaborative development.
-    \item \textbf{Modulus Assignment Database:} Licensed under the GNU Affero General Public License (AGPL). This network-specific license guarantees that the source code remains accessible and transparent even when run strictly as a cloud-hosted service.
+\item A comprehensive user manual for authors was developed in 2025.
+\item GitHub repositories containing templates for authors were created. These templates include the necessary structure and files to get started with creating and automatically deploying Ximera content. 
+The repository located at
+\begin{center}
+\url{https://github.com/ximeraProject/ximeraFirstSteps}
+\end{center}
+provides a starting point for authors to create their own Ximera content.
+\item Deployment workflows using GitHub Codespaces and Overleaf have been developed.
 \end{itemize}
 
-\subsection{Impact of OTP Phase I funding on the technical underpinnings-draft title} 
-this is where the table goes... see next page. (see Table \ref{tab:phaseIphaseIItechnical})
+The last item, in particular, automates much of the deployment process. After the initial setup is complete, deployment occurs automatically behind the scenes, allowing authors to focus on content creation rather than technical implementation.
+
+Future funding will allow us to further streamline and automate deployment workflows, reducing technical barriers for new authors and making Ximera content creation accessible to a broader community of educators.
+
+\subsubsection{Impact Summary} Table \ref{tab:phaseIphaseII} summarizes milestones achieved during OTP Phase I and proposed advances for Phase II.
+
 \begin{table}[htbp]
 \centering
 \caption{Summary of Phase I accomplishments, and proposed Phase II developments.}
-\label{tab:phaseIphaseIItechnical}
+\label{tab:phaseIphaseII}
+\renewcommand{\arraystretch}{1.5}
+
 \begin{tabular}{lll}
 \hline
- & \textbf{Progress Under Phase I} & \textbf{Proposed for Phase II} \\
+Users & \textbf{Progress Under Phase I} & \textbf{Proposed for Phase II} \\
 \hline
-\textbf{Document Class} & Submitted to CTAN& \\ 
-\textbf{Compiler} & ? &  \\
-\textbf{Server} & Xerxes? & ? \\
-\textbf{Modulus} & Testing phase & ? \\
+\textbf{Students} & \textbullet~\$5,000,000 in annual savings. & \textbullet~Additional textbooks \\ & \textbullet~Additional interactive textbooks & and other interactive content \\
+\textbf{Institutions} &  &  \\
+\textbf{Instructors} & \textbullet~More interactive content & \textbullet~Modulus Atlas \\ & to support class discussions & \\ &  \textbullet~Modulus is in Canvas testing phase& \\
+\textbf{Authors} & \textbullet~User manual created & \textbullet~Additional automation \\ & \textbullet~Automated deployment through & of deployment\\ & Codespaces and Overleaf & \\ & \textbullet~Starter kits made available on GitHub & \\
 \hline
 \end{tabular}
 \end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+
+% --------------------------------------------------------
+% --------------------------------------------------------
+% --------------------------------------------------------
+% --------------------------------------------------------
+% --------------------------------------------------------
+% --------------------------------------------------------
+
+
+% \subsection{Technical Details}
+% \label{ss:LaTeX}
+% The technical infrastructure described below currently supports tens of thousands of enrolled students annually and millions of public visits to Ximera-hosted content.
+
+% \subsubsection{\LaTeX\ and the Ximera Document Class}
+% Ximera uses \LaTeX\ as its authoring language. \LaTeX\ is a markup language created in the 1980s. It remains the preferred language for STEM authors because it provides a
+% simplified way to produce documents by separating the content and
+% structure from the formatting. 
+% \LaTeX\ is particularly useful for
+% producing complex documents, such as books, reports, and academic papers. 
+% % It also has a large number of packages and extensions that can
+% % be used to customize the output and automate many tasks.
+
+% Authors write their content in \LaTeX\ using the Ximera document
+% class, which includes formatting for both PDF and online formats.
+% Within the \LaTeX\ document, authors can use various Ximera macros to
+% add interactive content such as answer boxes and embedded videos or
+% graphs.  Authors then (invisibly) compile their document and generate the necessary files for both
+% PDF and online versions of their content (see Figure~\ref{F:XG}).
+
+% \begin{figure}
+%   \centering
+%   \includegraphics[width=.8\textwidth]{XimeraGraphic.png}
+%   \caption{Ximera allows an author to simultaneously write traditional
+%     and online interactive content.}
+%   \label{F:XG}
+% \end{figure}
+
+% Once the content is complete and compiled to HTML and JavaScript,
+% authors push their work to a Ximera server. Students can then access
+% the online content and interact with the various interactive elements
+% as designed by the author. 
+% % All interaction is happening on the
+% % student's own computer.  
+
+% In \LaTeX, a \emph{document class} is a file that specifies the overall
+% layout and formatting of a document. It defines the structure of the
+% document, including elements such as the title page, headers, footers,
+% and the document body. The Ximera document class provides the
+% following features:
+
+% \begin{description}
+% \item[Formatting for different domains] The Ximera document class
+%   provides built-in support for formatting documents in both PDF and
+%   online formats, which can be a big time-saver for
+%   authors. Additionally, it allows for the simultaneous creation of
+%   solution manuals and teaching editions, which can be especially
+%   useful for educators.
+% \item[Compiling individually or as a whole] With the Ximera document
+%   class, authors can easily compile individual documents or an entire
+%   collection of documents. This flexibility can be helpful when making
+%   changes to specific documents without having to re-compile the
+%   entire collection. Moreover, this allows an author to share large
+%   portions of a text with another, with minimal changes.
+% \item[Interactive content] The Ximera document class allows for the
+%   inclusion of interactive content, such as answer boxes that are
+%   validated by a client-side computer algebra system. Additionally, it
+%   allows for the embedding of YouTube videos, Desmos graphs, and
+%   GeoGebra interactives. 
+% \item[All content displayed] By default, the Ximera document class
+%   displays all content to the author. This means the author sees what
+%   the students see, along with answers and solutions, and links (that
+%   can be checked) to various interactive elements (when deployed, the
+%   interactive elements are truly embedded). This can be especially
+%   helpful for catching errors or inconsistencies in the content.
+% \end{description}
+
+% In May 2024, the platform achieved a critical scaling milestone by publishing the \texttt{ximera} document class to the Comprehensive \TeX{} Archive Network (CTAN). Now natively bundled within standard global distributions like \TeX{} Live and MiK\TeX{}, any educator worldwide can instantly begin authoring interactive STEM materials via \texttt{\textbackslash documentclass{ximera}} with zero local configuration. This integration shifts Ximera from an isolated campus utility to a permanent, globally available piece of open educational infrastructure.
+
+% \subsubsection{Xake: Deploying Ximera Content Online}\label{xake}
+
+% Xake (a play on words with \emph{make}) is the compiler currently used by Ximera
+% to compile \LaTeX\ source files into web-friendly formats such as
+% HTML, CSS, and JavaScript.  One of the primary goals of Xake is to provide a simple and reliable
+% way for authors to deploy their content to the web. 
+
+% Although the Xake tool streamlines the deployment process, it does
+% come with certain challenges; however, nearly all of these challenges have been resolved by work funded by the current OTP grant.
+
+% [[ BE MORE DESCRIPTIVE]]
+
+
+
+% \subsubsection{GitHub for Collaboration}\label{ss:gh}
+
+% The developers of Ximera use GitHub as a file storage,  version
+% control for Ximera development, version control for content development, issue tracking, and deployment via GitHub ``Actions.''  GitHub is a web-based platform that provides version control and collaborative software development tools. It allows developers to host and review code, manage projects, and collaborate with others. By using GitHub, the Ximera project can efficiently manage its codebase, track changes, and facilitate collaboration among developers and content creators. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% \subsection{Impact of OTP Phase I funding on the technical underpinnings-draft title} 
+% this is where the table goes... see next page. (see Table \ref{tab:phaseIphaseIItechnical})
+% \begin{table}[htbp]
+% \centering
+% \caption{Summary of Phase I accomplishments, and proposed Phase II developments.}
+% \label{tab:phaseIphaseIItechnical}
+% \begin{tabular}{lll}
+% \hline
+%  & \textbf{Progress Under Phase I} & \textbf{Proposed for Phase II} \\
+% \hline
+% \textbf{Document Class} & Submitted to CTAN& \\ 
+% \textbf{Compiler} & ? &  \\
+% \textbf{Server} & Xerxes? & ? \\
+% \textbf{Modulus} & Testing phase & ? \\
+% \hline
+% \end{tabular}
+% \end{table}
+
+% --------------------------------------------------------
+% --------------------------------------------------------
+% --------------------------------------------------------
+% --------------------------------------------------------
+% --------------------------------------------------------
+% --------------------------------------------------------
+
+
+
+
 
 \subsection{Industry Partners}
 
 The Ximera project has collaborated with several industry partners to enhance the development and dissemination of its educational materials. These partnerships have been instrumental in providing technical expertise, resources, and support for the project. Notable industry partners include:
 
-\paragraph{Infonomic} Infonomic is a technology company that specializes in developing software and platforms dealing with complex data. They have been a key partner in the development of Modulus, providing technical expertise and support for the integration of Ximera with Learning Management Systems (LMSs).
+\subsubsection{Infonomic} Infonomic is a technology company that specializes in developing software and platforms dealing with complex data. They have been a key partner in the development of Modulus, providing technical expertise and support for the integration of Ximera with Learning Management Systems (LMSs).
 \begin{center}
   \url{https://infonomic.io/}
 \end{center}
 
-\paragraph{BAWL: Botting Accessibility with \LaTeX} BAWL is a math accessibility company that focuses on making mathematical content accessible to all learners. They have a symbiotic relationship with Ximera, as they use Ximera materials in their work, and they also contribute to the development of accessible mathematical content within the Ximera platform.
+\subsubsection{BAWL: Botting Accessibility with \LaTeX} BAWL is a math accessibility company that focuses on making mathematical content accessible to all learners. They have a symbiotic relationship with Ximera, as they use Ximera materials in their work, and they also contribute to the development of accessible mathematical content within the Ximera platform.
 \begin{center}
   \url{https://www.bawl-stem.com/}
 \end{center}
 
 
-\subsection{Timeline of Development and Dissemination}
+\subsection{Abridged Timeline of Development and Dissemination}
 
 \begin{description}
-\item[Autumn 2010] Snapp lead a team to create a process for
-  converting \LaTeX\ documents into interactive textbooks for the
-  iPad. The team was composed of computer science undergraduates Sam
-  Colburn, Gus Coliadis, Will Mohr, and Jhovary Ruiz. This pilot
-  project won \textit{Best Capstone Project} for the undergraduates
-  CSE 758 course.
-\item[Summer 2011] Fowler and Snapp worked with a computer science
-  graduate student, Joo-Kyung Kim, on the content navigator for the
-  interactive textbook. This navigator allowed users to easily
-  navigate through the textbook and interact with its contents.
-\item[Spring 2012] Fowler and Snapp led a team of computer science
-graduate students, Shweta Kulkarni, Sai Prathyusha Peddi, Aditi
-Singhal, and Diego Zaccai, working on a content conversion tool.
-\item[Autumn 2012] Fowler lead MOOCulus, a Massive Open Calculus
-  Course, hosted on the Coursera Platform. Snapp assembled and wrote
-  an open source PDF textbook for the course, and Gupkin created
-  online homework question through the Khan-Academy platform. This
-  course had around 50,000 enrollments the first time it ran.
 \item[Autumn 2013] Clemens, Fowler and Snapp were awarded the NSF
   grant \textit{Interactive Textbook}, DUE-1245433, \$180000.
-\item[Autumn 2013] Fowler lead M2O2C2 (Massively Multivariable Open
-  Online Calculus Course) with Gupkin and Staten. This was the first
-  deployment of the Ximera platform. This course had 10,000
-  enrollments the first time it ran.
-\item[Spring 2014] Ximera Booth at JMM (Joint Mathematics Meetings, a conference with thousands of participants).
-\item[Spring 2014] Snapp wrote prelectures in Ximera for Calculus 1.
-\item[Summer 2014] XW1 (Ximera Workshop 1) was a three day
-  national workshop; held at OSU; Monday, July 28th---July 30th.  Partially funded
-  by the NSF (DUE-1245433), and partially funded by the Shuttleworth foundation, we
-  had around 30 participants.  As a group, we developed the
-  \LaTeX\ syntax, and developed the preliminary backend for
-  deployment. By the end of the workshop, nearly all of the
-  participants had produced online content via Ximera.
-  %% https://docs.google.com/document/d/1XGMX4--Ii20X9fAS7DMB8wj6r6SXRMpb49le9fOGSdk/edit#
-\item[Spring 2015] Ximera Booth at JMM.
-\item[Summer 2015] XW2 was a three day national workshop; held at OSU; Monday, July
-  27th---July 29th.  Funded by the NSF (DUE-1245433), we had around 30
-  participants. As a group, we added more interactivity, including the
-  ability to embed YouTube videos, GeoGebra Interactives.
-  %% https://docs.google.com/document/d/1Y96PulLgrBMaD-HxBMvr5KnAyvuRR469n9GhUbt_pZU/edit#heading=h.raoye5ngrdgk
 \item[Autumn 2015] Calculus 1 is the first Ximera course that
   is completely deployed and integrated in the LMS at OSU.
-\item[Spring 2016] Ximera Booth at JMM.
 \item[Spring 2016] Calculus 2 at is completely deployed and integrated
   into the LMS using Ximera at OSU.
-\item[Summer 2016] XW3 was a three day national workshop; held at OSU;
-  Monday, July 25th---July 27th.  Funded by the NSF (DUE-1245433) and
-  Textbook Affordability Grants, we had around 30 participants. As a
-  group, we added more interactivity including the ability to embed
-  Desmos graphs and we established integration with the Canvas LMS and
-  Ximera assignments. At this point, we had a mature \LaTeX\ document
-  class, backend deployment with Xake, and gradebook integration.
-    %% https://docs.google.com/document/d/1ughwIgEFQF6fY7ADI-FM2KDuD8Nlt1Len6ADg6Z1w5o/edit#
 \item[Summer 2016] University of Florida (UF) officially joins Ximera project and
     commits a full time graduate student to deploying a Ximera server at UF independent of the OSU server.
 \item[Autumn 2016] Calculus 3 is completely deployed and integrated into
   the LMS using Ximera at OSU. At this point, we had a complete calculus sequence.
-\item[Spring 2017] Ximera Booth at JMM.
-\item[Summer 2017] XW4 was a two day national workshop; held at OSU; Monday, June
-  5th---June 6th.  Funded by an ALX grant (Affordable Learning Exchange), we had around 20 participants. Nearly all participants were
-  deploying with Xake, and the answer validator was improved.
-\item[Summer 2017] UF successfully deploys the first fully independent server of Ximera outside of OSU. 
+\item[Summer 2017] UF successfully deploys the first fully independent Ximera server, named Xronos, outside of OSU. 
     The code is updated to make independent server deployment significantly easier for other institutions. 
-\item[Summer 2017] Ximera Project/Server at UF is renamed ``Xronos'' to avoid confusion with OSU server, 
-    but underlying project remains the same and development progress is synced between both projects. 
   \item[Autumn 2017] Business Calculus interactive text is deployed at OSU.
-  \item[Autumn 2017] \textbf{Ximera is saving students at OSU over \$1,000,000 per year in textbook costs.}
-  \item[Spring 2018] Ximera Booth at JMM.
-  \item[Summer 2018] XW5 was a two day national workshop; held at OSU; Monday, July
-  9th---July 10th.  Funded by an ALX grant, we had around 15
-  participants. All participants were deploying with Xake by the end of the workshop.
-  \item[Summer 2018] Several Ximera authors receive funding from the Ohio Open Ed Collaborative (OOEC) to contribute to the state's repository 
-  of open educational resources.
+  \item[Autumn 2017] \textbf{Ximera is saving students at OSU over \$1,000,000 per year in textbook costs.} Initial NSF grant has concluded.
 \item[Autumn 2018] Ximera is used for all sections of Calculus 2 and
   for all sections of Calculus for Engineers at OSU.
-\item[Autumn 2018] XW6 was a two day national workshop; held at UF;
-  Saturday, October 27th---October 28th.  We had around 15
-  participants. All participants were deploying with Xake by the end
-  of the workshop.
- \item[Autumn 2018] XW7 was a one day local workshop; held at CCSC;
-   Thursday, December 13th.  We had around 10 participants. All
-   participants were deploying with Xake by the end of the workshop.
- \item[Autumn 2018] Xronos adopted by UF in Calculus 1  as homework platform integrated with LMS.
- \item[Autumn 2018] Xronos adopted by UF in Calculus 2 as homework platform integrated with LMS.
- \item[Summer 2018] Xronos adopted by UF in College Algebra  as homework integrated with LMS, and as separate etext.
- \item[Spring 2018] Xronos adopted by UF in Precalculus Algebra  as fully interactive online textbook and homework platform integrated with LMS.
- \item[Spring 2019] Ximera Booth at JMM.
- \item[Spring 2019] Xronos adopted by UF in Calculus 3  as homework platform integrated with LMS.
- \item[Spring 2019] XW8 was a one day local workshop; held at OSU;
-   Monday, March 11th.  We had around 10 participants. All
-   participants were deploying with Xake by the end of the workshop.
- \item[Autumn 2020] Xronos adopted by UF in Trigonometry  as homework platform integrated with LMS.
- \item[Autumn 2020] \textbf{Ximera saves students over \$2,000,000 per year in textbook costs at OSU and UF combined.}
- \item[Spring 2020] Ximera Booth at JMM.
- \item[Spring 2021] Xronos adopted by UF in Business Calculus 2  as homework platform integrated with LMS.
- \item[Autumn 2022] Xronos adopted by UF in Business Calculus 1  as fully interactive online textbook and homework platform integrated with LMS.
- \item[Autumn 2022] Precaculus with Review was deployed with Xake.
- \item[Spring 2023] Ximera consortium applied for a Department of Education grant.
- \item[Spring 2024] Ximera consortium awarded a Department of Education grant (2024--2026). The major goals of the grant include: 
+ \item[Autumn 2018] Ximera is used for all sections of College Algebra, Precalculus Algebra, Calculus 1, and Calculus 2 at UF.
+ \item[Spring 2019] Ximera is used for all sections of Calculus 3 at UF.
+\item[Spring 2019] \textbf{Ximera saves students over \$2,000,000 per year in textbook costs at OSU and UF combined.}
+
+ \item[Autumn 2020] Ximera is used for all sections of Trigonometry at UF.
+ \item[Spring 2021] Ximera is used for all sections of Business Calculus 2 at UF.
+ \item[Autumn 2022] Ximera is used for all sections of Business Calculus 1 at UF.
+ \item[Autumn 2022] \textbf{Ximera saves students over \$2,500,000 per year in textbook costs at OSU and UF combined.}
+ \item[Spring 2023] Ximera consortium applied for a Department of Education OTP grant.
+ \item[Spring 2024] Ximera consortium awarded a Department of Education OTP grant P116T230012 (2024--2026). The major goals of the grant include: 
  \begin{itemize}
     \item Development of a new LTI 1.3 connection via Modulus, a novel assignment-grade database. (Proof of concept complete. Production is currently in testing)
     \item An invisible deployment of Ximera content to the web, which will allow authors to deploy without needing to understand the technical details of deployment. (Proof of concept complete. Production is currently in testing)
     \item WCAG 2.1 AA accessibility for all Ximera content. (In development in conjuction with BAWL)
-    \item An ultimate goal of saving students \$4,000,000---\$10,000,000 per year in textbook costs world-wide by the end of the grant. At the end of year 2, we were in that range.
+    \item An ultimate goal of saving students \$4,000,000---\$10,000,000 per year in textbook costs world-wide by the end of the grant. At the end of year 2, we were in that range for student savings.
     \end{itemize}
- \item[Spring 2024] XW9 was an international virtual workshop (Ximera Virtual Workshop 1) held spring of 2024. We had 5 participants. Major accomplishments included: The Ximera document class was submitted to CTAN (a major objective of the OTP grant).
  \item[Autumn 2024] \textbf{Ximera saves students over \$3,500,000 per year in textbook costs world-wide.}
- \item[Autumn 2024] Ximera Booth at MathFest, a conference with thousands of participants.
- \item[Spring 2025] Ximera Booth at JMM.
- \item[Spring 2025] Ximera Booth at the Mathematical Congress of the Americas, a conference with thousands of participants.
- \item[Spring 2025] XW10 was a 3 day in-person national workshop held at OSU; May 12---May 14. We had 30 participants and international speakers via Zoom. 
  \item[Autumn 2025] \textbf{Ximera saves students over \$5,400,000 per year in textbook costs world-wide.}
-\item[Spring 2026] Ximera Booth at JMM.
- \item[Spring 2026] XW11 was a 3 day in-person national workshop held at OSU; May 27---May 29. We had 27 participants and international speakers via Zoom. 
+ \item[Spring 2026] Ximera consortium applied for a Department of Education OTP grant.
 
  \end{description}
 
 
 
 
-\section{Absolute Priority 1: Improving Collaboration and Dissemination}
-% Consortium of >= 3 IHEs beyond informal partners, plus employers,
-% workforce stakeholders, and/or trade or professional associations.
-% Address: (a) reducing cost of college for large numbers of students;
-% (b) aligning learning objectives with skills/knowledge needed by
-% large numbers of students (or industry standards for CTE programs).
-
-In this section, we will describe the Ximera Consortium, our mechanisms for dissemination, and how we meet industry standards for the courses we serve. In particular, we will describe the necessary components of OER materials for large-enrollment courses.
-\subsection{The Consortium}
-
-The Ximera Consortium consists of a core group of formal partner
-institutions, each with an ongoing, named working relationship to the
-project, together with a broader group of institutions that have
-adopted Ximera materials in their courses.
-
-The core consortium includes The Ohio State University (lead
-institution); the University of Florida, where Jason Nowell leads
-front-end development and AI integration work; KU~Leuven (Belgium),
-where Wim Obbels provides DevOps and server infrastructure support; and 
-Lakeland Community College, where Paul Zachlin serves as the project's
-Dissemination Specialist. This satisfies the requirement of no fewer
-than three institutions of higher education with substantial margin. Each core partner has a documented, ongoing collaborative role
-rather than a usage-only relationship.
-
-Beyond this core, Ximera materials are in active use at Coastal
-Carolina University, Columbus State Community College, the City
-University of New York, the University of Hartford, Prairie View
-A\&M University, the University of Connecticut, the University of
-Cincinnati, California State University~Sacramento, and Yale
-University. Together with the core consortium, this brought Ximera
-materials to fourteen institutions and over 45,000 students in 2025
-alone (Table~\ref{tab:enrollment2025}). We will continue to formalize
-relationships with these institutions, including pursuing letters of
-support from department chairs, over the course of this grant.
-
-\subsection{Workforce and Professional Stakeholders}
-
-The mathematics courses that Ximera serves, College Algebra,
-Precalculus, the Calculus sequence, Linear Algebra, Differential Equations, and Statistics, are precisely the high-enrollment
-``gateway'' courses that serve in-demand fields across
-science, technology, engineering, computing, health, and the skilled
-technical workforce. To connect the consortium's work to workforce
-needs, we will engage relevant professional associations as advisory
-stakeholders, including the Mathematical Association of America (MAA),
-the American Mathematical Association of Two-Year Colleges (AMATYC),
-and the Society for Industrial and Applied Mathematics (SIAM). These
-associations, which set disciplinary standards, convene the
-conferences at which we disseminate, and represent faculty across two-
-and four-year institutions, ensure that our materials remain aligned
-with the quantitative skills and competencies that downstream
-employers and degree programs require. Dr.~Paul Zachlin, our
-Dissemination Specialist, is an active member of the MAA, AMATYC, AMS, ILAS, and serves on the Ohio Department of Higher Education Transfer Assurance
-Guide committee, which approves course learning outcomes statewide---a direct
-link between consortium materials, the articulated learning
-outcomes that transfer and workforce pathways depend upon.
-
-During the 2024--2026 grant cycle, the Ximera project established a robust national presence, tracking toward presentations, workshops and booths at a total of ten national/international conferences along with numerous regional presentations by the close of the funding period.
-
-\subsection{Aligning Learning Objectives with Needed Skills} % (b)
-
-Ximera and Modulus allow instructors and institutions to manage their own materials.
-This means that Ximera instructors can align student learning objectives with the
-quantitative skills required across a broad range of degree programs, occupations, and local workforce demands. 
-
-A premier example of this agility is the Statistical Process Control curriculum developed by manufacturing and mathematics faculty from multiple Ohio institutions:
-\begin{center}
-    \url{https://ximera.osu.edu/qcstats/QC_stats}
-\end{center}
-These specialized modules were engineered directly in response to the statewide workforce expansion catalyzed by the Intel Corporation's semiconductor manufacturing investments. 
-
-Ximera materials created at consortium institutions are based on the standard
-learning outcomes for transferable gateway mathematics courses, such as Ohio's
-Transfer Assurance Guidelines, and by the disciplinary associations named
-above. Because the materials are openly licensed and instrumented for
-revision, individual institutions can adapt them to local program
-requirements, for example, emphasizing applications relevant to
-engineering, the life sciences, or business, while preserving the
-shared core. This combination of a common, standards-aligned spine
-with locally adaptable content is what allows a single consortium
-effort to serve large numbers of students whose specific program and
-workforce destinations differ.
-
-\subsection{Collaboration and Dissemination Infrastructure}
-
-Since Ximera uses open licensing and is hosted publicly on GitHub, it naturally functions as a collaborative ecosystem. The use of GitHub allows for version control and collaborative software development, enabling multiple contributors to work on the project simultaneously. This fosters a community of educators and developers who can share resources, provide feedback, and contribute to the ongoing development of Ximera. Moreover, Ximera's \LaTeX\ architecture allows for easy adaptation, remixing, and reuse of content, which is essential for collaboration and dissemination in the educational community.
-
-\paragraph{Modulus: For grade pass-back} For large scale adoption of Ximera at an IHE, we must be able to integrate Ximera activities into its own learning
-management system.
-Modulus, the project's LTI~1.3 assignment-grade
-database, provides that connection. Modulus servers will be publicly hosted and also hosted by IHEs themselves. Modulus is currently on-schedule and is being tested on OSU's test instance of Canvas.
-
-while contributing anonymized usage data back to the
-project. Modulus transforms a collection of independent deployments
-into an observable, coordinated network.
-
-\paragraph{Modulus Atlas}\label{par:modulus-atlas} Discovery is the central bottleneck for any
-open educational ecosystem: valuable materials remain invisible to the
-people who would most benefit from them, and adoption depends on
-personal networks. To solve this, Infonomic will build \emph{Modulus
-Atlas}, an open discovery and dissemination platform that maps the
-full Ximera ecosystem, activities, topics, grade levels, and
-institutions, into a single navigable, searchable directory. Building
-on the installation registry already native to the Modulus
-architecture, the Atlas automatically surfaces and announces newly
-registered activities, including a default, auto-generated discussion
-for each activity that authors may override with their own commentary.
-We will model Modulus Atlas on \emph{Uitwiskeling}
-(\url{https://www.uitwiskeling.be}), a long-running Flemish
-mathematics journal and portal that organizes curated content with
-reader discussion and that is itself an existing Ximera Flash Grant
-partner serving secondary schools across Belgium. Modulus Atlas adapts
-that proven model to the Ximera ecosystem, turning dissemination from
-a periodic, manual effort into an ongoing, largely automatic function
-of the platform.
-
-\paragraph{Interoperability with the broader OER ecosystem} Once
-Ximera activities are fully instrumented in Modulus, we will extend
-discovery and grade-passback interoperability outward to the wider
-open educational resources community, reaching out to PreTeXt
-(\url{https://pretextbook.org/}), STACK
-(\url{https://stack-assessment.org/}), and WeBWorK
-(\url{https://webwork.maa.org/}). Because these projects share open
-standards and serve overlapping audiences, interoperability multiplies
-the reach of consortium materials well beyond our own institutions and
-positions Ximera as a connective layer within the national OER
-landscape rather than an isolated silo.
-
-Together, these mechanisms,
-engagement with disciplinary and workforce-facing associations, a
-shared grade-integration layer, an automated discovery platform, and
-deliberate interoperability with peer OER projects, allow the
-consortium to develop and implement open textbooks that reduce the
-cost of college for large numbers of students while aligning learning
-objectives with the skills those students need.
-
-
-
-\section{Absolute Priority 2: Addressing Gaps in the Open Textbook Marketplace and Bringing Solutions to Scale}
-% Comprehensive plan covering all six elements:
-\subsection{Assessment of Existing Open Educational Resources}   % (a)
-
-Before proposing new development, we assessed the existing open
-textbook marketplace at two levels: the architectural level (how
-content is delivered and how interactivity scales) and the validation
-level (how student responses are checked, relative to industry-leading
-commercial platforms).
-
-\paragraph{Architectural gaps} At the architectural level, the
-current open textbook marketplace shows five recurring gaps: limited
-interactive or dynamic content, with many free and open textbooks
-restricted to static PDFs or web pages; a lack of integrated online
-homework systems, forcing educators who want a free textbook paired
-with free homework to choose one or the other; limited content
-customization, since most online textbooks do not allow an instructor
-to adapt material to their own students; inconsistent ADA compliance
-across the marketplace as a whole, leaving many free and open
-resources inaccessible to some students with disabilities (a gap
-Ximera itself has only recently closed through the accessibility work
-described under Absolute Priority~3); and, most consequentially for
-scale, a near-universal reliance on server-side interactivity.
-Table~\ref{tab:calc-comparison} summarizes this last gap among the
-leading free calculus textbooks.
-
-\begin{table}[h]
-\centering
-\caption{Comparison of Free Calculus Textbooks}
-\label{tab:calc-comparison}
-\begin{tabular}{lccccc}
-\hline
-\textbf{Textbook} & \textbf{Free Text} & \textbf{Dynamic} & \textbf{Free HW} & \textbf{Customizable} & \textbf{Server/Client} \\
-\hline
-Calculus by OpenStax & \checkmark & $\times$ & \checkmark & \checkmark & N/A \\
-APEX Calculus & \checkmark & $\times$ & $\times$ & \checkmark & N/A \\
-Active Calculus & \checkmark & \checkmark & \checkmark & \checkmark & Server Side \\
-Contemporary Calculus & \checkmark & $\times$ & \checkmark & \checkmark & N/A \\
-Community Calculus & \checkmark & $\times$ & \checkmark & \checkmark & N/A \\
-\textbf{Ximera} & \checkmark & \checkmark & \checkmark & \checkmark & \textbf{Client Side} \\
-\hline
-\end{tabular}
-\end{table}
-
-Server-side interactivity requires a central server to mediate every
-student interaction. When the number of students attempting to
-interact with that server grows large, server-side solutions become
-difficult and expensive to scale; Active Calculus, the only one of
-these peer texts to offer dynamic content at all, does so through a
-server-side architecture. Ximera, by contrast, performs all
-interactivity, answer checking, graphing, and feedback on the
-student's own computer (Section~\ref{ss:LaTeX}); the central server's
-role is limited to serving static content. This is why Ximera has been
-able to support MOOCs with tens of thousands of simultaneous
-enrollments and OSU's large coordinated calculus sections without the
-server-capacity problems that constrain server-side competitors. At
-OSU and UF, Ximera-deployed courses already meet or exceed every other
-open resource across all five categories in
-Table~\ref{tab:calc-comparison}; the task this project addresses is
-bringing that same standard to every Ximera course, at every
-consortium institution.
-
-\paragraph{Validation-level gaps} Beyond architecture, we conducted a
-systematic comparison of Ximera's answer-validation and authoring
-capabilities against the leading commercial mathematics homework
-platforms. Here by `validator' we mean a given online homework system's ability to detect a correct answer from an incorrect answer and vice versa. we evaluated each platform: Pearson MyLab Math, McGraw Hill ALEKS, Cengage WebAssign,
-Hawkes Learning, and MyOpenMath/IMathAS. Seven dimensions were analyzed: standard response validation, algebraic and
-functional submissions, graphing, randomization, factored-form
-validation, targeted feedback, and custom-validation authoring.
-
-For ordinary response types, numeric entry, text entry, multiple
-choice, and select-all, the major platforms are broadly comparable,
-and Ximera's support is on par with industry leaders. The more
-consequential differences emerge in mathematically richer territory.
-Ximera's default algebraic validator is unusually robust because its
-equivalence check samples many complex-plane points, motivated by the
-identity theorem, rather than relying only on a small fixed set of
-real-number substitutions.
-
-
-Ximera also offers additional flexibility by exposing an optional
-author-written JavaScript validation pathway as well as one using the open-source computer algebra system SAGE.
-These powerful tools allow Ximera to validate novel mathematical forms that simply would not be possible with other systems.
-
-
-\subsection{Creation and Expansion of Scalable Materials}        % (b)
-
-
-\paragraph{Stitz-Zeager Precalculus conversion} We are currently converting the widely used, free Stitz-Zeager Precalculus text
-into the Ximera document class, this project will complete and
-disseminate a fully interactive version of one of the most widely
-adopted free precalculus textbooks in the country, immediately
-extending Ximera's reach to every institution already using the
-Stitz-Zeager print or PDF edition.
-
-\paragraph{Course-sequence completion} Beyond these targeted gaps, we
-will continue expanding interactive coverage of the high-enrollment
-gateway sequence: College Algebra, Precalculus, the Calculus sequence, Linear Algebra, Differential Equations, and Introductory Statistics,
-prioritizing courses identified by consortium partners as the highest
-barriers to adoption.
-
-\subsection{Review Protocols: Accuracy, Rigor, and Accessibility} % (c)
-
-Authors make errors. However, 
-Because content is hosted on GitHub
-(Section~\ref{ss:gh}), errors are tracked as issues, and can be corrected transparently, with a visible history of
-revision. Flash Grants frequently fund targeted review work, for
-example, reviewing or editing one-third of an existing online course,
-and completed Flash Grant deliverables are checked against their
-proposed scope before stipends are paid.
-
-Accessibility review is conducted by Jeff Kuan of BAWL (Botting
-Accessibility with \LaTeX), the project's accessibility specialist,
-who audits new and existing content for WCAG~2.1 Level~AA compliance,
-maintains the accessibility sections of the Ximera User Manual, and
-consults with Advisory Board member Neil Soiffer of MathCAT on
-mathematical screen-reader compatibility, including alt text and
-authoring metadata. This protocol, developed under the current FIPSE
-award, will continue and expand under this grant, with an explicit
-goal of training consortium authors directly in accessible authoring
-practices so that accessibility review becomes distributed across the
-consortium rather than centralized in a single specialist.
-
-\subsection{Dissemination and Adoption Beyond the Consortium}    % (d)
-
-Dissemination beyond the consortium is addressed primarily through
-\emph{Modulus Atlas} (Section~\ref{par:modulus-atlas}), the discovery
-and dissemination platform described under Absolute Priority~1, which
-automatically surfaces newly registered Ximera activities to the
-public, independent of whether the registering institution is a
-formal consortium member. Modulus Atlas is modeled on Uitwiskeling
-(\url{https://www.uitwiskeling.be}), a Flemish mathematics journal and
-portal that Ximera has already partnered with through a Flash Grant,
-expanding Ximera's reach into Belgian K-12 schools entirely outside
-the consortium's original footprint. This precedent demonstrates that
-dissemination through curated, discoverable publication can drive
-adoption well beyond formal consortium institutions, and Modulus Atlas
-is designed to generalize that pattern automatically and at scale. As
-described under Absolute Priority~1, we will further extend
-interoperability outward to PreTeXt, STACK, and WeBWorK once Ximera
-activities are fully instrumented in Modulus, multiplying reach across
-the broader OER ecosystem rather than limiting dissemination to
-institutions with a direct relationship to the project.
-
-We will also continue established outreach channels: exhibitor booths
-and minicourses at major mathematics meetings (the Joint Mathematics
-Meetings, MAA MathFest, AMATYC, and others), the Ximera Office Hours
-and Virtual Support Desk, and direct outreach by Paul Zachlin, our
-Dissemination Specialist, to identify new conference and institutional
-opportunities throughout the year.
-
-\subsection{Professional Development for Faculty and Staff}      % (e)
-
-The primary vehicle for faculty professional development is the
-annual Ximera Workshop, a multi-day, hands-on training event at which
-new and existing authors deploy live Ximera activities by the end of
-the workshop. Across ten prior workshops, attendance has ranged from
-five (during an international virtual workshop) to thirty
-participants, and outcomes have been consistent: nearly all new
-attendees leave able to author and deploy content independently. We
-will continue to hold at least one Ximera Workshop annually under this
-grant, budgeted at \$20,000 per year in participant support.
-
-Beyond the annual workshop, professional development is sustained
-through monthly Ximera Office Hours and a Virtual Support Desk,
-targeted accessibility training (the current grant's Ximera
-Accessibility Workshop reached approximately fifteen participants),
-and the Flash Grant program itself, which functions as a distributed,
-project-based professional development mechanism: faculty develop new
-skills, such as authoring custom validators, embedding interactive
-elements, or producing print-ready editions, by completing a funded,
-scoped project rather than attending a separate training session.
-Over the current FIPSE award, this mechanism has supported
-approximately 80 awards at a rate of roughly 32 per year; we will
-continue at a comparable scale under this grant.
-
-\subsection{Courses for Which Materials Will Be Developed}       % (f)
-
-Consistent with Absolute Priority~3's emphasis on high-enrollment
-courses, this project will develop and expand interactive materials
-for: College Algebra, Precalculus (including Precalculus with Review
-and the Stitz-Zeager conversion), Trigonometry, the Calculus sequence
-(Calculus~1, 2, and~3, Calculus for Engineers, and Business Calculus
-1~and~2), Linear Algebra, Differential Equations, and introductory
-Statistics. These are the gateway and prerequisite courses identified
-across consortium institutions, from Ohio State and the University of
-Florida to community college and regional university partners, as
-the highest-enrollment, highest-impact targets for cost savings and
-improved outcomes.
-
-\section{Absolute Priority 3: Promoting Student Success}
-% High-enrollment courses/programs; highest level of student savings.
-\subsection{Promoting and Tracking Use; Projected Direct Cost Savings} % (a)
-\subsection{Monitoring Impact on Instruction, Outcomes, and Costs}     % (b)
-\subsection{Evidence-Based Practices and Dissemination}                % (c)
-\subsection{Sustaining and Updating Materials Beyond the Funded Period}% (d)
-
-%% =====================================================================
-%% Selection criteria (34 CFR 75.210) -- 100 points total
-%% =====================================================================
-
-
 \section{Statement of Need}
 
-While open educational resources have demonstrated their potential to reduce costs and improve access, significant barriers remain between the existence of OER and their successful adoption at scale. Many high-quality resources remain difficult to discover, are insufficiently open,  or insufficiently supported for LMS intgeration. At the same time, faculty often lack the time, technical support, and incentives necessary to identify, adapt, and deploy OER effectively.
+% \subsection{Data Demonstrating the Issue, Challenge, or Opportunity} % up to 6
+% \subsection{Nature and Magnitude of Gaps and How the Project Addresses Them} % up to 6
+
+% While open educational resources have demonstrated their potential to reduce costs and improve access, significant barriers remain between the existence of OER and their successful adoption at scale. Many high-quality resources remain difficult to discover, are insufficiently open,  or insufficiently supported for LMS intgeration. At the same time, faculty often lack the time, technical support, and incentives necessary to identify, adapt, and deploy OER effectively.
 
 
-Ximera does a good job of solving the problem above. It uses a language (\LaTeX) that faculty are familier with. Modulus will ensure LMS integration. However, the real issue is that Ximera is truly free and open, we have no way of knowing who uses Ximera unless they directly contact us. Moreover, others have no way of finding our work, unless we publish direct links to it in.
-\textbf{Hence, the challenge is not simply the creation of additional content. It is ensuring that existing and newly developed resources are discoverable, maintainable, reliable, and capable of supporting student success over time. }
-
-
-
-This need is particularly acute in high-enrollment courses, where even modest barriers to adoption can affect thousands of students. To maximize student savings and educational impact, the consortium must provide both high-quality open resources and the infrastructure necessary for their successful dissemination, implementation, and continuous improvement.
-
+% Ximera does a good job of solving the problem above. It uses a language (\LaTeX) that faculty are familier with. Modulus will ensure LMS integration. However, the real issue is that Ximera is truly free and open, we have no way of knowing who uses Ximera unless they directly contact us. Moreover, others have no way of finding our work, unless we publish direct links to it in.
+% \textbf{Hence, the challenge is not simply the creation of additional content. It is ensuring that existing and newly developed resources are discoverable, maintainable, reliable, and capable of supporting student success over time. }
 
 
 
+% This need is particularly acute in high-enrollment courses, where even modest barriers to adoption can affect thousands of students. To maximize student savings and educational impact, the consortium must provide both high-quality open resources and the infrastructure necessary for their successful dissemination, implementation, and continuous improvement.
+
+
+
+\subsection{Data Demonstrating the Issue, Challenge, or Opportunity}
+
+National data confirm that the barrier to open-resource adoption is not the absence of good material, but faculty's ability to find, evaluate, and trust it. In the most recent national faculty survey, conducted in April 2025 with 3,447 respondents across all 50 states, 59\% of higher education faculty reported some awareness of OER, but 30\% remained entirely unaware, and only 33\% used OER as a required course material, the highest rate recorded in the survey's twelve-year history, but still meaning two out of three faculty do not~\cite{bayview2025}. Critically, the same survey's open-ended responses show that awareness alone does not translate to adoption: faculty who are favorably disposed toward OER repeatedly cited the time required to search for and evaluate suitable material as the factor slowing their own rollout~\cite{bayview2025}. This is a discoverability problem, not an awareness or quality problem.
+
+The financial stakes of closing this gap are well established nationally. Students spent an average of \$341 on required course materials in 2024-25~\cite{nacs2025}, a figure that, while declining as free and digital alternatives spread, still represents real, avoidable cost for tens of millions of students enrolled in gateway courses each year. Within mathematics specifically, the architectural gaps already identified in this proposal (Table 3, Section 3.1) show why so few existing free resources close this gap on their own: most free calculus texts lack dynamic content, integrated homework, or content customization, and the one peer text that offers dynamic content does so through a server-side architecture that does not scale to large enrollments.
+
+Ximera has already demonstrated that these gaps are solvable at meaningful scale: 45,706 students at fifteen institutions saved an estimated \$5.48 million in the 2025 calendar year alone (Table 1), and Ximera-supported Calculus I sections recorded an 18\% DFW rate against a national benchmark of 27\% (Section 7). But set against a national faculty population in which two-thirds still do not use OER as required material, this is a small fraction of the addressable need. The opportunity is not to prove that high-quality, interactive, free materials can work, that is established, but to close the gap between their existence and their discovery by the faculty who would use them.
+
+
+A binding federal deadline sharpens this opportunity considerably. Under Title II of the Americans with Disabilities Act, the Department of Justice's 2024 final rule requires every state and local government entity, including every public college and university in the country, more than 1,600 institutions nationally~\cite{nces-public}, to bring its web content and mobile applications into conformance with WCAG 2.1 Level AA~\cite{doj2024final}. Large public entities, a category that includes The Ohio State University and most of this consortium's public partner institutions, must comply by April 26, 2027, following a one-year extension the Department published in April 2026~\cite{doj2026ifr}. Static PDF course materials, the format in which most free and open textbooks are currently distributed, including the architectural gap already identified in Section 3.1, do not meet this standard on their own. Ximera, audited against WCAG 2.1 Level AA from the outset by BAWL (Section 6.9), already does. This converts an existing project strength into a time-bound national need: institutions that must solve this compliance problem before April 2027 anyway can solve it by adopting already-compliant Ximera materials instead of separately remediating their current PDFs.
+
+
+
+\subsection{Nature and Magnitude of Gaps and How the Project Addresses Them}
+
+The national data above point to a three-part funnel failure, and the Ximera project is now positioned, for the first time, to address all three within a single grant period.
+
+\textbf{Faculty are often unaware that suitable material exists.} Even strong, free, interactive materials like Ximera's remain invisible to faculty outside the consortium's existing network unless someone happens to share a direct link. With no link, no awareness; with no awareness, no adoption, regardless of quality.
+
+\textbf{Even aware faculty face a search-and-evaluation cost that suppresses adoption.} This is the barrier faculty themselves identify most often~\cite{bayview2025}, and it is distinct from awareness: a faculty member can know OER exists in general while still lacking an efficient way to find material matched to their specific course, institution type, and student population.
+
+\textbf{Successful adoptions, once they happen, have historically gone uncounted and unsupported.} Because Ximera content requires no sign-up or login, the project has had no reliable way to know who is using it unless an instructor independently reaches out, and no mechanism to pass grades into an institution's LMS without manual, instructor-built workarounds.
+
+Hence, the challenge addressed by this project is not the creation of additional content. It is ensuring that existing and newly developed resources are discoverable, maintainable, reliable, and capable of supporting student success over time.
+
+This project addresses each gap directly. Modulus Atlas (Section 6.2), modeled on the Flemish portal Uitwiskeling, closes the awareness and search-cost gaps by surfacing every registered Ximera activity to instructors with no prior connection to the consortium, automatically and continuously, rather than depending on a faculty member's existing network. Because faculty cite \emph{time}, not skepticism, as the binding constraint~\cite{bayview2025}, Atlas is paired with a direct, one-on-one expert consultation service (Section 4.4) rather than written documentation alone, addressing the barrier at its actual source. Modulus's LTI 1.3 connection (Section 1.2) closes the third gap structurally, giving every adopting institution a path to grade integration and giving the project, for the first time, real usage data rather than self-reported estimates.
+
+This need is particularly acute in high-enrollment gateway courses, where even modest barriers to adoption affect thousands of students per institution per year, and where the national spending and awareness figures above show that most of the addressable population has not yet been reached. To convert Ximera's demonstrated, but still narrow, impact into impact at national scale, the consortium must pair high-quality open resources with the discovery, integration, and support infrastructure this project builds.
 
 \section{Project Design}
 
 The consortium will promote student success through a comprehensive strategy that combines open resource adoption, implementation support, continuous improvement, and long-term sustainability.
 
-\subsection{Flash Grants for Local Adoption and Improvement}
+\subsection{Flash Grants for Local Adoption and Improvement}\label{ss:fg}
 
 To accelerate adoption across consortium institutions, the project will establish a competitive Flash Grant program. Small, rapid-turnaround awards will provide faculty and departments with targeted support to adopt, adapt, or expand the use of Modulus-enabled open educational resources in high-enrollment courses.
 
@@ -1312,37 +886,602 @@ re-scoping or a no-cost extension becomes necessary.
 
 
 
-\criterion{Need for the Project}{12}
-\subsection{Data Demonstrating the Issue, Challenge, or Opportunity} % up to 6
-\subsection{Nature and Magnitude of Gaps and How the Project Addresses Them} % up to 6
+
 
 
 
 \section{Evaluation Plan}
 
 
-\criterion{Quality of the Project Design}{48}
-\subsection{Community Engagement and Continuous Improvement}            % up to 4
-\subsection{Clear, Measurable, Ambitious yet Achievable Goals}          % up to 4
-\subsection{Specific, Measurable Targets and Reliable Administrative Data} % up to 4
-\subsection{Building on Ideas and Efforts from Similar External Projects}  % up to 4
-\subsection{Quality, Intensity, and Duration of Professional Development}  % up to 4
-\subsection{Meaningful Improvements in Student Achievement}             % up to 4
-\subsection{Skills and Competencies for High-Quality Employment}        % up to 4
-\subsection{Efficient Strategies, Technology, and Leveraged Resources}  % up to 4
-\subsection{Capacity to Bring the Project to Scale}                     % up to 10
-\subsection{Mechanisms for Broad Dissemination}                         % up to 6
 
-\criterion{Adequacy of Resources}{12}
-\subsection{Relevance and Commitment of Each Partner}     % up to 6
-\subsection{Institutionalization Beyond Federal Funding}  % up to 6
+Our evaluation plan reuses a data collection and benchmarking
+methodology that has already operated successfully for three years
+under the current FIPSE award (P116T230012), giving us confidence both
+in its feasibility and in our ability to interpret year-over-year
+trends consistently across the two awards.
+ 
+\subsection{Personnel.} Evaluation will be conducted by Elizabeth
+Miller, an Instructional Designer in OSU's Mathematics and Statistics
+Learning Center, and Carolyn Johns, the Center's Interim Director.
+Both have served as the project's evaluators since 2024 and are
+budgeted at a level of effort proportional to the scope of work in
+each year of this grant (Budget Narrative). Their continuity across
+the two awards ensures consistent measurement definitions, survey
+instruments, and data handling from one grant period into the next, a
+key feasibility advantage over standing up a new evaluation function
+from scratch.
+ 
+\subsection{Data collection.} Each semester, Ms.~Miller and
+Dr.~Johns distribute structured surveys to all known Ximera-adopting
+instructors and institutions, collecting enrollment counts, course
+completions, failure/withdrawal rates, instructor counts, and
+section-level adoption data. These survey responses are cross-checked
+against institutional and instructor-level reporting where available,
+and compiled into the project's longitudinal dataset at the end of
+each semester and reported annually.
+ 
+\subsection{External benchmarking.} Rather than relying solely on
+internal targets, our methodology benchmarks Ximera-supported outcomes
+against published, peer-reviewed national data wherever possible. For
+the calculus sequence, we compare DFW (drop/fail/withdraw) rates and
+average final grades against Bressoud et al.'s national study of the
+calculus sequence, \emph{The Calculus Sequence: Catalyzing Change in
+the First Two Years} and related work on the strange role of calculus
+in the United States. Under the current award, this benchmarking
+showed Ximera-supported Calculus~I sections at an 18\% DFW rate
+against a national benchmark of 27\%, and an average GPA of 2.66
+against a national benchmark of 2.52. We will continue this
+externally-anchored comparison rather than relying only on
+internally-defined targets, which strengthens the rigor and relevance
+of our outcome claims.
 
-\criterion{Quality of the Management Plan}{16}
-\subsection{Feasibility: Responsibilities, Timelines, and Milestones} % up to 8
-\subsection{Ensuring High-Quality, Accessible Products and Services}  % up to 8
 
-\criterion{Quality of the Evaluation Plan}{12}
-\subsection{Thorough, Feasible, Relevant, and Appropriate Methods}    % up to 6
+\subsection{Performance measures} Consistent with 34 CFR 75.590, this
+evaluation plan addresses all ten performance measures established by the Department
+for the Open Textbook Pilot Program.
+
+\begin{itemize}
+\item[\textbf{[PM 1]}] The number of students who enrolled in courses that use open textbooks and/or
+ancillary materials developed through the grant.
+\item[\textbf{[PM 2]}] The number of students who completed courses that used open textbooks and/or
+ancillary materials developed through the grant.
+\item[\textbf{[PM 3]}] The failure rate or withdrawal rate in courses that use open textbooks and/or
+ancillary materials compared with equivalent courses that used commercial textbooks.
+\item[\textbf{[PM 4]}] The average grade of students who completed a course that used open textbooks
+and/or ancillary materials developed through the grant compared with the equivalent
+average grade of students who used commercial textbooks.
+\item[\textbf{[PM 5]}] The number of faculty/instructors that use open textbooks and/or ancillary
+materials developed through the grant.
+\item[\textbf{[PM 6]}] The number of institutions within the consortium, and the number of institutions
+outside of the consortium, that adopted the open textbooks and/or ancillary materials
+developed through the grant.
+\item[\textbf{[PM 7]}] The number of courses among consortium members that adopted the open textbooks
+and/or ancillary materials developed through the grant, compared to those that
+continued to use commercial textbooks.
+\item[\textbf{[PM 8]}] The number of faculty/instructors or institutions that use tools for revising and
+remixing open educational resources content to facilitate adoption of open textbooks
+and/or ancillary materials developed through the grant.
+\item[\textbf{[PM 9]}] The average cost savings per student.
+\item[\textbf{[PM 10]}] The total cost savings for students who used open textbooks and/or ancillary
+materials developed through the grant compared to students in the same course of study
+who used traditional textbooks.
+\end{itemize}
+
+
+ 
+\subsection{Baseline data} At the time of writing, the
+Ximera project's documented baseline is around 45,000 students enrolled in
+Ximera-supported courses across fifteen adopting institutions in 2025
+(Table~\ref{tab:enrollment2025}); 320 active faculty/instructors;
+approximately \$5.48 million in annual student savings at \$120 per
+student; an 18\% calculus DFW rate; and 199 of 306 tracked course
+sections (65\%) using Ximera materials among adopting institutions.
+These figures, not zero, are the baseline against which Years~1--4 of
+this grant will be measured, since this proposal extends and scales an
+existing, operating project rather than launching a new one. Year-over
+-year targets for each performance measure are set as a percentage
+increase over this documented baseline, scaled to the rate of growth
+observed over the prior award (Table~\ref{tab:eval-targets}).
+ 
+\begin{table}[h]
+\centering
+\footnotesize
+\caption{Year-by-Year Targets by Performance Measure}
+\label{tab:annual-targets}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Measure} & \textbf{Baseline} & \textbf{Year 1} & \textbf{Year 2} & \textbf{Year 3} & \textbf{Year 4} \\
+\midrule
+Students enrolled (PM 1) & 45,706 & 55,000 & 62,000 & 70,000 & 80,000 \\
+Students completed (PM 2) & 43,961 & 52,800 & 59,500 & 67,200 & 76,000 \\
+Calculus DFW rate (PM 3) & 18\% & $\leq$17\% & $\leq$16.5\% & $\leq$16\% & $\leq$15\% \\
+Avg.\ grade vs.\ nat'l (PM 4) & 2.66 / 2.52 & $\geq$2.60 & $\geq$2.60 & $\geq$2.60 & $\geq$2.60 \\
+Active instructors (PM 5) & 320 & 385 & 435 & 495 & 550 \\
+Adopting institutions (PM 6) & 15 & 18 & 20 & 23 & 25 \\
+Course-section adoption (PM 7) & 65\% & 69\% & 73\% & 76\% & 80\% \\
+Remixing instructors (PM 8) & 88/yr & 90/yr & 93/yr & 96/yr & 100+/yr \\
+Avg.\ savings/student (PM 9) & \$120 & \$120 & \$125 & \$130 & \$120--150 \\
+Total annual savings (PM 10) & \$5.48M & \$6.6M & \$7.8M & \$9.1M & \$9.6--12M \\
+\bottomrule
+\end{tabular}
+\end{table}
+
 \subsection{Analytic Strategy Linking Components, Mediators, and Outcomes} % up to 6
+ 
+ 
+\subsubsection{Logic model} Table~\ref{tab:logic-model} summarizes the
+mediating relationships we will track. Each row identifies a funded
+project component, the mechanism by which it is hypothesized to affect
+outcomes, and the outcome measure(s) it is expected to move.
+ 
+\begin{table}[h]
+\centering
+\caption{Project Components as Mediators of Outcomes}
+\label{tab:logic-model}
+\small
+\begin{tabular}{p{3.2cm}p{5.2cm}p{3.6cm}}
+\hline
+\textbf{Component} & \textbf{Mediating Mechanism} & \textbf{Outcome(s) Affected} \\
+\hline
+GitHub Actions deployment hardening & Reduces author friction and deployment failures, increasing the rate at which new/revised content reaches students & PM4, PM7 (instructors; remixing) \\
+Modulus (LTI 1.3 grade passback) & Removes the institutional adoption barrier of manual gradebook integration, enabling large-course coordinated adoption & PM5, PM6 (institutions; section adoption) \\
+Modulus Atlas & Solves content discoverability, surfacing activities to instructors who are not already personally connected to the consortium & PM1, PM5 (new enrollment; new institutions) \\
+Flash Grants & Funds targeted authoring/remixing work, directly producing new and improved interactive content & PM7, PM8 (remixing; grades) \\
+BAWL accessibility review & Ensures content is usable by students with disabilities, supporting completion among the full enrolled population & PM2, PM3 (completion; DFW rate) \\
+AI-assisted authoring / HaLLMos & Lowers the technical barrier to authoring and personalizes student feedback & PM7, PM8 (remixing; grades) \\
+Dissemination (Zachlin, conferences, workshops) & Recruits new instructors and institutions into the consortium & PM4, PM5 (instructors; institutions) \\
+\hline
+\end{tabular}
+\end{table}
+
+
+
+
+
+\section{Absolute Priority 1: Improving Collaboration and Dissemination}
+% Consortium of >= 3 IHEs beyond informal partners, plus employers,
+% workforce stakeholders, and/or trade or professional associations.
+% Address: (a) reducing cost of college for large numbers of students;
+% (b) aligning learning objectives with skills/knowledge needed by
+% large numbers of students (or industry standards for CTE programs).
+
+In this section, we will describe the Ximera Consortium, our mechanisms for dissemination, and how we meet industry standards for the courses we serve. In particular, we will describe the necessary components of OER materials for large-enrollment courses.
+\subsection{The Consortium}
+
+The Ximera Consortium consists of a core group of formal partner
+institutions, each with an ongoing, named working relationship to the
+project, together with a broader group of institutions that have
+adopted Ximera materials in their courses.
+
+The core consortium includes The Ohio State University (lead
+institution); the University of Florida, where Jason Nowell leads
+front-end development and AI integration work; KU~Leuven (Belgium),
+where Wim Obbels provides DevOps and server infrastructure support; and 
+Lakeland Community College, where Paul Zachlin serves as the project's
+Dissemination Specialist. This satisfies the requirement of no fewer
+than three institutions of higher education with substantial margin. Each core partner has a documented, ongoing collaborative role
+rather than a usage-only relationship.
+
+Beyond this core, Ximera materials are in active use at Coastal
+Carolina University, Columbus State Community College, the City
+University of New York, the University of Hartford, Prairie View
+A\&M University, the University of Connecticut, the University of
+Cincinnati, California State University~Sacramento, and Yale
+University. Together with the core consortium, this brought Ximera
+materials to fourteen institutions and over 45,000 students in 2025
+alone (Table~\ref{tab:enrollment2025}). We will continue to formalize
+relationships with these institutions, including pursuing letters of
+support from department chairs, over the course of this grant.
+
+\subsection{Workforce and Professional Stakeholders}
+
+The mathematics courses that Ximera serves, College Algebra,
+Precalculus, the Calculus sequence, Linear Algebra, Differential Equations, and Statistics, are precisely the high-enrollment
+``gateway'' courses that serve in-demand fields across
+science, technology, engineering, computing, health, and the skilled
+technical workforce. To connect the consortium's work to workforce
+needs, we will engage relevant professional associations as advisory
+stakeholders, including the Mathematical Association of America (MAA),
+the American Mathematical Association of Two-Year Colleges (AMATYC),
+and the Society for Industrial and Applied Mathematics (SIAM). These
+associations, which set disciplinary standards, convene the
+conferences at which we disseminate, and represent faculty across two-
+and four-year institutions, ensure that our materials remain aligned
+with the quantitative skills and competencies that downstream
+employers and degree programs require. Dr.~Paul Zachlin, our
+Dissemination Specialist, is an active member of the MAA, AMATYC, AMS, ILAS, and serves on the Ohio Department of Higher Education Transfer Assurance
+Guide committee, which approves course learning outcomes statewide---a direct
+link between consortium materials, the articulated learning
+outcomes that transfer and workforce pathways depend upon.
+
+During the 2024--2026 grant cycle, the Ximera project established a robust national presence, tracking toward presentations, workshops and booths at a total of ten national/international conferences along with numerous regional presentations by the close of the funding period.
+
+\subsection{Aligning Learning Objectives with Needed Skills} % (b)
+
+Ximera and Modulus allow instructors and institutions to manage their own materials.
+This means that Ximera instructors can align student learning objectives with the
+quantitative skills required across a broad range of degree programs, occupations, and local workforce demands. 
+
+A premier example of this agility is the Statistical Process Control curriculum developed by manufacturing and mathematics faculty from multiple Ohio institutions:
+\begin{center}
+    \url{https://ximera.osu.edu/qcstats/QC_stats}
+\end{center}
+These specialized modules were engineered directly in response to the statewide workforce expansion catalyzed by the Intel Corporation's semiconductor manufacturing investments. 
+
+Ximera materials created at consortium institutions are based on the standard
+learning outcomes for transferable gateway mathematics courses, such as Ohio's
+Transfer Assurance Guidelines, and by the disciplinary associations named
+above. Because the materials are openly licensed and instrumented for
+revision, individual institutions can adapt them to local program
+requirements, for example, emphasizing applications relevant to
+engineering, the life sciences, or business, while preserving the
+shared core. This combination of a common, standards-aligned spine
+with locally adaptable content is what allows a single consortium
+effort to serve large numbers of students whose specific program and
+workforce destinations differ.
+
+\subsection{Collaboration and Dissemination Infrastructure}
+
+Since Ximera uses open licensing and is hosted publicly on GitHub, it naturally functions as a collaborative ecosystem. The use of GitHub allows for version control and collaborative software development, enabling multiple contributors to work on the project simultaneously. This fosters a community of educators and developers who can share resources, provide feedback, and contribute to the ongoing development of Ximera. Moreover, Ximera's \LaTeX\ architecture allows for easy adaptation, remixing, and reuse of content, which is essential for collaboration and dissemination in the educational community.
+
+\subsubsection{Modulus: For grade pass-back} For large scale adoption of Ximera at an IHE, we must be able to integrate Ximera activities into its own learning
+management system.
+Modulus, the project's LTI~1.3 assignment-grade
+database, provides that connection. Modulus servers will be publicly hosted and also hosted by IHEs themselves. Modulus is currently on-schedule and is being tested on OSU's test instance of Canvas.
+
+while contributing anonymized usage data back to the
+project. Modulus transforms a collection of independent deployments
+into an observable, coordinated network.
+
+\subsubsection{Modulus Atlas}\label{par:modulus-atlas} Discovery is the central bottleneck for any
+open educational ecosystem: valuable materials remain invisible to the
+people who would most benefit from them, and adoption depends on
+personal networks. To solve this, Infonomic will build \emph{Modulus
+Atlas}, an open discovery and dissemination platform that maps the
+full Ximera ecosystem, activities, topics, grade levels, and
+institutions, into a single navigable, searchable directory. Building
+on the installation registry already native to the Modulus
+architecture, the Atlas automatically surfaces and announces newly
+registered activities, including a default, auto-generated discussion
+for each activity that authors may override with their own commentary.
+We will model Modulus Atlas on \emph{Uitwiskeling}
+(\url{https://www.uitwiskeling.be}), a long-running Flemish
+mathematics journal and portal that organizes curated content with
+reader discussion and that is itself an existing Ximera Flash Grant
+partner serving secondary schools across Belgium. Modulus Atlas adapts
+that proven model to the Ximera ecosystem, turning dissemination from
+a periodic, manual effort into an ongoing, largely automatic function
+of the platform.
+
+\subsubsection{Interoperability with the broader OER ecosystem} Once
+Ximera activities are fully instrumented in Modulus, we will extend
+discovery and grade-passback interoperability outward to the wider
+open educational resources community, reaching out to PreTeXt
+(\url{https://pretextbook.org/}), STACK
+(\url{https://stack-assessment.org/}), and WeBWorK
+(\url{https://webwork.maa.org/}). Because these projects share open
+standards and serve overlapping audiences, interoperability multiplies
+the reach of consortium materials well beyond our own institutions and
+positions Ximera as a connective layer within the national OER
+landscape rather than an isolated silo.
+
+Together, these mechanisms,
+engagement with disciplinary and workforce-facing associations, a
+shared grade-integration layer, an automated discovery platform, and
+deliberate interoperability with peer OER projects, allow the
+consortium to develop and implement open textbooks that reduce the
+cost of college for large numbers of students while aligning learning
+objectives with the skills those students need.
+
+
+
+\section{Absolute Priority 2: Addressing Gaps in the Open Textbook Marketplace and Bringing Solutions to Scale}
+% Comprehensive plan covering all six elements:
+\subsection{Assessment of Existing Open Educational Resources}   % (a)
+
+Before proposing new development, we assessed the existing open
+textbook marketplace at two levels: the architectural level (how
+content is delivered and how interactivity scales) and the validation
+level (how student responses are checked, relative to industry-leading
+commercial platforms).
+
+\subsubsection{Architectural gaps} At the architectural level, the
+current open textbook marketplace shows five recurring gaps: limited
+interactive or dynamic content, with many free and open textbooks
+restricted to static PDFs or web pages; a lack of integrated online
+homework systems, forcing educators who want a free textbook paired
+with free homework to choose one or the other; limited content
+customization, since most online textbooks do not allow an instructor
+to adapt material to their own students; inconsistent ADA compliance
+across the marketplace as a whole, leaving many free and open
+resources inaccessible to some students with disabilities (a gap
+Ximera itself has only recently closed through the accessibility work
+described under Absolute Priority~3); and, most consequentially for
+scale, a near-universal reliance on server-side interactivity.
+Table~\ref{tab:calc-comparison} summarizes this last gap among the
+leading free calculus textbooks.
+
+\begin{table}[h]
+\centering
+\caption{Comparison of Free Calculus Textbooks}
+\label{tab:calc-comparison}
+\begin{tabular}{lccccc}
+\hline
+\textbf{Textbook} & \textbf{Free Text} & \textbf{Dynamic} & \textbf{Free HW} & \textbf{Server/Client} \\
+\hline
+Calculus by OpenStax & \checkmark & $\times$ & \checkmark & N/A \\
+APEX Calculus & \checkmark & $\times$ & $\times$ & N/A \\
+Active Calculus & \checkmark & \checkmark & \checkmark &  Server Side \\
+Contemporary Calculus & \checkmark & $\times$ & \checkmark & N/A \\
+Community Calculus & \checkmark & $\times$ & \checkmark & N/A \\
+Ximera & \checkmark & \checkmark & \checkmark &  Client Side \\
+\hline
+\end{tabular}
+\end{table}
+
+Server-side interactivity requires a central server to mediate every
+student interaction. When the number of students attempting to
+interact with that server grows large, server-side solutions become
+difficult and expensive to scale; Active Calculus, the only one of
+these peer texts to offer dynamic content at all, does so through a
+server-side architecture. Ximera, by contrast, performs all
+interactivity, answer checking, graphing, and feedback on the
+student's own computer (Section~\ref{ss:LaTeX}); the central server's
+role is limited to serving static content. This is why Ximera has been
+able to support MOOCs with tens of thousands of simultaneous
+enrollments and OSU's large coordinated calculus sections without the
+server-capacity problems that constrain server-side competitors. At
+OSU and UF, Ximera-deployed courses already meet or exceed every other
+open resource across all five categories in
+Table~\ref{tab:calc-comparison}; the task this project addresses is
+bringing that same standard to every Ximera course, at every
+consortium institution.
+
+
+\subsubsection{Ximera is Client Side}
+
+All of the
+interactivity provided by Ximera happens on the student's
+computer. This means we can serve a much higher volume of students
+than our competitors that have server side interaction. We demonstrate
+our ability to handle large volumes of students with our experience
+with MOOCs and OSU's large calculus classes. Server side solutions
+cannot provide the same experience when there are tens-of-thousands of
+students. (See Figure \ref{F:server})
+
+ \begin{figure}
+  \centering
+  \includegraphics[width=.8\textwidth]{server.png}
+  \caption{Client side interactivity allows Ximera to serve a large number of students.}
+  \label{F:server}
+\end{figure}
+
+
+\subsubsection{Answer Verification and Computer Algebra System}
+
+\textit{Math-expressions} is a JavaScript library that can be used for parsing and working with mathematical expressions. 
+In theory (and in
+practice), a computer algebra system cannot always validate correct
+answers as correct, and incorrect answers as incorrect.  This is due to Richardson's theorem which states that 
+equality is undecidable between certain types of functions. \cite{richardson}. 
+A popular validation technique is to check for equality at random \textit{real} points
+\cite{fisher}. This and some additional techniques are summarized by Chris Sangwin \cite{sangwin}.
+
+In contrast, math-expressions uses complex numbers to validate
+answers (see Figure \ref{F:validator}). This seems to work quite well.  One metric is the STACK
+project \cite{stack}, which has produced a wide variety of pairs of
+expressions which should be adjudicated as equal, and pairs which
+should be adjudicated as different.  These form the basis for unit
+tests of math-expressions.  Out of more than five thousand test cases,
+math-expressions fails on just a handful.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=.8\textwidth]{answerValidator.png}
+  \caption{Different versions of the correct answer are accepted as correct.}
+  \label{F:validator}
+\end{figure}
+
+\subsubsection{Validation-level gaps} Beyond architecture, we conducted a
+systematic comparison of Ximera's answer-validation and authoring
+capabilities against the leading commercial mathematics homework
+platforms. Here by `validator' we mean a given online homework system's ability to detect a correct answer from an incorrect answer and vice versa. we evaluated each platform: Pearson MyLab Math, McGraw Hill ALEKS, Cengage WebAssign,
+Hawkes Learning, and MyOpenMath/IMathAS. Seven dimensions were analyzed: standard response validation, algebraic and
+functional submissions, graphing, randomization, factored-form
+validation, targeted feedback, and custom-validation authoring.
+
+For ordinary response types, numeric entry, text entry, multiple
+choice, and select-all, the major platforms are broadly comparable,
+and Ximera's support is on par with industry leaders. The more
+consequential differences emerge in mathematically richer territory.
+Ximera's default algebraic validator is unusually robust because its
+equivalence check samples many complex-plane points, motivated by the
+identity theorem, rather than relying only on a small fixed set of
+real-number substitutions.
+
+
+Ximera also offers additional flexibility by exposing an optional
+author-written JavaScript validation pathway as well as one using the open-source computer algebra system SAGE.
+These powerful tools allow Ximera to validate novel mathematical forms that simply would not be possible with other systems.
+
+
+\subsection{Creation and Expansion of Scalable Materials}        % (b)
+
+
+
+
+\subsubsection{Stitz-Zeager Precalculus conversion} We are currently converting the widely used, free Stitz-Zeager Precalculus text into the Ximera document class. This project will complete and disseminate a fully interactive, WCAG 2.1 AA-compliant version of one of the most widely adopted free precalculus textbooks in the country, immediately extending Ximera's reach to every institution already using the Stitz-Zeager print or PDF edition. This conversion has acquired new urgency since the work began: every public institution currently assigning Stitz-Zeager in its existing PDF format now faces an April 26, 2027 federal deadline to bring that material into WCAG 2.1 Level AA compliance, a standard the original PDF was not built to meet. Completing the Ximera conversion on its scheduled autumn 2026 timeline gives every public institution currently using Stitz-Zeager a compliant, drop-in replacement nearly a full academic year before the deadline takes effect, at no cost and without a separate accessibility remediation project of their own.
+
+
+
+\subsubsection{Course-sequence completion} Beyond these targeted gaps, we
+will continue expanding interactive coverage of the high-enrollment
+gateway sequence: College Algebra, Precalculus, the Calculus sequence, Linear Algebra, Differential Equations, and Introductory Statistics,
+prioritizing courses identified by consortium partners as the highest
+barriers to adoption.
+
+\subsection{Review Protocols: Accuracy, Rigor, and Accessibility} % (c)
+
+Authors make errors. However, 
+Because content is hosted on GitHub
+(Section~\ref{ss:gh}), errors are tracked as issues, and can be corrected transparently, with a visible history of
+revision. Flash Grants frequently fund targeted review work, for
+example, reviewing or editing one-third of an existing online course,
+and completed Flash Grant deliverables are checked against their
+proposed scope before stipends are paid.
+
+Accessibility review is conducted by Jeff Kuan of BAWL (Botting
+Accessibility with \LaTeX), the project's accessibility specialist,
+who audits new and existing content for WCAG~2.1 Level~AA compliance,
+maintains the accessibility sections of the Ximera User Manual, and
+consults with Advisory Board member Neil Soiffer of MathCAT on
+mathematical screen-reader compatibility, including alt text and
+authoring metadata. This protocol, developed under the current FIPSE
+award, will continue and expand under this grant, with an explicit
+goal of training consortium authors directly in accessible authoring
+practices so that accessibility review becomes distributed across the
+consortium rather than centralized in a single specialist.
+
+\subsection{Dissemination and Adoption Beyond the Consortium}    % (d)
+
+Dissemination beyond the consortium is addressed primarily through
+\emph{Modulus Atlas} (Section~\ref{par:modulus-atlas}), the discovery
+and dissemination platform described under Absolute Priority~1, which
+automatically surfaces newly registered Ximera activities to the
+public, independent of whether the registering institution is a
+formal consortium member. Modulus Atlas is modeled on Uitwiskeling
+(\url{https://www.uitwiskeling.be}), a Flemish mathematics journal and
+portal that Ximera has already partnered with through a Flash Grant,
+expanding Ximera's reach into Belgian K-12 schools entirely outside
+the consortium's original footprint. This precedent demonstrates that
+dissemination through curated, discoverable publication can drive
+adoption well beyond formal consortium institutions, and Modulus Atlas
+is designed to generalize that pattern automatically and at scale. As
+described under Absolute Priority~1, we will further extend
+interoperability outward to PreTeXt, STACK, and WeBWorK once Ximera
+activities are fully instrumented in Modulus, multiplying reach across
+the broader OER ecosystem rather than limiting dissemination to
+institutions with a direct relationship to the project.
+
+We will also continue established outreach channels: exhibitor booths
+and minicourses at major mathematics meetings (the Joint Mathematics
+Meetings, MAA MathFest, AMATYC, and others), the Ximera Office Hours
+and Virtual Support Desk, and direct outreach by Paul Zachlin, our
+Dissemination Specialist, to identify new conference and institutional
+opportunities throughout the year.
+
+\subsection{Professional Development for Faculty and Staff}      % (e)
+
+The primary vehicle for faculty professional development is the
+annual Ximera Workshop, a multi-day, hands-on training event at which
+new and existing authors deploy live Ximera activities by the end of
+the workshop. Across ten prior workshops, attendance has ranged from
+five (during an international virtual workshop) to thirty
+participants, and outcomes have been consistent: nearly all new
+attendees leave able to author and deploy content independently. We
+will continue to hold at least one Ximera Workshop annually under this
+grant, budgeted at \$20,000 per year in participant support.
+
+Beyond the annual workshop, professional development is sustained
+through monthly Ximera Office Hours and a Virtual Support Desk,
+targeted accessibility training (the current grant's Ximera
+Accessibility Workshop reached approximately fifteen participants),
+and the Flash Grant program itself, which functions as a distributed,
+project-based professional development mechanism: faculty develop new
+skills, such as authoring custom validators, embedding interactive
+elements, or producing print-ready editions, by completing a funded,
+scoped project rather than attending a separate training session.
+Over the current FIPSE award, this mechanism has supported
+approximately 80 awards at a rate of roughly 32 per year; we will
+continue at a comparable scale under this grant.
+
+\subsection{Courses for Which Materials Will Be Developed}       % (f)
+
+Consistent with Absolute Priority~3's emphasis on high-enrollment
+courses, this project will develop and expand interactive materials
+for: College Algebra, Precalculus (including Precalculus with Review
+and the Stitz-Zeager conversion), Trigonometry, the Calculus sequence
+(Calculus~1, 2, and~3, Calculus for Engineers, and Business Calculus
+1~and~2), Linear Algebra, Differential Equations, and introductory
+Statistics. These are the gateway and prerequisite courses identified
+across consortium institutions, from Ohio State and the University of
+Florida to community college and regional university partners, as
+the highest-enrollment, highest-impact targets for cost savings and
+improved outcomes.
+
+\section{Absolute Priority 3: Promoting Student Success}
+% High-enrollment courses/programs; highest level of student savings.
+\subsection{Promoting and Tracking Use; Projected Direct Cost Savings} % (a)
+
+
+\subsubsection{Promoting Use} Flash Grants (Section~\ref{ss:fg}) fund the creation and improvement of activities; Modulus Atlas (Section 6.10) makes those activities discoverable to instructors with no prior connection to the consortium; and Paul Zachlin's direct outreach (Section~\ref{ss:fg}) converts that visibility into adoption. Atlas surfaces what Flash Grants produce, and dissemination carries it the rest of the way.
+
+Tracking use relies on two data streams. The first, semester surveys administered by Elizabeth Miller and Carolyn Johns and cross-checked against institutional reporting, has operated successfully since 2024 (Section 7). The second is new to this grant period: once Modulus is fully deployed, anonymized, activity-level usage data exported directly from the Modulus database (Section 6.10) will let us observe actual student engagement and completion, rather than depending entirely on instructor self-report, for any institution using the LTI 1.3 connection.
+
+Projected direct cost savings follow the same conservative, known-enrollment-only methodology used to establish our baseline (Table 1, Section 7), valuing each avoided textbook purchase at $120. Applied to the Year 1–4 targets in Table 4, this methodology projects total annual student savings growing from a $5.48 million baseline to between $9.6 and $12 million by Year 4. We report this conservative figure, rather than an extrapolated one, because it remains defensible under external scrutiny; actual savings, which include enrollments we are not independently aware of, are very likely higher.
+
+
+
+
+
+
+\subsection{Monitoring Impact on Instruction, Outcomes, and Costs}     % (b)
+Instructional impact is monitored at two levels, mirroring the activity-score and course-score distinction built into Modulus (Section 1.2). Activity-level data gives instructors and the project team granular visibility into which assignments are being used and how effectively; course-level data, computed by the same formula instructors use for final grades, supports our headline outcome measures (PM3, PM4).
+Outcomes are evaluated against an external, peer-reviewed benchmark rather than an internally defined target, as described in Section 7: DFW rates and average grades in Ximera-supported sections are compared annually to Bressoud et al.'s published national calculus data. This benchmarking will expand to additional gateway courses, Precalculus and Linear Algebra, as comparable national data becomes available, giving us a year-over-year picture of whether Ximera-supported instruction is keeping pace with national trends, not only whether our own numbers are rising.
+
+
+
+Costs are monitored through the same survey and usage data described in Section 4.1. We additionally track a measure not previously reported under the current award: the marginal cost of supporting each newly adopting institution, calculated as Flash Grant and Dissemination Specialist effort divided by new institutions onboarded that year. As Modulus Atlas matures into a self-service discovery channel, we expect this marginal cost to decline, a trend we will report annually as evidence that the dissemination model scales sublinearly with adoption.
+
+\subsection{Evidence-Based Practices and Dissemination}                % (c)
+
+Identifying evidence-based practices. Findings from the monitoring in Section ??, which activities, course designs, and implementation patterns correlate with lower DFW rates, higher remixing activity, or faster instructor onboarding, are reviewed by Snapp, Fowler, and the evaluation team at the quarterly check-ins described in the Management Plan (Section ??). Well-supported patterns are documented as discrete, reusable practices rather than left embedded in a single institution's implementation.
+Disseminating those practices happens through three channels operating in parallel. Modulus Atlas (Section 6.2) hosts documentation, implementation guides, and case studies alongside the activities they describe, so discovering an activity also surfaces the evidence for using it well. The annual Ximera Workshop and monthly Office Hours (Section ??) translate documented practices into hands-on training, sharing the explicit goal, also seen in Section 6.9, of moving expertise outward into the consortium rather than concentrating it with the core team. Zachlin's conference presentations (Section 6.6) and the project's publication record (Section 1.5) carry findings to the broader mathematics education community beyond current Ximera users.
+Closing the loop. Because Atlas, professional development, and dissemination draw on the same evidence base, a practice identified at one institution can reach the full consortium, and the public, within a single grant year, rather than spreading informally over several years as it has under earlier, less-instrumented phases of the project.
+
+
+
+\subsection{Sustaining and Updating Materials Beyond the Funded Period}% (d)
+Open access to content is permanent and does not depend on this grant. All Ximera materials are released under CC BY-SA (Section 1.4) and hosted on public GitHub repositories. Nothing below changes this; the question this section addresses is how the people and infrastructure that keep content current and discoverable, the roles funded under Sections 6.6–6.10, continue once federal funding ends in Year 4.
+Modeled on Uitwiskeling, with one-on-one consultation as the first choice. Our model for Modulus Atlas, Uitwiskeling (Section 2.4), sustains a small, dedicated staff through reader subscriptions rather than by charging for access to mathematics itself; we adopt that same principle, with the activities Atlas indexes remaining free and the project instead monetizing a service layered on top of discovery. Our primary service is direct, one-on-one access to expertise: once Atlas is surfacing Ximera activities publicly, an instructor or department will be able to discover an activity for free, then opt into a paid subscription connecting them with a project-affiliated author or experienced instructor for direct consultation on implementing that specific activity in their own classroom.
+
+We prioritize one-on-one consultation for three reasons grounded elsewhere in this narrative. First, it draws on a resource the project has already built and validated: a deep bench of Flash-Grant-funded authors and instructors trained across ten prior Ximera Workshops (Section 3.5), who have collectively completed roughly 80 funded projects (Section 6.8). Second, it addresses the actual adoption barrier identified in our Statement of Need (Section 5), faculty time and confidence, rather than a lack of written material; the Ximera User Manual and Best Practices Guide (Section 6.9) already cover the latter at no cost. Third, it preserves the direct, personal relationship between authors and adopting instructors that has driven Ximera's organic growth from two institutions to fifteen over the past decade (Section 2.1), rather than substituting a written product for it.
+Pedagogical companion materials, as a secondary, scaling mechanism. As one-on-one consultations accumulate, recurring questions and implementation patterns will be documented and offered as optional, lower-cost written companion materials, teaching notes, common-misconception guides, suggested pacing, in the spirit of Uitwiskeling's own "Under the Magnifying Glass" column. This tier exists to scale the value of consultations already taking place, not to replace them, and will only be developed for a given activity once consultation volume justifies it.
+
+Managed Modulus hosting (fallback, equity-safeguarded). Because Modulus is licensed AGPL (Section 1.4), any institution may self-host a Modulus server at no cost in perpetuity; this is a structural commitment, not a transitional one. A lower-priority option under consideration is a fee for a centrally hosted, fully managed instance, for institutions that prefer not to run their own server, an "open core" pattern common among open-source infrastructure projects. We treat this option cautiously and would only pursue it with built-in fee waivers for under-resourced and minority-serving institutions, preserving the equity gains documented under Performance Measure 6.
+
+Governance and timeline. Snapp and Fowler will explore appropriate organizational structures, including fiscal sponsorship or formal nonprofit status, for administering the consultation subscription. We will pilot it in Year 2 alongside the existing Atlas/Uitwiskeling pilot (Section 6.10), introduce companion materials opportunistically as consultation volume warrants, and report uptake and revenue in the APR alongside the other Section 6.10 milestones, with the goal of a piloted, evaluated sustainability model in place by Year 4.
+%% =====================================================================
+%% Selection criteria (34 CFR 75.210) -- 100 points total
+%% =====================================================================
+
+
+
+\printbibliography
+
+
+% \criterion{Quality of the Project Design}{48}
+% \subsection{Community Engagement and Continuous Improvement}            % up to 4
+% \subsection{Clear, Measurable, Ambitious yet Achievable Goals}          % up to 4
+% \subsection{Specific, Measurable Targets and Reliable Administrative Data} % up to 4
+% \subsection{Building on Ideas and Efforts from Similar External Projects}  % up to 4
+% \subsection{Quality, Intensity, and Duration of Professional Development}  % up to 4
+% \subsection{Meaningful Improvements in Student Achievement}             % up to 4
+% \subsection{Skills and Competencies for High-Quality Employment}        % up to 4
+% \subsection{Efficient Strategies, Technology, and Leveraged Resources}  % up to 4
+% \subsection{Capacity to Bring the Project to Scale}                     % up to 10
+% \subsection{Mechanisms for Broad Dissemination}                         % up to 6
+
+% \criterion{Adequacy of Resources}{12}
+% \subsection{Relevance and Commitment of Each Partner}     % up to 6
+% \subsection{Institutionalization Beyond Federal Funding}  % up to 6
+
+% \criterion{Quality of the Management Plan}{16}
+% \subsection{Feasibility: Responsibilities, Timelines, and Milestones} % up to 8
+% \subsection{Ensuring High-Quality, Accessible Products and Services}  % up to 8
+
+% \criterion{Quality of the Evaluation Plan}{12}
+% \subsection{Thorough, Feasible, Relevant, and Appropriate Methods}    % up to 6
+% \subsection{Analytic Strategy Linking Components, Mediators, and Outcomes} % up to 6
 
 \end{document}
