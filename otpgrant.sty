@@ -17,6 +17,9 @@
   \RequirePackage{mathptmx}%
 }
 
+\usepackage[backend=biber, style=numeric]{biblatex}
+\addbibresource{references.bib}
+
 \RequirePackage{setspace}      % \doublespacing / \singlespacing per document
 \RequirePackage[hidelinks]{hyperref} % internal links, no colored boxes in print
 
@@ -31,7 +34,7 @@
 
 \tikzstyle{output}=[outer sep=2pt,thick,trapezium, draw, text centered, trapezium left angle=60, trapezium right angle=120, minimum height=2em]
 \tikzstyle{connector} = [draw, black!50!white,ultra thick, -stealth]
-\RequirePackage{booktabs}
+% \RequirePackage{booktabs}
 \RequirePackage{array}
 \RequirePackage{longtable}       % for better tables; load after geometry to avoid conflicts
 
