@@ -37,7 +37,9 @@ Ximera, pronounced ``chimera,'' (\textbf{X}imera:
 \textbf{R}esources, for \textbf{A}ll) is an open-source platform that
 provides tools for authoring and publishing (PDF and Online),
 open-source, interactive educational content, such as
-textbooks, assessments, and online courses. Ximera serves tens of thousands of students annually, has generated annual savings of more than \$5 million, supports a growing community of authors and instructors, and Ximera servers attract  millions of visitors worldwide.   \textbf{The ultimate goal of this project is to promote sustained student success and savings.} The Ximera project depends on four essential parts:
+textbooks, assessments, and online courses. Ximera serves tens of thousands of students annually, has generated annual savings of more than \$5 million, supports a growing community of authors and instructors, and Ximera servers attract  millions of visitors worldwide.   \textbf{The ultimate goal of this project is to promote sustained student success and savings.} 
+
+The Ximera project depends on four essential parts:
 \begin{enumerate}
   \item Authoring: Needs to be easy and promote collaboration/remixing.
   \item Content Deployment: Needs to be robust and invisible to the author.
@@ -54,22 +56,26 @@ The Ximera Project is funded 2024--2026 (with no other external funding) by a \$
 % \subsubsection{}
 % The Ximera platform has three basic types of users: students, instructors, and authors. We will discuss each in turn below.
 
+\subsubsection*{Ximera Users}
+The Ximera platform has four basic types of users: students, institutions, instructors, and authors. We will discuss each in turn below.
 
 
 \subsection{Students}
-Students interact with the \textit{content} produced within
-Ximera, hence their experience is highly dependent on the \textit{quality} of this
-content. However there are common themes that we will discuss below.
-    
-\subsubsection{Ximera Content is Open and Free} Ximera materials require no purchase, sign-up, or subscription and are available to anyone in the world.  Complete textbooks are currently available for Precalculus, Calculus I, II and III, Linear Algebra, and Differential Equations. In addition, activities and supplementary materials exist for Introductory Statistics, College Algebra and other courses.
-Students can access Ximera materials without
-signing up or logging in. As an example, anyone can see and use the content
+% Students interact with the \textit{content} produced within
+% Ximera, hence their experience is highly dependent on the \textit{quality} of this
+% content. 
+   
+\subsubsection{Ximera Content is Open and Free} Ximera materials require no purchase, sign-up, or subscription and are available to anyone in the world.  As an example, anyone can see and use the content
 hosted at
 \begin{center}
   \url{https://ximera.osu.edu/mooculus}
 \end{center}
 This means that students who seek information, even if they are not
-enrolled in a Ximera course, can find Ximera materials via a search engine and access content immediately. \textbf{In 2025, Ximera servers had recorded millions of
+enrolled in a Ximera course, can find Ximera materials via a search engine and access content immediately. 
+
+Complete textbooks are currently available for Precalculus, Calculus I, II and III, Linear Algebra, and Differential Equations. In addition, activities and supplementary materials exist for Introductory Statistics, College Algebra and other courses.
+
+\textbf{In 2025, Ximera servers had recorded millions of
     unique visitors.} 
     
 \subsubsection{Ximera is Interactive} Higher levels of student engagement lead to better learning
@@ -182,7 +188,7 @@ Institutions have their own needs. We address these.
 
 Large educational institutions use Learning Management Systems (LMS) to manage their grades. Canvas and Blackboard are examples of LMSs. To transfer grades, one needs a Learning Tools Interoperability (LTI) link. LTI is a standard protocol that allows different learning applications to communicate and work together. One of the outcomes of our current work is the development of a new LTI~1.3 connection via Modulus, a novel assignment-grade database. This new connection provides a seamless and efficient experience for both instructors and students.
 
-Modulus is being developed by Infonomic under the direction of Snapp and Fowler. At the time of this writing, it is being tested in one of OSU's Canvas installation. Modulus will allow instructors to easily create and manage Ximera assignments within their LMS, while also providing a centralized database for tracking student progress and performance. This integration will enable instructors to access detailed analytics and insights about student engagement and learning outcomes, ultimately supporting the goal of promoting sustained student success (See Figure \ref{F:modulus}). Modulus will also provide alternatives for
+Modulus is being developed by Infonomic under the direction of Snapp and Fowler. At the time of this writing, it is being tested in one of OSU's Canvas installations. Modulus will allow instructors to easily create and manage Ximera assignments within their LMS, while also providing a centralized database for tracking student progress and performance. This integration will enable instructors to access detailed analytics and insights about student engagement and learning outcomes, ultimately supporting the goal of promoting sustained student success (See Figure \ref{F:modulus}). Modulus will also provide alternatives for
     self-learners
     and situations where LTI 1.3 support is not available.
     
@@ -263,7 +269,7 @@ course. The PDFs produced allow incremental development of the
 materials while still being used and tested in the classroom. 
 
 \subsubsection{Online Materials without LMS Integration}
-At other institutions using Ximera, instructors can use Ximera
+At institutions where Ximera is not currently integrated with the LMS, instructors can use Ximera
 materials, and have their students complete various Ximera
 assignments. However, data access is prohibitively difficult for most
 instructors in this category; Modulus solves this issue.
@@ -275,9 +281,9 @@ assignments directly integrated into the Learning Management System
 (LMS). For these instructors, Ximera works seamlessly and invisibly.
 
 
+\paragraph{}
 
-
-As Ximera authors create more materials with interactive features in mind, instructors increasingly have options to incorporate discussions, group work, labs, and other forms of interactive learning into their classrooms. For example, the Differential Equations text utilizes spreadsheet labs that include embedded videos and links to sample spreadsheets; Linear Algebra includes many geometric explorations and links to online coding exercises, while Precalculus by Stitz and Zeager, currently being converted to Ximera, boasts connections between the concrete and the abstract that can be used for classroom discussion or to encourage independent reading  (See Figure \ref{F:llama}).
+As Ximera authors create more materials with interactive features in mind, instructors increasingly have options to incorporate discussions, group work, labs, and other forms of interactive learning into their classrooms. For example, the Differential Equations text utilizes spreadsheet labs that include embedded videos and links to sample spreadsheets; Linear Algebra includes many geometric explorations and links to online coding exercises; Precalculus by Stitz and Zeager, currently being converted to Ximera, boasts connections between the concrete and the abstract that can be used for classroom discussion or to encourage independent reading  (See Figure \ref{F:llama}).
 
 \begin{figure}
   \centering
@@ -290,7 +296,7 @@ As Ximera authors create more materials with interactive features in mind, instr
 
 \subsection{Authors}
 
-Authors are the primary users of Ximera, and most of our design decisions have been made to aid authors.
+%Authors are the primary users of Ximera, and most of our design decisions have been made to aid authors.
 
 
 \subsubsection{Familiar Writing Tools}
@@ -304,7 +310,9 @@ mathematics and other STEM fields. For example, the preprint server
 arXiv hosts more than 2 million papers, nearly all of which were
 authored in \LaTeX. This narrative was authored in \LaTeX. As a result, many potential authors already have
 course materials written in \LaTeX, making it a natural authoring
-environment for STEM content. In May 2024, the platform achieved a critical scaling milestone by publishing the \texttt{ximera} document class to the Comprehensive \TeX{} Archive Network (CTAN). Now natively bundled within standard global distributions like \TeX{} Live and MiK\TeX{}, any educator worldwide can instantly begin authoring interactive STEM materials via \texttt{\textbackslash documentclass\{ximera\}} with zero local configuration. This integration shifts Ximera from an isolated campus utility to a permanent, globally available piece of open educational infrastructure.
+environment for STEM content. 
+
+In May 2024, the Ximera platform achieved a critical scaling milestone by publishing the \texttt{ximera} document class to the Comprehensive \TeX{} Archive Network (CTAN). Now natively bundled within standard global distributions like \TeX{} Live and MiK\TeX{}, any educator worldwide can instantly begin authoring interactive STEM materials via \texttt{\textbackslash documentclass\{ximera\}} with zero local configuration. This integration shifts Ximera from an isolated campus utility to a permanent, globally available piece of open educational infrastructure.
 
 \subsubsection{Simultaneous Output}
 Ximera allows authors to use a single \LaTeX\ source file to
@@ -350,7 +358,7 @@ All of these files are hosted on GitHub, a web-based platform for version contro
 software development. As a result, authors can easily collaborate,
 share materials, and contribute improvements. If a user (student, instructor, or author) encounters issues with the content or platform performance, GitHub provides straightforward ways to report them.
 For example, the GitHub repository for The Ohio State University's calculus sequence
-has 41 contributors, authors have resolved 419 issues in the course materials, and the content been `forked' 460 times (each fork
+has 41 contributors, authors have resolved 419 issues in the course materials, and the content had been `forked' 460 times (each fork
 represents a copy of the course materials that can be adapted and
 extended by another instructor or author).
 \begin{figure}
@@ -444,9 +452,9 @@ OTP Phase I funding has enabled significant improvements for all realms of Ximer
 
 The most significant benefit for students has been the expansion and enhancement of Ximera materials. Since the beginning of the grant period, we have supported the development and improvement of additional textbooks, including Linear Algebra, and Differential Equations. Our most recent undertaking is the conversion of the popular OER Precalculus textbook by Stitz and Zeager to the Ximera platform, with completion anticipated by autumn 2026.
 
-Converting existing OER materials to Ximera allows us to incorporate auto-graded exercises, embedded interactives, and other Ximera features, enhancing these resources for today's students. Continued funding will allow us to build on this progress by expanding the library of Ximera materials, updating existing content, and bringing additional open educational resources to the platform.
+Converting existing OER materials to Ximera allows us to incorporate auto-graded exercises, embedded interactives, and other Ximera features, enhancing these resources for today's students, and ensuring conformance with WCAG 2.1 Level AA. Continued funding will allow us to build on this progress by expanding the library of Ximera materials, updating existing content, and bringing additional open educational resources to the platform.
 
-\subsubsection{Instructors}
+\subsubsection{Institutions and Instructors}
 
 Current funding has allowed us to make significant strides in improving the instructor experience. The most notable advancement has been the development of the Modulus tool, which enables Ximera assignments to pass student grades directly to a learning management system (LMS) (see Section~???). Modulus is being developed by Infonomic under the direction of Snapp and Fowler. In its current implementation, Modulus successfully passes grades to Canvas at The Ohio State University.
 
@@ -488,7 +496,7 @@ Users & \textbf{Progress Under Phase I} & \textbf{Proposed for Phase II} \\
 \textbf{Students} & \textbullet~\$5,000,000 in annual savings. & \textbullet~Additional textbooks \\ & \textbullet~Additional interactive textbooks & and other interactive content \\
 \textbf{Institutions} &  &  \\
 \textbf{Instructors} & \textbullet~More interactive content & \textbullet~Modulus Atlas \\ & to support class discussions & \\ &  \textbullet~Modulus is in Canvas testing phase& \\
-\textbf{Authors} & \textbullet~User manual created & \textbullet~Additional automation \\ & \textbullet~Automated deployment through & of deployment\\ & Codespaces and Overleaf & \\ & \textbullet~Starter kits made available on GitHub & \\
+\textbf{Authors} & \textbullet~User manual created & \textbullet~Additional automation \\ & \textbullet~Automated deployment through & of deployment\\ & Codespaces and Overleaf & \\ & \textbullet~Starter kits made available on GitHub & \\ & \textbullet~CTAN &\\
 \hline
 \end{tabular}
 \end{table}
