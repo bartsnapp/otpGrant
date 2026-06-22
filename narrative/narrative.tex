@@ -450,51 +450,58 @@ extended by another instructor or author).
 
 \section{Statement of Need}\label{ss:need}
 
-Our current problem is as follows: ANNA (WHY FB or REDDIT OERCOMMONS is insufficient) 
+\subsection{OER Landscape}
+\subsubsection{Barriers to Adoption} National data show that OER awareness has outpaced OER use, and the gap is not closing. In the most recent national faculty survey 59\% of higher-education faculty reported some awareness of OER, yet only 33\% used OER as required course material~\cite{bayview2025}. 
+
+A 2020 multi-institutional study of four large public research universities identifies ``Time constraints'' as the single most-cited obstacle (93\%).  The second most-cited obstacle  is "Finding a comprehensive set of resources" (72\%). ~\cite{elder2020}.
+
+Indeed, when doing a search for linear algebra materials we found hundreds of single-topic videos and lecture notes, dozens of free PDF textbooks, a handful of free textbooks that incorporate some level of interactivity, and none that provide a single integrated structure that combines interactive instructional content, graded assessment (with LMS connectivity), and feedback within a single environment, enabling students to encounter interactive activities as an integral part of the reading experience.
+
+While free online textbooks and online homework systems are widely available, these components are often delivered through separate platforms, making them more difficult, and time-consuming, for instructors to manage and integrate into their LMS structure. 
+
+The ``time constraint'' issue, and the ``lack of comprehensive materials'' barrier, together reveal a multifaceted challenge of \textbf{instructional workflow integration}.
+
+Even when high-quality OER content is available, instructors must often manually create LMS assignments, manage grade synchronization, configure external tools, and provide technical support for students navigating multiple systems. These integration tasks consume valuable instructor time and increase the perceived cost of adoption. Faculty need systems that reduce the time required to discover, evaluate, deploy, assess, and maintain OER materials within existing teaching workflows.
+
+\subsubsection{WCAG 2.1 Compliance} Over the next several years, colleges and universities will face the challenge of bringing existing OER materials into compliance with Title II of the Americans with Disabilities Act. Many OER resources for large-enrollment mathematics courses remain distributed primarily as PDF documents and are not currently WCAG 2.1 AA compliant. In contrast, Ximera was designed with accessibility in mind and, following an independent audit by BAWL, is on track to achieve WCAG 2.1 AA conformance by the completion of OTP Phase I.
+
+As institutions seek accessible mathematics solutions, interest in Ximera continues to grow. However, discussions with prospective adopters reveal that many remain unaware of the platform's full capabilities, including its interactive content, assessment tools, and LMS integration. OTP Phase II will address this gap by improving discoverability, community engagement, and adoption pathways, ensuring that institutions can readily identify and implement accessible OER solutions.
 
 
-\subsection{Challenges and Opportunity} % up to 6
+\subsection{Current Ximera Landscape}
+Ximera was designed to provide complete course content. It provides online interactive textbooks, homework, and can even provide activities for recitation sections. However, discoverability is real issue; a Ximera site might have complete course content, yet navigating to that content might be impossible. Search engines find pages within courses, but the users are unaware of the other content of the course. 
+A general search for materials on a common gateway topic returns hundreds of single-topic videos, dozens of free PDF textbooks, and a handful of partially interactive alternatives; Ximera surfaces as one undifferentiated result among that noise rather than as a recognized destination, even where it is the only option that combines instruction, embedded interactives, and auto-graded assessment in a single environment. And because the platform keeps no account of who is using it, the project cannot identify, contact, or support an instructor who has already adopted Ximera material unless that instructor independently reaches out to the Ximera developers.
 
-\subsubsection{The Adoption Gap and Discovery}
-National data show that OER awareness has outpaced OER use, and the gap is not closing. In the most recent national faculty survey 59\% of higher-education faculty reported some awareness of OER, yet only 33\% used OER as required course material~\cite{bayview2025}. This is our experience from OTP Phase I as well. Many students and instructors are aware of Ximera, but they do not realize how easy it is to incorperate Ximera materials into a course, nor do they realize that we often provide a \textbf{complete} course. 
+\subsection{Community of Practice Paradigm}
+Repository-based systems largely solve the problem of content discovery. Platforms such as OER Commons, MERLOT, OpenStax, LibreTexts, and the Open Textbook Library make it substantially easier to locate instructional materials than a general web search. However, discovery is only the first step in adoption.
 
+Once content is identified, instructors must still determine how to deploy it within their course structure, integrate it with their LMS, locate or create assessments, manage grade reporting, adapt materials to local needs, and resolve technical issues. Repository platforms generally provide limited support for these downstream instructional workflows.
 
-A 2020 multi-institutional study of four large public research universities identifies the barrier: while time constraints were the single most-cited obstacle (69\%), a combined 86\% of respondents cited at least one barrier tied specifically to \textbf{locating} appropriate material: comprehensiveness, suitability, currency, or local relevance, making discoverability, not time alone, the dominant impediment~\cite{elder2020}.
+In addition, repositories typically offer few mechanisms for sustained collaboration among adopters. Instructors may download and use the same resource for years without interacting with one another, sharing improvements, or contributing back to the original project. As a result, valuable implementation knowledge remains distributed across individual institutions rather than accumulating within a shared community.
 
+Ximera already has rich, comprehensive content, Modulus will enable to integrate Ximera content with the instructor's LMS.  During OTP Phase II, we propose to develop mechanisms for discovery of Ximera materials, and sustained collaboration between and amongst authors and instructors.  To this end, we propose to develop ATLAS (\textbf{A}ctivity \textbf{T}opic \textbf{L}ibrary \textbf{A}nd \textbf{S}ocial), an open-source discovery and dissemination platform that serves as the public-facing hub of the Ximera ecosystem and beyond (See Figure~\ref{F:XimeraAtlas}).
 
+\begin{figure}
+  \centering
+  \includegraphics[width=.8\textwidth]{XimeraAtlas.png}
+  \caption{ATLAS connects instructors to the Ximera ecosystem.}\label{F:XimeraAtlas}
+\end{figure}
 
-\subsubsection{Opportunity Through Accessibility}
+Together, Ximera, Modulus, and ATLAS address the two most significant barriers to OER adoption: ``time constraint'' and ``lack of comprehensive set of resources''. 
 
+Ximera provides the instructional foundation through openly licensed interactive textbooks, embedded activities, and auto-graded assessment. Rather than treating reading and homework as separate experiences, Ximera integrates instruction, practice, and feedback within a single learning environment.
 
-Ximera, audited against WCAG 2.1 AA by BAWL from the outset, is on track to meet this standard by the end of OTP Phase~I.
-Title II of the Americans with Disabilities Act requires more than 1,600 institutions nationally, to bring its web content and mobile applications into WCAG 2.1 Level AA conformance. These institutions are looking for accessible solutions for their mathematics content. Institutions of Higher Education are already reaching out to Ximera and BAWL to discuss compliant solutions. However, working with them, it is clear that are very unaware of Ximera's true capabilities and potential. 
-In this grant, OTP Phase II, we will solve this problem and take advantage of this opportunity.
+Modulus extends this ecosystem by addressing one of the most persistent challenges identified by instructors: LMS integration. Through grade synchronization and course-management tools, Modulus allows Ximera activities to function within existing institutional workflows, reducing the technical burden associated with adopting new instructional materials. Together, Ximera and Modulus provide a comprehensive pathway from content delivery to assessment and reporting, saving instructors valueable time.
 
-
-
-\subsection{Discoverability is the Key Issue} % up to 6
-
-Ximera aims to provide complete course content. It provides online interactive textbooks, homework, and can even provide activities for recitation sections. However, discoverability is real issue; a Ximera site might have complete course content, yet navigating to that content might be impossible. Search engines find pages within courses, but the users are unaware of the other content of the course. 
-A general search for materials on a common gateway topic returns hundreds of single-topic videos, dozens of free PDF textbooks, and a handful of partially interactive alternatives; Ximera surfaces as one undifferentiated result among that noise rather than as a recognized destination, even where it is the only option that combines instruction, embedded interactives, and auto-graded assessment in a single environment. And because the platform keeps no account of who is using it, the project cannot identify, contact, or support an instructor who has already adopted Ximera material unless that instructor independently reaches out to the Ximera developers themselves.
-
-
-\subsection{Current OER Dissemination Platforms}
-
-ANNA (WHY FB or REDDIT OERCOMMONS is insufficient)
-
-
-
-
-
-
+The proposed new component, ATLAS, constitutes the social umbrella for the instructional ecosystem: community, support, and continuous improvement. While Ximera and Modulus provide the instructional and technical infrastructure, ATLAS provides the human infrastructure. Through shared resources, implementation guides, discussion forums, and collaboration tools, ATLAS enables instructors to discover comprehensive materials, exchange ideas, receive technical assistance, and contribute improvements back to the community. In doing so, ATLAS transforms a collection of educational resources into a sustainable and evolving ecosystem of practice.
 
 \section{Project Design}
 
-The primary objective of this grant is content discoverability, dissemination, and adoption. For this we will build ATLAS.
+The primary objective of this grant is improving adoption by alleviating the two most significant barriers to adoption: ``time constraint'' and ``lack of comprehensive materials.``
 
 \subsection{ATLAS: Activity Topic Library And Social}\label{ss:atlas}
 
-The project will develop ATLAS (\textbf{A}ctivity \textbf{T}opic \textbf{L}ibrary \textbf{A}nd \textbf{S}ocial), an open-source discovery and dissemination platform that serves as the public-facing hub of the Ximera ecosystem and beyond (See Figure~\ref{atlasSite}). The name is deliberate: like the Titan who held up the heavens, ATLAS supports the weight of the ecosystem behind it; like a geographic atlas, it gives instructors a single place to look something up rather than search for it. All content will be freely visible and open without log-in. ATLAS provides a searchable directory of  activities with grade data connected to a Modulus server, organized by topic,  level, and institution, so that finding materials no longer depends on already knowing someone who uses it.
+The project will develop ATLAS (\textbf{A}ctivity \textbf{T}opic \textbf{L}ibrary \textbf{A}nd \textbf{S}ocial), the public-facing hub of the Ximera ecosystem (See Figure~\ref{atlasSite}). The name is deliberate: like the Titan who held up the heavens, ATLAS supports the weight of the ecosystem behind it; like a geographic atlas, it gives instructors a single place to look something up rather than search for it. All content will be freely visible and open without log-in. ATLAS provides a searchable directory of  activities with grade data connected to a Modulus server, organized by topic,  level, and institution, so that finding materials no longer depends on already knowing someone who uses it.
 
 \begin{figure}
   \centering
@@ -504,21 +511,15 @@ The project will develop ATLAS (\textbf{A}ctivity \textbf{T}opic \textbf{L}ibrar
   \label{atlasSite}
 \end{figure}
 
-\todo{What is the difference with the existing OER repository? That is the one question I would Immediately tackle}
- ATLAS will be built to answer the specific needs of the Ximera project.
-ATLAS will treat each activity less like a file and more like a profile: a topic page that carries its own metadata and, by default, a blog-like discussion thread, and things like implementation notes (See Figure~\ref{F:XimeraAtlas}). This gives an instructor evaluating an unfamiliar activity the same kind of context a colleague's recommendation would, at the scale of the full ecosystem rather than one institution's personal network, directly addressing the search-and-evaluation cost identified as the dominant adoption barrier.
 
+%\todo{What is the difference with the existing OER repository? That is the one question I would Immediately tackle}
+What differentiates ATLAS from a repository+social media of choice structure is that ATLAS will be built to answer the specific needs of the Ximera project.
+ATLAS will treat each activity less like a file and more like a profile: a topic page that carries its own metadata and, by default, a blog-like discussion thread, and things like implementation notes (See Figure~\ref{F:XimeraAtlas}). This gives an instructor evaluating an unfamiliar activity the same kind of context a colleague's recommendation would, at the scale of the full ecosystem rather than one institution's personal network, directly addressing the search-and-evaluation cost identified as the dominant adoption barrier.  
 
 ATLAS servers will be connected to existing Modulus installations. Authors will receive  data on their online activies posted to ATLAS. ATLAS users will be able to easily incorporate ATLAS posts into course materials that they can share with their students and collect grade data. 
 
-\begin{figure}
-  \centering
-  \includegraphics[width=.8\textwidth]{XimeraAtlas.png}
-  \caption{ATLAS connects instructors to the Ximera ecosystem.}\label{F:XimeraAtlas}
-\end{figure}
 
-
-In collaboration with Alexander Holvoet at partner Uitwiskeling, ATLAS will be iteratively designed to optimize discoverability and instructor's ease of use, building on their existing website (\url{https://www.uitwiskeling.be}).
+% In collaboration with Alexander Holvoet at partner Uitwiskeling, ATLAS will be iteratively designed to optimize discoverability and instructor's ease of use, building on their existing website (\url{https://www.uitwiskeling.be}).
 
 \subsection{Flash Grants for Local Adoption and Improvement}\label{ss:fg}
 
@@ -1262,9 +1263,7 @@ into an observable, coordinated network.  This will enable a more systematic app
 
 \subsubsection{ATLAS: A Complete Roadmap to Sucessful Adoption}\label{par:modulus-atlas} 
 
-Next to time constraints, [this study] identifies "Finding a comprehensive set of resources" as a top reason for not adopting OERs.  Indeed, when doing a search for linear algebra materials we found hundreds of single-topic videos and lecture notes, dozens of free PDF textbooks, a handful of free textbooks that incorporate some level of interactivity, and none (other than Ximera) that provide a single integrated structure that combines interactive instructional content, graded assessment, and feedback within a single environment, enabling students to encounter interactive activities as an integral part of the reading experience.
 
-While free online textbooks and online homework systems are widely available, these components are often delivered through separate platforms, making them more difficult for instructors to manage.
 
 
 % Discovery is the central bottleneck for any
