@@ -520,13 +520,20 @@ ATLAS will treat each activity less like a file and more like a profile: a topic
 
 ATLAS servers will be connected to existing Modulus installations. Authors will receive  data on their online activies posted to ATLAS. ATLAS users will be able to easily incorporate ATLAS posts into course materials that they can share with their students and collect grade data. 
 
-The deep software integration of ATLAS manifests across three core instructional workflows:
+The deep software integration of ATLAS manifests across three core instructional workflows (see Figure \ref{F:atlasmap}:
 
 \begin{itemize}
     \item \textbf{Automated Content Indexing via Git:} Because Ximera source documents are hosted on GitHub, ATLAS does not rely on manual form submissions. It actively parses the semantic \LaTeX\ metadata tags from public repositories, automatically indexing new problem sets, interactive applets, and textbook chapters into a searchable national catalog the moment an author pushes code.
     \item \textbf{Curriculum Fork-Tracking:} When an instructor copies or ``forks'' an existing textbook to tailor it to local workforce demands, ATLAS programmatically tracks and visualizes that lineage. This allows prospective adopters to see exactly how a foundational core spine has been mutated by peer institutions (e.g., viewing an OSU Calculus spine alongside a version adapted by Columbus State).
     \item \textbf{Direct LMS Provisioning via Modulus:} ATLAS interfaces directly with the Modulus database engine to streamline adoption mechanics. When an instructor identifies a desired learning module within the ATLAS graphical interface, they can click a unified deployment trigger that instantly communicates with Modulus to provision the necessary \mbox{LTI 1.3} tokens and instantiate the corresponding gradebook columns inside their local LMS instance.
 \end{itemize}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=.9\textwidth]{AtlasFunctionMap.png}
+  \caption{ATLAS automates the discovery-to-adoption process while creating infrastructure for continuous improvement and collaboration.}\label{F:atlasmap}
+  \label{atlasSite}
+\end{figure}
 
 By unifying discovery, version tracing, and LMS configuration into a singular interface, ATLAS eliminates the traditional ``time constraint'' barriers that paralyze OER adoption, transforming static open content into a dynamic, interconnected community of practice.
 
