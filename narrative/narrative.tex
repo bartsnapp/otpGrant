@@ -76,7 +76,6 @@ As part of OTP Phase I, the Ximera project has collaborated with several industr
   \url{https://www.bawl-stem.com/}
 \end{center}
 
-Claude responded: Good clarification — that changes the primary pitch from validation to interactive computation, which is a much stronger story and directly parallel to Desmos.Reconsidered SageMath integration as embedded interactive cellsReconsidered SageMath integration as embedded interactive cellsGood clarification — that changes the primary pitch from validation to interactive computation, which is a much stronger story and directly parallel to Desmos. Here's the revised entry:
 
 \subsubsection{SageMath} SageMath is an open-source computer algebra
 system whose computational engine Ximera exposes as a native \LaTeX\
@@ -475,22 +474,26 @@ extended by another instructor or author).
 
 \section{Statement of Need}\label{ss:need}
 
-\subsection{OER Landscape}
-\subsubsection{Barriers to Adoption} National data show that OER awareness has outpaced OER use, and the gap is not closing. In the most recent national faculty survey 59\% of higher-education faculty reported some awareness of OER, yet only 33\% used OER as required course material~\cite{bayview2025}. 
+\subsection{Accessibility} Over the next several years, colleges and universities will face the challenge of bringing existing OER materials into compliance with Title II of the Americans with Disabilities Act. Many OER resources for large-enrollment mathematics courses remain distributed primarily as PDF documents and are not currently WCAG 2.1 AA compliant. In contrast, Ximera was designed with accessibility in mind and, following an independent audit by BAWL, is on track to achieve WCAG 2.1 AA conformance by the completion of OTP Phase I.
+
+As institutions seek accessible mathematics solutions, interest in Ximera continues to grow. However, discussions with prospective adopters reveal that many remain unaware of the platform's full capabilities, including its interactive content, assessment tools, and LMS integration. OTP Phase II will address this gap by improving discoverability, community engagement, and adoption pathways, ensuring that institutions can readily identify and implement accessible OER solutions.
+
+
+\subsection{Barriers to Adoption}
+ National data show that OER awareness has outpaced OER use, and the gap is not closing. In the most recent national faculty survey 59\% of higher-education faculty reported some awareness of OER, yet only 33\% used OER as required course material~\cite{bayview2025}. 
 
 A 2020 multi-institutional study of four large public research universities identifies ``Time constraints'' as the single most-cited obstacle (93\%).  The second most-cited obstacle  is "Finding a comprehensive set of resources" (72\%). ~\cite{elder2020}.
 
-Indeed, when doing a search for linear algebra materials we found hundreds of single-topic videos and lecture notes, dozens of free PDF textbooks, a handful of free textbooks that incorporate some level of interactivity, and none that provide a single integrated structure that combines interactive instructional content, graded assessment (with LMS connectivity), and feedback within a single environment, enabling students to encounter interactive activities as an integral part of the reading experience.
+Indeed, when doing a search for linear algebra materials we found:
+\begin{itemize}
+  \item hundreds of single-topic videos and lecture notes,
+  \item dozens of free PDF textbooks, 
+  \item a handful of free textbooks that incorporate some level of interactivity, 
+\end{itemize}
+yet \textbf{none that provide a single structure that combines interactive instructional content, graded assessment (with LMS connectivity), and feedback.}
+While free online textbooks and online homework systems are widely available, these components are delivered through separate platforms, making them more difficult, and time-consuming, for instructors to manage and integrate into their courses than proprietary solutions. Thus OER faces the challenge of \textbf{instructional workflow integration}. 
 
-While free online textbooks and online homework systems are widely available, these components are often delivered through separate platforms, making them more difficult, and time-consuming, for instructors to manage and integrate into their LMS structure. 
 
-The ``time constraint'' issue, and the ``lack of comprehensive materials'' barrier, together reveal a multifaceted challenge of \textbf{instructional workflow integration}.
-
-Even when high-quality OER content is available, instructors must often manually create LMS assignments, manage grade synchronization, configure external tools, and provide technical support for students navigating multiple systems. These integration tasks consume valuable instructor time and increase the perceived cost of adoption. Faculty need systems that reduce the time required to discover, evaluate, deploy, assess, and maintain OER materials within existing teaching workflows.
-
-\subsubsection{WCAG 2.1 Compliance} Over the next several years, colleges and universities will face the challenge of bringing existing OER materials into compliance with Title II of the Americans with Disabilities Act. Many OER resources for large-enrollment mathematics courses remain distributed primarily as PDF documents and are not currently WCAG 2.1 AA compliant. In contrast, Ximera was designed with accessibility in mind and, following an independent audit by BAWL, is on track to achieve WCAG 2.1 AA conformance by the completion of OTP Phase I.
-
-As institutions seek accessible mathematics solutions, interest in Ximera continues to grow. However, discussions with prospective adopters reveal that many remain unaware of the platform's full capabilities, including its interactive content, assessment tools, and LMS integration. OTP Phase II will address this gap by improving discoverability, community engagement, and adoption pathways, ensuring that institutions can readily identify and implement accessible OER solutions.
 
 
 \subsection{Current Ximera Landscape}
@@ -498,9 +501,9 @@ Ximera was designed to provide complete course content. It provides online inter
 A general search for materials on a common gateway topic returns hundreds of single-topic videos, dozens of free PDF textbooks, and a handful of partially interactive alternatives; Ximera surfaces as one undifferentiated result among that noise rather than as a recognized destination, even where it is the only option that combines instruction, embedded interactives, and auto-graded assessment in a single environment. And because the platform keeps no account of who is using it, the project cannot identify, contact, or support an instructor who has already adopted Ximera material unless that instructor independently reaches out to the Ximera developers.
 
 \subsection{Community of Practice Paradigm}
-Repository-based systems largely solve the problem of content discovery. Platforms such as OER Commons, MERLOT, OpenStax, LibreTexts, and the Open Textbook Library make it substantially easier to locate instructional materials than a general web search. However, discovery is only the first step in adoption.
+Repository-based systems largely solve the problem of content discovery. Platforms such as OER Commons, MERLOT, OpenStax, LibreTexts, and the Open Textbook Library make it substantially easier to locate instructional materials than a general web search. However, \textbf{discovery is only the first step in adoption.}
 
-Once content is identified, instructors must still determine how to deploy it within their course structure, integrate it with their LMS, locate or create assessments, manage grade reporting, adapt materials to local needs, and resolve technical issues. Repository platforms generally provide limited support for these downstream instructional workflows.
+Once content is identified, instructors must still determine how to deploy it within their course structure, integrate it with their LMS, locate or create assessments, manage grade reporting, adapt materials to local needs, and resolve technical issues. Repository platforms generally provide limited-to-no support for these downstream instructional workflows.
 
 In addition, repositories typically offer few mechanisms for sustained collaboration among adopters. Instructors may download and use the same resource for years without interacting with one another, sharing improvements, or contributing back to the original project. As a result, valuable implementation knowledge remains distributed across individual institutions rather than accumulating within a shared community.
 
@@ -516,7 +519,7 @@ Together, Ximera, Modulus, and ATLAS address the two most significant barriers t
 
 Ximera provides the instructional foundation through openly licensed interactive textbooks, embedded activities, and auto-graded assessment. Rather than treating reading and homework as separate experiences, Ximera integrates instruction, practice, and feedback within a single learning environment.
 
-Modulus extends this ecosystem by addressing one of the most persistent challenges identified by instructors: LMS integration. Through grade synchronization and course-management tools, Modulus allows Ximera activities to function within existing institutional workflows, reducing the technical burden associated with adopting new instructional materials. Together, Ximera and Modulus provide a comprehensive pathway from content delivery to assessment and reporting, saving instructors valueable time.
+Modulus extends this ecosystem by addressing one of the most persistent challenges identified by instructors: LMS integration. Through grade synchronization and course-management tools, Modulus allows Ximera activities to function within existing institutional workflows, reducing the technical burden associated with adopting new instructional materials. Together, Ximera and Modulus provide a comprehensive pathway from content delivery to assessment and reporting, saving instructors valuable time.
 
 The proposed new component, ATLAS, constitutes the social umbrella for the instructional ecosystem: community, support, and continuous improvement. While Ximera and Modulus provide the instructional and technical infrastructure, ATLAS provides the human infrastructure. Through shared resources, implementation guides, discussion forums, and collaboration tools, ATLAS enables instructors to discover comprehensive materials, exchange ideas, receive technical assistance, and contribute improvements back to the community. In doing so, ATLAS transforms a collection of educational resources into a sustainable and evolving ecosystem of practice.
 
@@ -536,18 +539,30 @@ The project will develop ATLAS (\textbf{A}ctivity \textbf{T}opic \textbf{L}ibrar
   \label{atlasSite}
 \end{figure}
 
+ATLAS will treat each Ximera course less like a collection of files and more like a profile on social media. ATLAS will deliver complete courses ready for adoption.  The posts in the social media feed will ``advertise'' the content of these courses. Authors and instructors will be able to comment and share.  This gives an instructor evaluating an unfamiliar activity the same kind of context a colleague's recommendation would. Thus expanding instructors pedagogical network. 
 
-%\todo{What is the difference with the existing OER repository? That is the one question I would Immediately tackle}
-What differentiates ATLAS from a repository+social media of choice structure is that ATLAS will be built to answer the specific needs of the Ximera project.
-ATLAS will treat each activity less like a file and more like a profile: a topic page that carries its own metadata and, by default, a blog-like discussion thread, and things like implementation notes. This gives an instructor evaluating an unfamiliar activity the same kind of context a colleague's recommendation would, at the scale of the full ecosystem rather than one institution's personal network, directly addressing the search-and-evaluation time-cost identified as the dominant adoption barrier.  
 
 ATLAS servers will be connected to existing Modulus installations. Authors will receive  data on their online activities posted to ATLAS. ATLAS users will be able to easily incorporate ATLAS posts into course materials that they can share with their students and collect grade data. 
+
+
+
+ATLAS treats each Ximera course less like a file and more like a profile. Authors present their complete courses on ATLAS, highlighting favorite activities as posts in a shared feed. This gives an instructor evaluating unfamiliar content the same kind of context a colleague's recommendation would provide — but at the scale of the full ecosystem rather than a single institution's personal network.
+When an instructor finds a course worth adopting, ATLAS removes the remaining friction. Because each ATLAS instance is connected to an existing Modulus installation, LMS integration is already built in. Instructors can incorporate activities directly into their course materials, share them with students, and begin collecting grade data without additional setup. Authors, in turn, receive engagement data on the activities they have posted, closing the feedback loop between content creators and the instructors who adopt their work.
+
+
+
+
+
+
+
+
 
 The deep software integration of ATLAS manifests across three core instructional workflows (see Figure \ref{F:atlasmap}:
 
 \begin{itemize}
-    \item \textbf{Automated Content Indexing via Git:} Because Ximera source documents are hosted on GitHub, ATLAS does not rely on manual form submissions. It actively parses the semantic \LaTeX\ metadata tags from public repositories, automatically indexing new problem sets, interactive applets, and textbook chapters into a searchable national catalog the moment an author pushes code.
-    \item \textbf{Curriculum Fork-Tracking:} When an instructor copies or ``forks'' an existing textbook to tailor it to local workforce demands, ATLAS programmatically tracks and visualizes that lineage. This allows prospective adopters to see exactly how a foundational core spine has been mutated by peer institutions (e.g., viewing an OSU Calculus spine alongside a version adapted by Columbus State).
+    \item \textbf{Content Indexing:}  Ximera source documents hosted on GitHub will include a metadata file that informs ATLAS on the contents of the provided course. From there, ATLAS will parse the  metadata and generate the social-profile of the course content.
+    \item \textbf{Curriculum Tracking:} When an instructor uses ATLAS to adopt course content, ATLAS will communicate with Modulus to inform the author. Authors will receive aggregate data on course usage. \textbf{This is something OER authors want to help improve the quality of their content.}
+    This will facilitate collaboration across institutions.
     \item \textbf{Direct LMS Provisioning via Modulus:} ATLAS interfaces directly with the Modulus database engine to streamline adoption mechanics. When an instructor identifies a desired learning module within the ATLAS graphical interface, they can click a unified deployment trigger that instantly communicates with Modulus to provision the necessary \mbox{LTI 1.3} tokens and instantiate the corresponding gradebook columns inside their local LMS instance.
 \end{itemize}
 
