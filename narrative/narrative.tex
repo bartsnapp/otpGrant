@@ -76,13 +76,36 @@ As part of OTP Phase I, the Ximera project has collaborated with several industr
   \url{https://www.bawl-stem.com/}
 \end{center}
 
-\subsubsection{Uitwiskeling (mathematics teacher journal)}
-\todo{im happy to be involved but should also talk to the mathematics teacher journals in USA for getting funded and positioning Uitwiskeling as first try out partner.}
-Uitwiskeling is a mathematics teacher journal aimed at K12 education in Belgium, offering both teacher articles and Ximera learning materials, and has been supported by an OTP Phase I Ximera Flash Grant.
-Their current online platform provides a clean example of how learning materials can be integrated with teaching guides, all accessible in an easily searchable database.
-Uitwiskeling will partner with Infonomic as piloting partner to review different iterative designs of ATLAS.
+Claude responded: Good clarification — that changes the primary pitch from validation to interactive computation, which is a much stronger story and directly parallel to Desmos.Reconsidered SageMath integration as embedded interactive cellsReconsidered SageMath integration as embedded interactive cellsGood clarification — that changes the primary pitch from validation to interactive computation, which is a much stronger story and directly parallel to Desmos. Here's the revised entry:
+
+\subsubsection{SageMath} SageMath is an open-source computer algebra
+system whose computational engine Ximera exposes as a native \LaTeX\
+environment: authors write a \texttt{sageCell} block in their source
+file and students see a live, editable SageMath interpreter embedded
+directly in the page. This gives students hands-on access to symbolic
+computation, numerical experiments, and visualization without leaving
+the reading environment, and gives authors a way to set exercises that
+require genuine algebraic reasoning rather than numeric answer-matching.
+Ximera also uses SageMath's symbolic engine as an optional validation
+pathway for checking mathematical equivalences that numeric substitution
+alone cannot handle. SageMath's founder, William Stein, serves on the
+Ximera Advisory Board.
 \begin{center}
-	\url{https://www.uitwiskeling.be/}
+  \url{https://www.sagemath.org/}
+\end{center}
+
+\subsubsection{Desmos} Desmos is an education technology company whose
+interactive graphing calculator and computational tools are embedded
+directly into Ximera course activities. Rather than sending students
+to a separate application, Ximera authors place live Desmos graphs
+and sliders inside the reading experience itself, so that a student
+can manipulate a function and immediately answer an exercise about
+it in the same environment. This integration is one of the features
+that distinguishes Ximera from free PDF textbooks and from homework
+systems that treat computation as a separate step.
+Desmos has worked out a Memorandum of Understanding with Ximera allowing this use.
+\begin{center}
+  \url{https://www.desmos.com/}
 \end{center}
 
 
@@ -315,7 +338,7 @@ instructors in this category; When fully implemented, Modulus will solve this is
 OSU and the University of Florida (UF), instructors of large classes and a few others have Ximera
 assignments directly integrated into the Learning Management System
 (LMS). For these instructors, Ximera works seamlessly and invisibly.
-\todo{Also KU Leuven!}
+%\todo{Also KU Leuven!}
 
 
 
@@ -499,17 +522,16 @@ The project will develop ATLAS (\textbf{A}ctivity \textbf{T}opic \textbf{L}ibrar
 \begin{figure}
   \centering
   \includegraphics[width=.8\textwidth]{atlas.png}
-  \caption{Authors post Ximera activities to ATLAS, where they become discoverable by topic, 
+  \caption{A MOCK-UP of ATLAS: Authors post Ximera activities to ATLAS, where they become discoverable by topic, 
   level, and institution.}\label{F:atlasMedia}
   \label{atlasSite}
 \end{figure}
 
-\todo{What is the difference with the existing OER repository? That is the one question I would Immediately tackle}
  ATLAS will be built to answer the specific needs of the Ximera project.
 ATLAS will treat each activity less like a file and more like a profile: a topic page that carries its own metadata and, by default, a blog-like discussion thread, and things like implementation notes (See Figure~\ref{F:XimeraAtlas}). This gives an instructor evaluating an unfamiliar activity the same kind of context a colleague's recommendation would, at the scale of the full ecosystem rather than one institution's personal network, directly addressing the search-and-evaluation cost identified as the dominant adoption barrier.
 
 
-ATLAS servers will be connected to existing Modulus installations. Authors will receive  data on their online activies posted to ATLAS. ATLAS users will be able to easily incorporate ATLAS posts into course materials that they can share with their students and collect grade data. 
+ATLAS servers will be connected to existing Modulus installations. Authors will receive  data on their online activities posted to ATLAS. ATLAS users will be able to easily incorporate ATLAS posts into course materials that they can share with their students and collect grade data. 
 
 \begin{figure}
   \centering
@@ -623,18 +645,17 @@ Converting existing OER materials to Ximera allows us to incorporate auto-graded
 
 \subsubsection{Institutions}
 
-Current funding enabled great strides toward meeting the needs of institutions. Modulus will solve the issues of grade data and BAWL will ensure WCAG 2.1 AA compliance.
+Current OTP Phase I funding enabled great strides toward meeting the needs of institutions. Modulus will solve the issues of grade data and BAWL will ensure WCAG 2.1 AA compliance.
 
-Future funding will allow us to test and extend Modulus to other LMSs like Blackboard and Brightspace and provide CSS theming for institutional branding.
-\todo{I would really make a visual infographic on timelines involved}
-\todo{Now the funding is being used for previous goals? Would not try to include it subtly but very explicitly say for which objectives of OTP I extra funding is required}
+OTP Phase II funding will allow us to test and extend Modulus to other LMSs like Blackboard and Brightspace and provide website theming for institutional branding.
+
 
 \subsection{Instructors}
 
 Using Modulus instructors will be able to integrate Ximera assignments into their existing LMS workflows and record student progress automatically.
 Current funding has allowed us to make significant strides in improving the instructor experience. The most notable advancement has been the development of the Modulus tool, which enables Ximera assignments to pass student grades directly to a learning management system (LMS). 
 
-Future funding will support the development of ATLAS, providing tools for discovering and easily incorperating Ximera content into their courses.
+Future funding will support the development of ATLAS, providing tools for discovering and easily incorporating Ximera content into their courses.
 
 
 
@@ -654,7 +675,7 @@ The repository located at
 \url{https://github.com/ximeraProject/ximeraFirstSteps}
 \end{center}
 provides a starting point for authors to create their own Ximera content.
-\item Deployment workflows using GitHub Codespaces and Overleaf have been developed.
+\item Browser based deployment workflows have been developed.
 \todo{These words mean nothing for the reader but the increase in userfriendliness is very important and will also impact your adoption + discovery. provide some screenshots of how it works}
 \end{itemize}
 
@@ -847,26 +868,47 @@ feed directly into the quarterly report cycle.
 
 
 \subsection{Advisory Board}
-\todo{would also add concluding remark how the advisory board is well-balanced or covering the important voices}
 
-\paragraph{Neil Soiffer}
-member Neil Soiffer of MathCAT (one of three Advisory
-Board members receiving a \$1,000/year stipend from the \$3,000/year
-Advisory Board line) on mathematical screen-reader compatibility,
-including alt text and authoring metadata. Building on the Best
-Practices Guide finalized under the current award, the explicit
-management goal for this grant is to shift accessibility review from a
-single specialist to a distributed practice: consortium authors will
-be trained directly in accessible authoring conventions at the annual
-Workshop, with Kuan auditing a declining share of total content each
-year as that capacity grows. Progress is tracked via audit coverage
-and the number of consortium authors completing accessibility
-training, reported annually.
+We have assembled an advisory board of open-education experts.
+
+
+\textbf{Neil Soiffer} holds a B.S.\ in Mathematics from MIT and a Ph.D.\ in 
+Computer Science from UC Berkeley. He is a principal architect of MathML, the 
+W3C standard for representing mathematical notation on the web, and currently 
+chairs the W3C Math Working Group, which is developing expanded browser support 
+and updating the MathML standard. He previously developed MathPlayer, the 
+widely used tool that enables major screen readers, including JAWS and 
+NVDA, to render mathematical content in web pages, Word, and PowerPoint 
+documents. He now develops MathCAT (Math Capable Assistive Technology), a 
+library that converts MathML to speech and braille and is integrated into 
+leading assistive technology platforms. Soiffer has published extensively on 
+mathematical accessibility and has worked at Wolfram Research, Design Science, 
+and other organizations at the intersection of mathematics and computing. On the 
+Ximera project, he will consult closely with Jeff Kuan of BAWL to ensure 
+Ximera's mathematical content meets the highest accessibility standards for 
+screen reader users.
+
 
 \paragraph{Piotr Mitros}
+Piotr Mitros holds a Ph.D.\ in Electrical Engineering and Computer Science from 
+MIT (2007). In 2011, he proposed the MITx initiative to MIT and built the first 
+version of the Open edX platform, which became the technical foundation for edX. 
+He served as Chief Scientist at edX from 2012 to 2017, and subsequently as 
+Senior Research Scientist at the Educational Testing Service. Open edX is now an 
+open-source platform powering approximately 200 learning portals worldwide. 
+Mitros brings to the Ximera advisory board direct experience building and 
+sustaining open educational platforms at national scale.
 
 
-\paragraph{William Stein}
+\textbf{William Stein} initiated the SageMath project in 2004, an open-source 
+mathematical software system for researchers, teachers, and students that has 
+become a standard tool in computational mathematics. He also founded SageMath, 
+Inc.\ and created CoCalc, a cloud-based platform for collaborative mathematical 
+computing that operates as a self-sustaining commercial product. Both SageMath 
+and CoCalc have been essential to Ximera's development. Stein has received 
+several awards and honors throughout his career, including the NSF CAREER Award, 
+the Alfred P.\ Sloan Research Fellowship, and the Richard Dimick Jenks Memorial 
+Prize from the Association for Computing Machinery.
 
 
 
@@ -880,7 +922,7 @@ MAA MathFest, AMATYC, and similar venues. Zachlin is responsible for
 identifying new conference and institutional outreach opportunities
 throughout the year and reports quarterly to Snapp on contacts made,
 presentations delivered.
-\todo{Wim Obbels has talked about giving workshops; could be incentivized to up the amount?}
+
 
 
 
@@ -891,7 +933,7 @@ development vehicle, organized by Snapp and Fowler. At this point there have bee
 \begin{center}
   \url{https://ximera.org/workshops/}
 \end{center}
-\todo{This is somewhat meagre, given the stressing of adoption gap earlier in the proposal?}
+DESCRIBE WORKSHOPS BETTER
 
 \subsection{Flash Grants}
 
